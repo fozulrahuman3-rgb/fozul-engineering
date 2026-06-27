@@ -35,39 +35,63 @@ const aboutHighlights = [
 const consultancyServices = [
   {
     title: 'Civil QA/QC Consultancy',
-    description: 'End-to-end quality leadership for civil and industrial projects with strong field execution and documentation discipline.',
-    highlights: ['Project Quality Planning', 'ITP Review', 'Method Statement Review', 'Inspection Support'],
+    description: 'Independent quality strategy and field support for civil works, ensuring compliance, traceability, and construction confidence.',
     icon: 'quality',
   },
   {
-    title: 'Root Cause Analysis',
-    description: 'Independent technical investigation of defects, structural issues, and recurring failures with clear corrective insight.',
-    highlights: ['Concrete Defects', 'Structural Cracks', 'Corrosion Investigation', 'Failure Investigation'],
+    title: 'Root Cause Failure Analysis',
+    description: 'Systematic engineering review of defects, failures, and recurring issues to isolate the real causes and support corrective action.',
     icon: 'analysis',
   },
   {
-    title: 'Repair & Rehabilitation',
-    description: 'Practical rehabilitation strategies for durability, structural recovery, and long-term asset performance.',
-    highlights: ['Concrete Repair Recommendations', 'Epoxy Injection', 'Protective Coating Systems', 'Repair Material Selection'],
+    title: 'Concrete Crack Investigation',
+    description: 'Detailed assessment of crack mechanisms, movement, and structural implications to guide durable repair decisions.',
+    icon: 'crack',
+  },
+  {
+    title: 'Structural Condition Assessment',
+    description: 'Technical condition reviews for existing assets and concrete structures, with practical recommendations for performance improvement.',
     icon: 'repair',
   },
   {
-    title: 'Geosynthetics Engineering',
-    description: 'Specialized support for geosynthetic systems, installations, integrity checks, and quality assurance.',
-    highlights: ['HDPE Liner QA/QC', 'Geotextile Inspection', 'Geomembrane Welding', 'Leak Detection Support'],
-    icon: 'liner',
+    title: 'Waterproofing Inspection',
+    description: 'Inspection-led review of waterproofing systems, leakage risks, and system performance for long-term reliability.',
+    icon: 'waterproof',
   },
   {
-    title: 'Construction Quality Audit',
-    description: 'Structured audits and improvement programs that strengthen site control, accountability, and compliance.',
-    highlights: ['Site Quality Audit', 'NCR Investigation', 'CAPA Implementation', 'Quality Improvement'],
+    title: 'Rebar Corrosion Assessment',
+    description: 'Evaluation of corrosion risk, reinforcement degradation, and protective measures to preserve structural durability.',
+    icon: 'corrosion',
+  },
+  {
+    title: 'Concrete Repair Recommendations',
+    description: 'Practical repair planning and material guidance for spalling, delamination, and deterioration issues.',
+    icon: 'repair',
+  },
+  {
+    title: 'Industrial QA/QC Audits',
+    description: 'Structured audits and quality reviews for industrial environments, focused on compliance, control, and operational excellence.',
     icon: 'inspection',
   },
   {
-    title: 'Technical Training',
-    description: 'Practical training solutions for site engineers, inspectors, and quality teams to raise performance standards.',
-    highlights: ['QA/QC Training', 'Inspection Training', 'Site Engineer Training', 'Practical Workshops'],
-    icon: 'plan',
+    title: 'HDPE Liner Quality Consultancy',
+    description: 'Specialist support for liner system quality, installation assurance, inspection planning, and defect prevention.',
+    icon: 'liner',
+  },
+  {
+    title: 'Geotextile & Geomembrane Inspection',
+    description: 'Field and technical inspection support for geosynthetic installations, integrity, and performance verification.',
+    icon: 'geotextile',
+  },
+  {
+    title: 'Construction Quality Management',
+    description: 'Practical quality leadership for site execution, documentation control, and project delivery oversight.',
+    icon: 'qa',
+  },
+  {
+    title: 'Project Documentation Review',
+    description: 'Review of quality plans, method statements, ITPs, and compliance documentation for project readiness.',
+    icon: 'document',
   },
 ]
 
@@ -586,11 +610,7 @@ function App() {
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <ul className="service-highlights">
-                  {item.highlights.map((highlight) => (
-                    <li key={highlight}>{highlight}</li>
-                  ))}
-                </ul>
+                <button type="button" className="knowledge-link service-link">Learn More</button>
               </motion.article>
             ))}
           </div>
