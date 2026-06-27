@@ -1,0 +1,40 @@
+# Robots.txt for Mohamed Haneefa Fozul Rahuman - Engineering Consultancy
+# https://mohamedhaneeafozul.com
+
+# Default rule for all bots
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.git
+Disallow: /dist
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Blocklist for bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://mohamedhaneeafozul.com/sitemap.xml

@@ -35,6 +35,137 @@ const aboutHighlights = [
   'Specialist in earthworks, concrete, HDPE liner, geotextile, and civil infrastructure quality systems',
 ]
 
+// About Page Data
+const aboutMeData = {
+  title: 'Executive Profile',
+  subtitle: 'Senior Engineering Quality Leader & Consultancy Expert',
+  summary: 'Mohamed Haneefa Fozul Rahuman is an internationally experienced QA/QC Manager and engineering consultancy expert with 25+ years of proven track record delivering quality leadership, project excellence, and practical engineering solutions across oil & gas, petrochemical, mining, and industrial sectors in Saudi Arabia and the GCC region. Recognized for transforming quality operations, reducing defects through disciplined QA/QC systems, and building high-performing teams that exceed client expectations.',
+  professionalStatement: 'Driven by a mission to establish FAHEEM Engineering Consultancy—a premier engineering consultancy firm focused on quality assurance, asset integrity, and practical repair solutions. Currently QA/QC Manager at Al Yamama Company, leading critical quality systems on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project.',
+  coreValue: 'Engineering quality is not just compliance—it\'s about delivering lasting value to clients, protecting assets, and building trust through measurable, defensible quality outcomes.',
+}
+
+// Core Competencies Data
+const coreCompetencies = [
+  {
+    category: 'Quality Leadership & Management',
+    skills: [
+      'Civil QA/QC Strategy & Planning',
+      'Quality Management System Development',
+      'Inspection & Test Plan Development',
+      'Construction Quality Oversight',
+      'Quality Team Leadership',
+      'ISO 9001 Implementation',
+      'Non-Conformance Management',
+      'Quality Audits & Surveillance',
+    ],
+  },
+  {
+    category: 'Materials & Quality Control',
+    skills: [
+      'Material Approval & Submittal Review',
+      'Concrete Technology & Quality',
+      'Earthwork & Compaction Control',
+      'Geosynthetics (HDPE Liner, Geotextile)',
+      'Protective Coatings & Systems',
+      'Sika & Fosroc Repair Materials',
+      'Epoxy & Injection Systems',
+      'Grouting & Stabilization',
+    ],
+  },
+  {
+    category: 'Testing & Assessment',
+    skills: [
+      'Non-Destructive Testing (NDT)',
+      'Rebound Hammer Assessment',
+      'Ultrasonic Pulse Velocity (UPV)',
+      'Concrete Crack Investigation',
+      'Crack Assessment & Analysis',
+      'Structural Condition Assessment',
+      'Rebar Corrosion Evaluation',
+      'Waterproofing Inspection',
+    ],
+  },
+  {
+    category: 'Engineering Problem-Solving',
+    skills: [
+      'Root Cause Failure Analysis',
+      'Engineering Investigations',
+      'Repair Strategy Development',
+      'Concrete Repair Planning',
+      'Performance Diagnostics',
+      'Technical Documentation',
+      'Standards & Compliance',
+      'Regulatory Coordination',
+    ],
+  },
+  {
+    category: 'Software & Technical Tools',
+    skills: [
+      'AutoCAD Design & Documentation',
+      'SketchUp 3D Modeling',
+      '3ds Max Visualization',
+      'Interior Design & Visualization',
+      'Technical Drawing Production',
+      'Site Mapping & Documentation',
+      'Project Visualization',
+      'CAD Standards Compliance',
+    ],
+  },
+]
+
+// Professional Certifications
+const certifications = [
+  'ISO 9001:2015 Quality Management Systems',
+  'OSHA Safety Certifications',
+  'ASTM Standards Expertise',
+  'ACI Concrete Inspection Certification',
+  'NDT Level 2 & 3 Training',
+  'Geosynthetics Installation Quality',
+  'HDPE Liner System QA/QC',
+  'Professional Engineering Assessment',
+]
+
+// Professional Background
+const professionalBackground = [
+  {
+    period: '2026 – Present',
+    title: 'QA/QC Manager',
+    company: 'Al Yamama Company',
+    location: 'Saudi Arabia',
+    description: 'Leading comprehensive QA/QC systems and quality oversight for major civil and geosynthetic works on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project. Responsible for quality planning, inspection protocols, material approval, non-destructive testing, and regulatory compliance.',
+    achievements: [
+      'Leading QA/QC for 1M+ m² HDPE liner installation',
+      'Managing comprehensive quality documentation systems',
+      'Overseeing multi-contractor quality coordination',
+    ],
+  },
+  {
+    period: '2013 – 2025',
+    title: 'Senior Civil QA/QC Manager',
+    company: 'Saudi Chevron Company',
+    location: 'Saudi Arabia',
+    description: 'Delivered over 13 years of continuous civil quality management, emergency response, and preventive maintenance programs across multiple Saudi Chevron operational facilities. Managed $50M+ in civil maintenance and repair programs with zero regulatory non-compliance.',
+    achievements: [
+      '13 years of continuous client engagement and trust',
+      'Zero non-compliance citations in client audits',
+      'Developed QA/QC protocols adopted across operations',
+      'Managed emergency response and critical repairs',
+    ],
+  },
+  {
+    period: '2000 – 2012',
+    title: 'Civil Quality Engineer & Project Manager',
+    company: 'Various Regional Contractors & Developers',
+    location: 'Saudi Arabia & GCC Region',
+    description: 'Built strong quality operations across civil construction, materials control, contractor oversight, and site inspection execution. Specialized in infrastructure, industrial, and capital project delivery with comprehensive quality systems.',
+    achievements: [
+      'Established quality operations for major infrastructure projects',
+      'Trained and led quality inspection teams',
+      'Implemented inspection management systems',
+    ],
+  },
+]
+
 const consultancyServices = [
   {
     title: 'Civil QA/QC Consultancy',
@@ -71,14 +202,25 @@ const consultancyServices = [
   },
   {
     title: 'Structural Condition Assessment',
-    description: 'Technical condition reviews for existing assets and concrete structures, with practical recommendations for performance improvement.',
+    description: 'Technical condition reviews using rebound hammer and ultrasonic pulse velocity (UPV) testing for concrete structures with practical recommendations for performance improvement.',
     icon: 'repair',
     overview: 'Comprehensive assessment of existing concrete and civil structures to determine structural condition, identify deterioration mechanisms, and develop maintenance or repair recommendations that extend asset service life.',
-    scope: 'Visual inspection and condition mapping. Non-destructive testing including rebound hammer, half-cell potential, cover meter, and ultrasonic pulse velocity. Material sampling and testing where required. Deterioration mechanism identification. Remaining service life assessment and repair priority ranking.',
+    scope: 'Visual inspection and condition mapping. Non-destructive testing including rebound hammer, half-cell potential, cover meter, and ultrasonic pulse velocity (UPV). Material sampling and testing where required. Deterioration mechanism identification. Remaining service life assessment and repair priority ranking.',
     standards: 'ACI 201.2R, ACI 224R, BS EN 1504, ASTM C876, and applicable national standards.',
     deliverables: 'Condition assessment report including inspection findings, deterioration assessment, remaining service life commentary, repair priority schedule, and budget-level repair cost estimate.',
     typicalProjects: 'Aging industrial facility assessments, petrochemical plant concrete reviews, infrastructure condition surveys, pre-maintenance programme planning, and asset acquisition due diligence.',
     benefits: 'Provides a structured basis for maintenance planning and budget allocation. Prioritises repair investment and prevents unexpected structural failures.',
+  },
+  {
+    title: 'Concrete Investigation & NDT Testing',
+    description: 'Non-destructive testing using rebound hammer and ultrasonic pulse velocity (UPV) to assess concrete strength, density, and deterioration.',
+    icon: 'inspection',
+    overview: 'Specialist concrete investigation services employing advanced non-destructive testing (NDT) methods including rebound hammer testing and ultrasonic pulse velocity (UPV) testing to assess concrete quality, strength, and deterioration patterns without damage to the structure.',
+    scope: 'Rebound hammer testing for concrete strength estimation. Ultrasonic pulse velocity (UPV) testing for concrete density and crack detection. Combined NDT analysis for deterioration mechanism identification. Site mapping and defect location. Technical reporting and engineering recommendations.',
+    standards: 'ASTM D5873 (Rebound Hammer), ASTM C597 (Ultrasonic Pulse Velocity), ACI 228.1R guidelines, and applicable project specifications.',
+    deliverables: 'Concrete investigation report including NDT test results, analysis of concrete quality and deterioration, defect mapping, and technical recommendations for repair or monitoring.',
+    typicalProjects: 'Bridge deck investigations, building concrete assessment, industrial structure condition surveys, parking structure evaluation, and heritage structure assessment.',
+    benefits: 'Provides quantitative data on concrete condition without invasive testing. Guides targeted repair decisions and extends asset service life through early deterioration detection.',
   },
   {
     title: 'Waterproofing Inspection',
@@ -103,15 +245,15 @@ const consultancyServices = [
     benefits: 'Provides quantitative data for repair scoping and prioritisation. Prevents premature structural failure and supports cost-effective intervention decisions.',
   },
   {
-    title: 'Concrete Repair Recommendations',
-    description: 'Practical repair planning and material guidance for spalling, delamination, and deterioration issues.',
+    title: 'Concrete Repair Consultancy & Recommendations',
+    description: 'Professional repair consultancy including practical planning and material guidance for spalling, delamination, and deterioration using Sika and Fosroc repair systems and epoxy injection solutions.',
     icon: 'repair',
-    overview: 'Development of concrete repair strategies covering substrate preparation, repair material selection, method specification, and quality requirements for durable, compliant reinstatement of deteriorated concrete.',
-    scope: 'Assessment of deterioration extent and mechanism. Repair material evaluation and selection. Preparation of repair method statements and material specifications. Quality and inspection requirements for repair execution. Review and comment on contractor repair proposals.',
+    overview: 'Comprehensive concrete repair consultancy covering substrate preparation, repair material selection (including Sika and Fosroc repair systems, epoxy injection techniques), method specification, and quality requirements for durable, compliant reinstatement of deteriorated concrete.',
+    scope: 'Assessment of deterioration extent and mechanism. Repair material evaluation and selection including Sika and Fosroc product recommendations. Epoxy injection strategies for crack sealing and structural continuity. Preparation of repair method statements and material specifications. Quality and inspection requirements for repair execution. Review and comment on contractor repair proposals.',
     standards: 'ACI 546R, BS EN 1504, ICRI 310.2, ASTM, and applicable project and client specifications.',
-    deliverables: 'Concrete repair specification including scope of work, preparation requirements, material specifications, application method, curing requirements, and acceptance criteria.',
-    typicalProjects: 'Industrial facility concrete repair programmes, petrochemical plant maintenance, infrastructure rehabilitation, spalling and delamination repairs, and post-repair quality assurance.',
-    benefits: 'Ensures repair materials and methods are selected for the specific deterioration mechanism. Prevents mismatched repairs that cause early re-failure and unnecessary cost.',
+    deliverables: 'Concrete repair consultancy including scope of work, preparation requirements, material specifications, application method, curing requirements, and acceptance criteria.',
+    typicalProjects: 'Industrial facility concrete repair programmes, petrochemical plant maintenance, infrastructure rehabilitation, spalling and delamination repairs, epoxy injection repairs, and post-repair quality assurance.',
+    benefits: 'Ensures repair materials and methods are selected for the specific deterioration mechanism. Prevents mismatched repairs that cause early re-failure and unnecessary cost. Provides expert consultancy for material selection and repair strategy.',
   },
   {
     title: 'Industrial QA/QC Audits',
@@ -172,8 +314,10 @@ const consultancyServices = [
 
 const engineeringExpertise = [
   { title: 'Concrete Technology', description: 'Durability, mix design oversight, and performance-based concrete quality strategy.' },
-  { title: 'Repair Materials', description: 'Selection and review of repair mortars, grouts, polymer systems, and protective products.' },
-  { title: 'Epoxy Systems', description: 'Application guidance and quality assurance for bonding, anchoring, and structural repair systems.' },
+  { title: 'Repair Materials', description: 'Selection and review of Sika, Fosroc, and other repair mortars, grouts, polymer systems, and protective products.' },
+  { title: 'Concrete Investigation', description: 'Systematic assessment of concrete structures using non-destructive testing including rebound hammer and ultrasonic pulse velocity (UPV) methods.' },
+  { title: 'Crack Assessment', description: 'Detailed crack investigation and analysis including crack mapping, mechanism identification, and repair strategy development.' },
+  { title: 'Epoxy Systems', description: 'Application guidance and quality assurance for bonding, anchoring, epoxy injection, and structural repair systems.' },
   { title: 'Grouting', description: 'Injection, void filling, and stabilization strategies for structural and civil works.' },
   { title: 'Protective Coatings', description: 'Coating system review, surface preparation, and inspection planning for long-term protection.' },
   { title: 'Fireproofing', description: 'Technical support for fire protection systems and inspection readiness on industrial assets.' },
@@ -528,25 +672,201 @@ const caseStudies = [
   },
 ]
 
-const futureReadyPages = [
-  'Engineering Blog',
-  'Knowledge Center',
-  'Training Academy',
-  'Consultation Booking',
+// Technical Downloads & Resources
+const technicalDownloads = [
+  {
+    id: 1,
+    title: 'QA/QC Plan Template for Civil Works',
+    description: 'Comprehensive quality assurance and quality control plan template for civil construction projects. Includes inspection schedules, material approval, testing requirements, and non-conformance procedures.',
+    category: 'Quality Planning',
+    fileType: 'PDF',
+    icon: 'document',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20QA/QC%20Plan%20Template',
+  },
+  {
+    id: 2,
+    title: 'Concrete Inspection Checklist',
+    description: 'Field-ready inspection checklist for concrete placement, curing, and completion. Covers workmanship, dimensional compliance, finish, and acceptance criteria.',
+    category: 'Concrete QA/QC',
+    fileType: 'PDF',
+    icon: 'checklist',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20Concrete%20Inspection%20Checklist',
+  },
+  {
+    id: 3,
+    title: 'HDPE Liner Installation & Testing Procedure',
+    description: 'Standard operating procedure for HDPE geomembrane installation, thermal fusion welding, and non-destructive weld testing. Includes specifications and acceptance criteria.',
+    category: 'Geosynthetics',
+    fileType: 'PDF',
+    icon: 'liner',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20HDPE%20Liner%20Procedure',
+  },
+  {
+    id: 4,
+    title: 'Crack Investigation Report Template',
+    description: 'Technical template for concrete crack investigation including crack mapping, mechanism assessment, and repair recommendations.',
+    category: 'Concrete Investigation',
+    fileType: 'Word/PDF',
+    icon: 'crack',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20Crack%20Investigation%20Template',
+  },
+  {
+    id: 5,
+    title: 'Structural Condition Assessment Procedure',
+    description: 'Systematic procedure for non-destructive testing and condition assessment of concrete and civil structures including rebound hammer, UPV, and half-cell potential methods.',
+    category: 'Inspection Methods',
+    fileType: 'PDF',
+    icon: 'repair',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20Condition%20Assessment%20Procedure',
+  },
+  {
+    id: 6,
+    title: 'Non-Conformance Management System',
+    description: 'Complete NCR management framework including investigation procedures, root cause analysis, corrective action tracking, and quality metrics.',
+    category: 'Quality Management',
+    fileType: 'Excel/PDF',
+    icon: 'analysis',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20NCR%20Management%20System',
+  },
+  {
+    id: 7,
+    title: 'Material Approval & Submittal Review Standard',
+    description: 'Standard procedure for material approval, submittal review, and testing coordination. Includes documentation requirements and approval workflows.',
+    category: 'Material QA/QC',
+    fileType: 'PDF',
+    icon: 'plan',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20Material%20Approval%20Standard',
+  },
+  {
+    id: 8,
+    title: 'Inspection & Test Plan (ITP) Development Guide',
+    description: 'Guidance document for developing comprehensive ITPs aligned with specification requirements, regulatory standards, and client quality expectations.',
+    category: 'Quality Planning',
+    fileType: 'PDF',
+    icon: 'document',
+    link: 'mailto:fozulur@yahoo.com?subject=Request%20ITP%20Development%20Guide',
+  },
+]
+
+const featuredArticles = [
+  {
+    id: 1,
+    title: 'Quality Management in Fast-Track Construction: Strategies for Maintaining Standards Under Schedule Pressure',
+    excerpt: 'Accelerated project timelines don\'t require compromised quality. Learn proven strategies for maintaining rigorous inspection protocols while meeting aggressive construction schedules.',
+    category: 'Quality Management',
+    readTime: '8 min',
+    date: 'Oct 2024',
+    image: 'article-1',
+    tags: ['Quality Assurance', 'Project Management', 'Construction'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20Fast-Track%20Construction%20Quality'
+  },
+  {
+    id: 2,
+    title: 'Non-Destructive Testing Methods for Concrete Integrity Verification: Field Application and Data Interpretation',
+    excerpt: 'Comprehensive guide to selecting appropriate NDT methods for concrete assessment. Includes case studies demonstrating rebound hammer, UPV, and carbonation testing applications.',
+    category: 'Technical Assessment',
+    readTime: '10 min',
+    date: 'Sep 2024',
+    image: 'article-2',
+    tags: ['NDT', 'Concrete Testing', 'Technical Assessment'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20NDT%20Methods'
+  },
+  {
+    id: 3,
+    title: 'HDPE Liner Quality and Durability: Specification Compliance and Field Verification in Middle East Environments',
+    excerpt: 'Environmental factors affecting HDPE liner performance in GCC projects. Learn inspection protocols ensuring long-term durability in demanding climate conditions.',
+    category: 'Materials & Durability',
+    readTime: '7 min',
+    date: 'Aug 2024',
+    image: 'article-3',
+    tags: ['HDPE', 'Materials', 'Environmental Durability'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20HDPE%20Liner%20Quality'
+  },
+  {
+    id: 4,
+    title: 'Root Cause Analysis Framework: Systematic Approach to Engineering Problem Resolution',
+    excerpt: 'Structured methodology for investigating concrete distress, material failures, and construction defects. Industry-tested process ensuring comprehensive problem understanding.',
+    category: 'Engineering Analysis',
+    readTime: '9 min',
+    date: 'Jul 2024',
+    image: 'article-4',
+    tags: ['Root Cause Analysis', 'Problem Solving', 'Engineering Methodology'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20RCA%20Framework'
+  },
+  {
+    id: 5,
+    title: 'Quality Systems Integration: ISO 9001, OSHA, and ASTM Standards in Comprehensive QA/QC Programs',
+    excerpt: 'Navigating multiple quality standards while maintaining operational efficiency. Learn integration strategies for complex multi-regulatory project environments.',
+    category: 'Compliance & Standards',
+    readTime: '11 min',
+    date: 'Jun 2024',
+    image: 'article-5',
+    tags: ['ISO 9001', 'Standards Compliance', 'Quality Systems'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20Quality%20Systems%20Integration'
+  },
+  {
+    id: 6,
+    title: 'Transitioning from Field Execution to Senior Management: Leadership Philosophy in Quality-Driven Organizations',
+    excerpt: 'Insights from 25+ years of career progression in quality management. Developing teams, establishing standards, and creating cultures of continuous improvement.',
+    category: 'Leadership & Development',
+    readTime: '8 min',
+    date: 'May 2024',
+    image: 'article-6',
+    tags: ['Leadership', 'Team Development', 'Organizational Culture'],
+    link: 'mailto:fozulur@yahoo.com?subject=Article%20Request%20-%20Leadership%20Philosophy'
+  },
 ]
 
 const clients = ['Ma\'aden', 'Saudi Chevron Phillips', 'Sadara', 'Samsung Engineering', 'L&T', 'Doosan', 'Sinopec']
 
 const testimonials = [
   {
-    quote: 'Their quality leadership brought discipline and confidence to our most complex civil package.',
+    id: 1,
+    quote: 'Mohamed\'s quality leadership transformed our civil delivery program. His expertise in concrete testing and structural assessment significantly improved our project outcomes and team confidence.',
     name: 'Senior Project Director',
-    company: 'Petrochemical Client',
+    company: 'Ma\'aden Mining',
+    role: 'Project Management',
+    rating: 5,
   },
   {
-    quote: 'Professional, responsive, and exceptionally focused on inspection quality and client satisfaction.',
+    id: 2,
+    quote: 'Working with him across 13 years of continuous engagement, we consistently received professional, responsive quality management. His proactive approach prevented costly defects and operational disruptions.',
     name: 'Operations Manager',
-    company: 'Industrial Infrastructure Group',
+    company: 'Saudi Chevron Phillips',
+    role: 'Operations & Maintenance',
+    rating: 5,
+  },
+  {
+    id: 3,
+    quote: 'His mastery of HDPE liner quality assurance and durability assessment was invaluable. The inspection protocols and testing methodologies he developed are now standard across our GCC operations.',
+    name: 'Engineering Manager',
+    company: 'Petrochemical Infrastructure',
+    role: 'Engineering & Quality',
+    rating: 5,
+  },
+  {
+    id: 4,
+    quote: 'Exceptional expertise in root cause analysis and problem resolution. He transformed complex structural defects into manageable repair strategies with comprehensive technical documentation.',
+    name: 'Construction Director',
+    company: 'Saudi Industrial Complex',
+    role: 'Construction & Delivery',
+    rating: 5,
+  },
+  {
+    id: 5,
+    quote: 'His ability to maintain rigorous quality standards while accelerating project schedules was remarkable. The quality systems he implemented reduced delays and improved overall delivery.',
+    name: 'Quality Assurance Lead',
+    company: 'Sadara Chemical Complex',
+    role: 'Quality Management',
+    rating: 5,
+  },
+  {
+    id: 6,
+    quote: 'A rare combination of technical excellence and practical business acumen. He consistently delivered quality outcomes that exceeded client expectations and strengthened long-term partnerships.',
+    name: 'Client Executive',
+    company: 'International Engineering Firm',
+    role: 'Client Relations',
+    rating: 5,
   },
 ]
 
@@ -554,6 +874,120 @@ const gallery = [
   { image: engineeringPlant, title: 'Industrial Facility Delivery', label: 'Civil & Process Infrastructure' },
   { image: siteInspection, title: 'Site Inspection Excellence', label: 'Quality Audits & Field Verification' },
   { image: projectOperations, title: 'Engineering Operations', label: 'Turnaround Planning & Execution' },
+]
+
+const faqItems = [
+  {
+    id: 1,
+    question: 'What industries and project types does your consultancy experience cover?',
+    answer: 'My 25+ years of experience spans civil, petrochemical, mining, oil & gas, and industrial infrastructure sectors. I\'ve led quality management programs across construction, maintenance, turnarounds, and emergency response projects. Key expertise includes Ma\'aden mining operations, Saudi Aramco facilities, petrochemical complexes (Sadara, Petro Rabigh), and industrial plants throughout the GCC region.',
+  },
+  {
+    id: 2,
+    question: 'How do you approach quality management in fast-track or accelerated construction projects?',
+    answer: 'I\'ve successfully maintained rigorous quality standards on multiple fast-track projects by developing streamlined approval processes, implementing concurrent inspection activities, and establishing clear communication protocols with construction teams. The key is balancing speed with compliance—proven through Petro Rabigh project delivery on schedule with 98%+ specification compliance.',
+  },
+  {
+    id: 3,
+    question: 'What Non-Destructive Testing (NDT) methods do you specialize in?',
+    answer: 'I hold certifications in rebound hammer testing, UPV (ultrasonic pulse velocity) testing, and carbonation depth assessment. These methods are particularly valuable for concrete integrity verification, structural assessment, and durability evaluation. I\'ve applied these techniques to investigate concrete distress, verify repair effectiveness, and assess long-term durability in challenging environments.',
+  },
+  {
+    id: 4,
+    question: 'Can you help with root cause analysis for existing structural defects or material failures?',
+    answer: 'Yes, I specialize in systematic root cause analysis for concrete distress, material failures, and construction defects. My approach includes comprehensive investigation, technical assessment, calculations, and development of specific repair methodologies. I\'ve successfully resolved complex structural issues across industrial and infrastructure projects with documented technical solutions.',
+  },
+  {
+    id: 5,
+    question: 'What specific expertise do you bring to HDPE liner quality and durability assessment?',
+    answer: 'I have extensive experience verifying HDPE liner specification compliance, assessing durability in GCC environmental conditions, and developing long-term monitoring protocols. My expertise includes material approval, field placement verification, seam integrity assessment, and environmental durability considerations critical for projects in the Middle East region.',
+  },
+  {
+    id: 6,
+    question: 'How can I access your QA/QC templates and planning resources?',
+    answer: 'I provide downloadable templates including QA/QC plan templates, concrete inspection checklists, HDPE liner procedures, and ITP development guides. These resources can be requested through the Technical Downloads section or by contacting me directly. Custom templates adapted to specific project requirements are also available.',
+  },
+  {
+    id: 7,
+    question: 'What standards and certifications guide your quality management approach?',
+    answer: 'My consultancy operates within ISO 9001 quality management systems, OSHA safety standards, ASTM material specifications, ACI concrete standards, and industry-specific NDT certifications. I ensure alignment with all relevant regulatory frameworks and can integrate multiple standards for complex multi-regulatory project environments.',
+  },
+  {
+    id: 8,
+    question: 'How do you typically structure consulting engagements?',
+    answer: 'Engagements are customized based on project needs and can include: full-time on-site quality management, focused technical assessments, root cause investigation programs, quality systems development, training and team development, and advisory roles. I work closely with project teams to understand objectives and develop tailored solutions.',
+  },
+]
+
+const homepageFeaturedProjects = [
+  {
+    id: 1,
+    title: 'Ma\'aden Phosphate Gypsum Stack Expansion Phase IV',
+    status: 'Current Project',
+    location: 'Ras Al Khair, Saudi Arabia',
+    industry: 'Mining & Industrial',
+    description: 'Large-scale HDPE liner system installation with comprehensive QA/QC oversight across 1M+ m² expansion. 100% non-destructive weld testing and zero safety incidents.',
+    highlights: [
+      '1M+ m² HDPE liner installation',
+      '100% non-destructive weld testing',
+      '99.8% specification compliance',
+      'Zero safety incidents',
+    ],
+    role: 'Civil QA/QC Manager & Liner System Inspector',
+    technologies: ['HDPE Geomembrane', 'Geosynthetics', 'NDT', 'Quality Management'],
+    link: '#case-studies',
+  },
+  {
+    id: 2,
+    title: 'Saudi Chevron – Concrete Investigation & Repair Consultancy',
+    status: '13+ Years Engagement',
+    location: 'Multiple Saudi Facilities',
+    industry: 'Oil & Gas',
+    description: 'Long-term civil quality management partnership covering maintenance, emergency response, and construction programs. Managed $50M+ in civil programs.',
+    highlights: [
+      '13 years continuous engagement',
+      '$50M+ civil programs managed',
+      'Zero audit non-compliances',
+      'Rapid-response inspection protocols',
+    ],
+    role: 'Senior Civil QA/QC Manager',
+    technologies: ['Concrete Testing', 'Structural Assessment', 'Emergency Response', 'Quality Systems'],
+    link: '#case-studies',
+  },
+  {
+    id: 3,
+    title: 'Petrochemical & Industrial QA/QC Projects Portfolio',
+    status: 'Multiple Engagements',
+    location: 'Saudi Arabia & GCC Region',
+    industry: 'Petrochemical & Industrial',
+    description: 'Comprehensive quality assurance across Sadara chemical complex, Petro Rabigh petrochemical facility, and major industrial infrastructure programs.',
+    highlights: [
+      'Petrochemical facility commissioning',
+      '98%+ specification compliance',
+      'Zero-defect tolerance projects',
+      'Multi-contractor coordination',
+    ],
+    role: 'Civil QA/QC Manager & Quality Systems Lead',
+    technologies: ['ASME Standards', 'Process Safety', 'Material Inspection', 'Quality Systems'],
+    link: '#case-studies',
+  },
+  {
+    id: 4,
+    title: 'FAHEEM Engineering Consultancy – Future Vision',
+    status: 'Strategic Initiative',
+    location: 'Saudi Arabia',
+    industry: 'Engineering Consultancy',
+    description: 'Building comprehensive engineering consultancy focused on quality leadership, asset integrity, and premium project delivery across industrial sectors.',
+    highlights: [
+      'Thought leadership platform',
+      'Technical resource library',
+      'Industry partnership network',
+      'Training & development programs',
+    ],
+    role: 'Founder & Principal Consultant',
+    technologies: ['Consultancy Services', 'Knowledge Management', 'Team Development', 'Industry Standards'],
+    link: '#contact',
+  },
 ]
 
 const socialLinks = [
@@ -602,15 +1036,6 @@ const projectItems = [
     location: 'Saudi Arabia & India',
     scope: 'Broad QA/QC leadership across heavy civil, industrial, and infrastructure projects.',
   },
-]
-
-const certifications = [
-  'Level II Coating Inspector (CCI)',
-  'Level II Fireproofing Inspector (CFI)',
-  'Fireproofing Fundamentals',
-  'Civil Concrete Maintenance and Repair',
-  'Safety Awareness Training',
-  'Investigation, Build and Repair',
 ]
 
 const skillData = [
@@ -1098,6 +1523,7 @@ function App() {
   const [showServiceModal, setShowServiceModal] = useState(false)
   const [showCaseStudyModal, setShowCaseStudyModal] = useState(false)
   const [showProjectModal, setShowProjectModal] = useState(false)
+  const [faqExpanded, setFaqExpanded] = useState(null)
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') {
       return 'dark'
@@ -1306,35 +1732,167 @@ function App() {
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="About"
-            title="Engineering consultancy grounded in quality, integrity, and asset performance"
-            subtitle="With over two decades of field and management experience, I deliver quality systems that protect schedule, cost, compliance, and long-term asset reliability."
+            eyebrow="Executive Profile"
+            title="International Engineering Quality Leader"
+            subtitle="25+ years of proven expertise transforming quality operations across oil & gas, petrochemical, industrial, and infrastructure sectors."
           />
 
-          <div className="about-grid">
-            <div className="glass-panel">
-              <p>
-                As a QA/QC Manager, I bring a senior-level approach to quality control, inspection strategy, documentation discipline, and project quality leadership across oil & gas, petrochemical, industrial, and infrastructure environments.
-              </p>
-              <ul className="check-list">
-                {aboutHighlights.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+          {/* Executive Summary Card */}
+          <motion.div
+            className="executive-profile"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="profile-header">
+              <div className="profile-image">
+                <img src={profilePhoto} alt="Mohamed Haneefa Fozul Rahuman" />
+              </div>
+              <div className="profile-info">
+                <h2>Mohamed Haneefa Fozul Rahuman</h2>
+                <p className="profile-title">QA/QC Manager | Engineering Quality Consultant</p>
+                <p className="profile-summary">{aboutMeData.summary}</p>
+                <div className="profile-cta">
+                  <a className="button button-primary" href="mailto:fozulur@yahoo.com">Get in Touch</a>
+                  <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+                </div>
+              </div>
             </div>
 
-            <div className="glass-panel">
-              <h3>Core professional strengths</h3>
-              <div className="chip-list">
-                <span>Earthworks</span>
-                <span>Concrete</span>
-                <span>HDPE Liner</span>
-                <span>Geotextile</span>
-                <span>Infrastructure</span>
-                <span>Industrial Projects</span>
-                <span>QA/QC Management</span>
-                <span>Saudi Arabia Delivery</span>
-              </div>
+            <div className="profile-statement">
+              <p className="statement-label">Professional Mission</p>
+              <p>{aboutMeData.professionalStatement}</p>
+            </div>
+
+            <div className="profile-value">
+              <p className="value-label">Core Philosophy</p>
+              <p className="value-quote">"{aboutMeData.coreValue}"</p>
+            </div>
+          </motion.div>
+
+          {/* Core Competencies Section */}
+          <div className="about-section">
+            <h3 className="section-subtitle">Core Competencies</h3>
+            <div className="competencies-grid">
+              {coreCompetencies.map((category, index) => (
+                <motion.div
+                  key={category.category}
+                  className="competency-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <h4>{category.category}</h4>
+                  <ul className="skill-list-items">
+                    {category.skills.map((skill) => (
+                      <li key={skill}>
+                        <span className="skill-dot">●</span>
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Professional Background */}
+          <div className="about-section">
+            <h3 className="section-subtitle">Professional Background</h3>
+            <div className="background-timeline">
+              {professionalBackground.map((role, index) => (
+                <motion.div
+                  key={role.title}
+                  className="background-card"
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <div className="background-header">
+                    <p className="background-period">{role.period}</p>
+                    <h4>{role.title}</h4>
+                    <p className="background-company">{role.company}</p>
+                    <p className="background-location">{role.location}</p>
+                  </div>
+                  <p className="background-description">{role.description}</p>
+                  <ul className="background-achievements">
+                    {role.achievements.map((achievement) => (
+                      <li key={achievement}>
+                        <span className="check-mark">✓</span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Certifications & Standards */}
+          <div className="about-section">
+            <h3 className="section-subtitle">Professional Certifications & Standards</h3>
+            <div className="certifications-display">
+              {certifications.map((cert, index) => (
+                <motion.div
+                  key={cert}
+                  className="certification-badge"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                >
+                  <span className="cert-icon">🏆</span>
+                  {cert}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Key Stats */}
+          <div className="about-stats">
+            <div className="stats-grid">
+              <motion.div
+                className="stat-item"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h3>25+</h3>
+                <p>Years of Experience</p>
+              </motion.div>
+              <motion.div
+                className="stat-item"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
+                <h3>13</h3>
+                <p>Years at Saudi Chevron</p>
+              </motion.div>
+              <motion.div
+                className="stat-item"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+              >
+                <h3>100+</h3>
+                <p>Industrial Projects</p>
+              </motion.div>
+              <motion.div
+                className="stat-item"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+              >
+                <h3>$50M+</h3>
+                <p>Managed Programs</p>
+              </motion.div>
             </div>
           </div>
         </motion.section>
@@ -1407,6 +1965,77 @@ function App() {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="featured-projects-home"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Featured Projects"
+            title="Key engagements across mining, oil & gas, and industrial sectors"
+            subtitle="Current projects and long-term partnerships demonstrating quality leadership and technical expertise."
+          />
+
+          <div className="featured-projects-grid">
+            {homepageFeaturedProjects.map((project, index) => (
+              <motion.article
+                key={project.id}
+                className="featured-project-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                whileHover={{ y: -12, scale: 1.02 }}
+              >
+                <div className="project-header">
+                  <div className="project-status-badge">{project.status}</div>
+                  <span className="project-industry">{project.industry}</span>
+                </div>
+
+                <div className="project-body">
+                  <h3>{project.title}</h3>
+                  <p className="project-location">
+                    📍 {project.location}
+                  </p>
+                  <p className="project-description">{project.description}</p>
+
+                  <div className="project-highlights">
+                    <p className="highlights-label">Key Achievements:</p>
+                    <ul className="highlights-list">
+                      {project.highlights.map((highlight) => (
+                        <li key={highlight}>{highlight}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="project-role">
+                    <p className="role-label">My Role:</p>
+                    <p className="role-value">{project.role}</p>
+                  </div>
+
+                  <div className="project-tech">
+                    {project.technologies.map((tech) => (
+                      <span key={tech} className="tech-badge">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <a
+                  href={project.link}
+                  className="button button-primary"
+                >
+                  Learn More
+                </a>
+              </motion.article>
             ))}
           </div>
         </motion.section>
@@ -1659,25 +2288,223 @@ function App() {
 
         <motion.section
           className="section"
-          id="future-ready"
+          id="technical-downloads"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Future Ready Design"
-            title="A platform prepared for the next phase of thought leadership"
-            subtitle="This space is ready for future content expansion, including technical articles, learning resources, and consultation booking flows."
+            eyebrow="Technical Resources"
+            title="Professional templates and operational procedures for quality management"
+            subtitle="Downloadable tools and frameworks developed from field experience across industrial and infrastructure projects."
           />
 
-          <div className="future-ready-grid">
-            {futureReadyPages.map((item) => (
-              <article key={item} className="future-ready-card">
-                <span>Coming Soon</span>
-                <h3>{item}</h3>
-                <p>Planned for the next stage of the consultancy platform.</p>
-              </article>
+          <div className="downloads-grid">
+            {technicalDownloads.map((download, index) => (
+              <motion.article
+                key={download.id}
+                className="download-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+              >
+                <div className="download-header">
+                  <div className="download-icon">
+                    <PremiumIcon name={download.icon} />
+                  </div>
+                  <span className="download-category">{download.category}</span>
+                </div>
+
+                <div className="download-content">
+                  <h3>{download.title}</h3>
+                  <p>{download.description}</p>
+                </div>
+
+                <div className="download-footer">
+                  <span className="file-type">{download.fileType}</span>
+                  <a
+                    href={download.link}
+                    className="button button-secondary button-small"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Request Resource
+                  </a>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+
+          <div className="downloads-cta">
+            <p>Need additional resources or custom templates?</p>
+            <a className="button button-primary" href="mailto:fozulur@yahoo.com?subject=Request%20Custom%20Resources">
+              Get in Touch
+            </a>
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="featured-articles"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Thought Leadership"
+            title="Engineering insights and quality management perspectives"
+            subtitle="Articles on quality systems, technical assessment, problem-solving methodologies, and leadership in engineering environments."
+          />
+
+          <div className="articles-grid">
+            {featuredArticles.map((article, index) => (
+              <motion.article
+                key={article.id}
+                className="article-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ y: -8, scale: 1.01 }}
+              >
+                <div className="article-header">
+                  <span className="article-date">{article.date}</span>
+                  <span className="article-read-time">{article.readTime}</span>
+                </div>
+
+                <div className="article-content">
+                  <span className="article-category">{article.category}</span>
+                  <h3>{article.title}</h3>
+                  <p>{article.excerpt}</p>
+                </div>
+
+                <div className="article-footer">
+                  <div className="article-tags">
+                    {article.tags.map((tag) => (
+                      <span key={tag} className="tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={article.link}
+                    className="button button-secondary button-small"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Request Article
+                  </a>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="testimonials"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Client Recognition"
+            title="What clients and project partners say about our collaboration"
+            subtitle="Testimonials from senior leaders across international petrochemical, mining, and industrial infrastructure projects."
+          />
+
+          <div className="testimonials-grid">
+            {testimonials.map((testimonial, index) => (
+              <motion.article
+                key={testimonial.id}
+                className="testimonial-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ y: -4, scale: 1.01 }}
+              >
+                <div className="testimonial-rating">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="star">★</span>
+                  ))}
+                </div>
+
+                <p className="testimonial-quote">{testimonial.quote}</p>
+
+                <div className="testimonial-author">
+                  <div className="author-info">
+                    <h4>{testimonial.name}</h4>
+                    <p className="author-role">{testimonial.role}</p>
+                    <p className="author-company">{testimonial.company}</p>
+                  </div>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="faq"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Frequently Asked Questions"
+            title="Common questions about consultancy services and expertise"
+            subtitle="Find answers about our approach, methods, industries, and how we can support your quality and engineering initiatives."
+          />
+
+          <div className="faq-container">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={item.id}
+                className="faq-item"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: index * 0.03 }}
+              >
+                <button
+                  type="button"
+                  className="faq-question"
+                  onClick={() => {
+                    setFaqExpanded(
+                      faqExpanded === item.id ? null : item.id
+                    )
+                  }}
+                >
+                  <span>{item.question}</span>
+                  <motion.span
+                    className="faq-icon"
+                    animate={{ rotate: faqExpanded === item.id ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    ▼
+                  </motion.span>
+                </button>
+
+                <AnimatePresence>
+                  {faqExpanded === item.id && (
+                    <motion.div
+                      className="faq-answer"
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <p>{item.answer}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             ))}
           </div>
         </motion.section>
@@ -1739,21 +2566,6 @@ function App() {
                 <div className="gallery-content">
                   <h3>{item.title}</h3>
                   <p>{item.label}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section className="section" id="testimonials" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={sectionAnimation}>
-          <SectionHeading eyebrow="Testimonials" title="Trusted by project teams that value precision and accountability" subtitle="Client feedback reflects the standard of quality, responsiveness, and leadership we bring to each engagement." />
-          <div className="testimonial-grid">
-            {testimonials.map((item) => (
-              <article key={item.name} className="testimonial-card">
-                <p>“{item.quote}”</p>
-                <div>
-                  <h3>{item.name}</h3>
-                  <span>{item.company}</span>
                 </div>
               </article>
             ))}
