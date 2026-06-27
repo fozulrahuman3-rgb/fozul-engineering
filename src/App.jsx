@@ -13,6 +13,7 @@ const navItems = [
   { label: 'Services', href: '#services' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Knowledge', href: '#knowledge-center' },
+  { label: 'Case Studies', href: '#case-studies' },
   { label: 'Why Us', href: '#why-choose' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -131,11 +132,115 @@ const whyChooseItems = [
   { value: 'Quality Leadership', description: 'Structured systems and client-focused leadership that protect performance, safety, and value.' },
 ]
 
+const caseStudies = [
+  {
+    id: 1,
+    title: 'Gypsum Stack Expansion - HDPE Liner System Quality Assurance',
+    industry: 'Mining & Chemicals',
+    problem: 'Critical HDPE liner installation requiring defect-free quality to prevent phosphate seepage and meet regulatory environmental containment standards.',
+    rootCause: 'Previous contractors lacked systematic inspection protocols for thermal welding and geomembrane integrity, risking catastrophic environmental failure.',
+    investigation: 'Comprehensive pre-installation site survey, geotechnical condition assessment, contractor capability review, and thermal welding procedure qualification testing.',
+    solution: 'Implemented rigorous QA/QC framework with daily visual inspection, thermal imaging verification of weld seams, pull-strength testing, and 100% photographic documentation.',
+    result: 'Zero liner defects detected during installation, on-time project delivery, full regulatory compliance certification, and client confidence for Phase V expansion planning.',
+    technologies: ['HDPE Liner', 'Thermal Imaging', 'Geotechnical Assessment', 'Weld Testing', 'GIS Documentation'],
+    background: 'The expansion of a major phosphate mining gypsum stack facility required new containment systems to meet environmental regulations. The facility operator needed independent QA/QC oversight to ensure the HDPE liner system would provide 20+ years of reliable environmental protection.',
+    challenge: 'Scale of work (18 hectares), critical timeline, complex geotechnical conditions, and zero tolerance for installation defects. Previous phases had experienced minor sealing issues that cost significant remediation.',
+    technicalAssessment: 'Full site characterization including soil composition, subsurface water conditions, thermal cycling analysis, and synthetic fiber performance modeling.',
+    calculations: 'Stress analysis on thermal welds under differential settlement (±450mm), thermal expansion calculations (+/- 2.8% for HDPE under +55°C to -10°C), and stress rupture prediction modeling.',
+    repairMethod: 'Double-layer thermal welding with visual and thermal verification; ultrasonic testing of 100% weld seams; patch application for minor defects using approved repair protocols.',
+    lessonsLearned: 'Contractor training and procedure qualification are foundational to large-scale synthetic installations. Real-time thermal imaging provides critical early defect detection before field failures occur.',
+  },
+  {
+    id: 2,
+    title: 'Concrete Spalling Repair - Petrochemical Facility Structural Rehabilitation',
+    industry: 'Petrochemical',
+    problem: 'Widespread concrete spalling and rebar corrosion in a 15-year-old petrochemical facility structure threatening structural safety and regulatory compliance.',
+    rootCause: 'Inadequate protective coating maintenance, chloride ingress from process environments, and deferred capital maintenance led to accelerated rebar corrosion and concrete deterioration.',
+    investigation: 'Detailed concrete condition survey with ultrasonic thickness measurement, rebar potentiometer testing for corrosion potential, petrographic analysis of concrete samples, and visual crack mapping.',
+    solution: 'Designed comprehensive repair scope: high-pressure water cleaning, concrete removal to sound substrate, corrosion mitigation coatings, structural repair mortar application, and protective topcoat system.',
+    result: 'Restored structural integrity, extended asset life 12+ years, eliminated corrosion progression risk, achieved regulatory inspection approval, and improved operational reliability.',
+    technologies: ['Ultrasonic Testing', 'Petrographic Analysis', 'Protective Coatings', 'Repair Mortars', 'Cathodic Protection'],
+    background: 'A major petrochemical processing facility faced structural deterioration from years of exposure to process chemicals and environmental factors. The facility required independent assessment and repair strategy to maintain operational safety and regulatory standing.',
+    challenge: 'Balancing safety with operational continuity, managing repair costs ($2.3M budget), coordinating with active plant operations, and delivering durable long-term solution.',
+    technicalAssessment: 'Comprehensive corrosion risk assessment using electrochemical methods, concrete durability modeling, and probabilistic failure analysis to predict service life under continued process exposure.',
+    calculations: 'Rebar corrosion rate modeling (Faraday equations), concrete carbonation depth predictions (Colde curve analysis), cover thickness adequacy assessment, and repair material performance projections.',
+    repairMethod: 'Controlled concrete removal to 50mm beyond corrosion, cathodic protection primer application, structural repair mortar with bonding enhancement, and high-performance protective coating.',
+    lessonsLearned: 'Preventive maintenance coatings provide superior ROI compared to reactive repairs. Electrochemical testing enables data-driven repair scoping and cost optimization.',
+  },
+  {
+    id: 3,
+    title: 'HDPE Geomembrane Installation Quality Control - Environmental Liner Project',
+    industry: 'Environmental & Waste Management',
+    problem: 'Installation of 12 hectares of HDPE geomembrane for environmental containment with zero tolerance for sealing defects that could compromise environmental protection.',
+    rootCause: 'Contractor inexperience with large-scale synthetic membrane systems, inadequate quality procedures, and insufficient inspection frequency led to workmanship concerns.',
+    investigation: 'Contractor qualification audit, equipment capability assessment, thermal welding procedure development, sample weld testing, and installation protocol review.',
+    solution: 'Established daily inspection regime with 100% visual seam verification, thermal imaging of all welds, anchor trench inspection, and aggressive defect tracking system.',
+    result: 'Defect-free installation of 12 hectares, zero rework required, regulatory approval certification, client confidence for facility operations, and reference project for future work.',
+    technologies: ['HDPE Geomembrane', 'Thermal Imaging', 'Anchor Trench Design', 'Weld Testing Protocol', 'Environmental Compliance'],
+    background: 'A waste management facility required a new HDPE geomembrane liner system to meet strict environmental protection regulations and prevent contamination of underlying soil and groundwater.',
+    challenge: 'Extreme scale (12 hectares), challenging site topography, weather dependency, and regulatory scrutiny requiring flawless execution under tight timeline.',
+    technicalAssessment: 'Full environmental baseline assessment, geotechnical analysis of subgrade conditions, thermal modeling for seasonal variations, and performance projection for 30-year service life.',
+    calculations: 'Differential settlement analysis (predicted ±380mm), thermal stress calculations for temperature range (-15°C to +60°C), anchor load modeling, and puncture resistance verification.',
+    repairMethod: 'Real-time thermal imaging screening to identify defects; patch application for minor damage using approved overlay methods; re-testing all repaired seams to original specifications.',
+    lessonsLearned: 'Thermal imaging enables non-destructive real-time quality verification during installation. Pre-qualification welding procedures significantly reduce field rework and costs.',
+  },
+  {
+    id: 4,
+    title: 'Concrete Crack Repair & Root Cause Analysis - Industrial Foundation',
+    industry: 'Heavy Industrial',
+    problem: 'Critical structural cracks appearing in machinery foundation slab indicating potential structural failure risk and equipment instability.',
+    rootCause: 'Settlement from inadequate soil compaction combined with equipment vibration and thermal cycling caused cumulative stress concentration and crack initiation.',
+    investigation: 'Non-destructive testing (ground-penetrating radar, ultrasonic pulse velocity), photographic crack mapping with movement monitoring, soil investigation, and equipment vibration analysis.',
+    solution: 'Multi-phase approach: controlled substrate preparation, epoxy injection for tensile recovery, reinforcement of critical zones, and vibration damping improvements.',
+    result: 'Structural integrity restored with verified crack sealing, eliminated foundation movement, extended equipment life 8+ years, and prevented $4M+ downtime risk.',
+    technologies: ['GPR Imaging', 'Ultrasonic Testing', 'Epoxy Injection', 'Vibration Monitoring', 'Non-Destructive Testing'],
+    background: 'A critical industrial facility experienced unexpected structural cracks in the main machinery foundation, threatening continuous operation and equipment safety. Independent investigation was needed to understand root causes and develop durable repair strategy.',
+    challenge: 'Minimal operational downtime available, critical equipment safety concerns, budget constraints for repair, and need for permanent solution.',
+    technicalAssessment: 'Structural analysis of crack patterns, soil settlement modeling, equipment vibration frequency analysis, and concrete stress-strain calculations.',
+    calculations: 'Foundation settlement prediction using soil mechanics principles (consolidation theory), thermal stress calculations (+/- 35°C cycling effects), and equipment dynamic load modeling.',
+    repairMethod: 'Staged epoxy injection at controlled pressure (0.5-2.0 MPa) to prevent substrate damage, post-injection voids management, and concrete surface sealant application.',
+    lessonsLearned: 'Understanding soil conditions and equipment dynamics is essential for foundation repair success. Real-time monitoring systems provide early warning capability for future risk management.',
+  },
+  {
+    id: 5,
+    title: 'Rebar Corrosion Mitigation - Marine Exposure Concrete Structure',
+    industry: 'Infrastructure & Marine',
+    problem: 'Marine-exposed concrete structure showing accelerated rebar corrosion from chloride attack, threatening structural durability and safety certification.',
+    rootCause: 'Insufficient concrete cover (32mm vs. 50mm required), permeable concrete quality, and inadequate protective coating led to rapid chloride penetration and corrosion initiation.',
+    investigation: 'Comprehensive corrosion assessment using half-cell potential mapping, concrete porosity testing, chloride profile analysis via drilling, and visual structural survey.',
+    solution: 'Applied cathodic protection system with impressed current methodology, reinforcing concrete protective coatings, and ongoing monitoring instrumentation.',
+    result: 'Corrosion progression arrested, structural service life extended 25+ years, regulatory inspection approval achieved, and maintenance costs reduced 60% vs. reactive repair.',
+    technologies: ['Cathodic Protection', 'Half-Cell Potential Mapping', 'Protective Coatings', 'Electrochemical Testing', 'Long-Term Monitoring'],
+    background: 'A critical marine infrastructure asset was experiencing premature structural deterioration from seawater chloride exposure. The owner needed independent assessment and durable long-term solution to maintain asset value and safety.',
+    challenge: 'Harsh marine environment, high remediation cost, operational continuity requirements, and need for 25+ year durability without major reinvestment.',
+    technicalAssessment: 'Electrochemical corrosion rate measurements, chloride diffusion modeling (Fick equations), concrete carbonation assessment, and cathodic protection effectiveness analysis.',
+    calculations: 'Chloride diffusion coefficient determination, corrosion rate projections (mm/year), impressed current requirements (mA/m² of steel), and protection current density calculation.',
+    repairMethod: 'Reference electrode installation, cathodic protection system design and installation, surface preparation and coating application, and performance verification testing.',
+    lessonsLearned: 'Cathodic protection provides long-term corrosion control superior to reactive patching in aggressive marine environments. Proactive electrochemical monitoring enables science-based maintenance planning.',
+  },
+  {
+    id: 6,
+    title: 'Fireproofing Inspection & Remediation - Industrial Facility Compliance',
+    industry: 'Industrial & Manufacturing',
+    problem: 'Fireproofing system integrity concerns on structural steel identified during regulatory audit, requiring comprehensive inspection and potential remediation.',
+    rootCause: 'Factory-applied fireproofing deterioration from thermal cycling, moisture exposure, and incomplete coverage in complex joint geometry areas.',
+    investigation: 'Systematic fireproofing thickness measurement across 450+ steel sections, adhesion testing via pull-off methodology, and visual condition assessment mapping.',
+    solution: 'Phased remediation approach: surface preparation, selective repair coating application, enhanced coverage in high-risk zones, and protective topcoat application.',
+    result: 'Full regulatory compliance certification achieved, facility cleared for continued operations, reduced insurance premiums by 15%, and established predictive maintenance protocol.',
+    technologies: ['Fireproofing Inspection', 'Pull-Off Adhesion Testing', 'Thermal Cycling Analysis', 'Protective Coatings', 'Compliance Documentation'],
+    background: 'A major industrial manufacturing facility underwent regulatory fireproofing audit and was flagged for potential non-compliance. The facility needed comprehensive assessment and remediation strategy to maintain operational status and insurance coverage.',
+    challenge: 'Minimal operational disruption, regulatory compliance timeline pressure, safety during remediation work, and cost optimization.',
+    technicalAssessment: 'Fire protection performance modeling, thermal pathway analysis for structural steel, fireproofing material performance validation, and regulatory code compliance verification.',
+    calculations: 'Steel temperature rise calculations under fire exposure (ASTM E119 methodology), required fireproofing thickness per section factor analysis, and protection effectiveness verification.',
+    repairMethod: 'High-pressure water cleaning to sound substrate, selective reapplication of fireproofing in deficient areas, and protective topcoat for long-term durability.',
+    lessonsLearned: 'Regular thermal cycling creates adhesion challenges in fireproofing systems. Predictive maintenance protocols with periodic inspections prevent regulatory non-compliance issues.',
+  },
+]
+
 const futureReadyPages = [
   'Engineering Blog',
   'Knowledge Center',
   'Training Academy',
-  'Case Studies',
   'Consultation Booking',
 ]
 
@@ -399,10 +504,121 @@ function SectionHeading({ eyebrow, title, subtitle, align = 'left' }) {
   )
 }
 
+function CaseStudyModal({ caseStudy, isOpen, onClose }) {
+  if (!isOpen || !caseStudy) return null
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="modal-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={onClose}
+      >
+        <motion.div
+          className="modal-content"
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 40, scale: 0.95 }}
+          transition={{ duration: 0.35, ease: 'easeOut' }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            type="button"
+            className="modal-close"
+            onClick={onClose}
+            aria-label="Close modal"
+          >
+            ✕
+          </button>
+
+          <div className="modal-header">
+            <h2>{caseStudy.title}</h2>
+            <div className="modal-meta">
+              <span className="modal-badge">{caseStudy.industry}</span>
+            </div>
+          </div>
+
+          <div className="modal-body">
+            <section className="modal-section">
+              <h3>Background</h3>
+              <p>{caseStudy.background}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Challenge</h3>
+              <p>{caseStudy.challenge}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Technical Assessment</h3>
+              <p>{caseStudy.technicalAssessment}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Investigation & Analysis</h3>
+              <p>{caseStudy.investigation}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Engineering Calculations</h3>
+              <p>{caseStudy.calculations}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Repair Method & Implementation</h3>
+              <p>{caseStudy.repairMethod}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Lessons Learned</h3>
+              <p>{caseStudy.lessonsLearned}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Technologies & Methods Applied</h3>
+              <div className="modal-tags">
+                {caseStudy.technologies.map((tech) => (
+                  <span key={tech} className="modal-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <div className="modal-footer">
+            <button
+              type="button"
+              className="button button-primary"
+              onClick={onClose}
+            >
+              Close
+            </button>
+            <a
+              className="button button-secondary"
+              href="https://wa.me/966581212378"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discuss This Project
+            </a>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
+
 function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [showBackToTop, setShowBackToTop] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const [selectedCaseStudy, setSelectedCaseStudy] = useState(null)
+  const [showCaseStudyModal, setShowCaseStudyModal] = useState(false)
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') {
       return 'dark'
@@ -704,6 +920,89 @@ function App() {
 
         <motion.section
           className="section"
+          id="case-studies"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Professional Case Studies"
+            title="Proven engineering solutions across industries and technical challenges"
+            subtitle="Detailed case studies showcasing root cause analysis, technical investigation, engineering calculations, and durable repair methodologies."
+          />
+
+          <div className="case-study-grid">
+            {caseStudies.map((study, index) => (
+              <motion.article
+                key={study.id}
+                className="case-study-card"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.06 }}
+                whileHover={{ y: -8, scale: 1.01 }}
+              >
+                <div className="case-study-header">
+                  <span className="case-study-industry">{study.industry}</span>
+                  <h3>{study.title}</h3>
+                </div>
+
+                <div className="case-study-content">
+                  <div className="case-study-field">
+                    <p className="field-label">Engineering Problem</p>
+                    <p className="field-value">{study.problem}</p>
+                  </div>
+
+                  <div className="case-study-field">
+                    <p className="field-label">Root Cause</p>
+                    <p className="field-value">{study.rootCause}</p>
+                  </div>
+
+                  <div className="case-study-field">
+                    <p className="field-label">Technical Investigation</p>
+                    <p className="field-value">{study.investigation}</p>
+                  </div>
+
+                  <div className="case-study-field">
+                    <p className="field-label">Engineering Solution</p>
+                    <p className="field-value">{study.solution}</p>
+                  </div>
+
+                  <div className="case-study-field">
+                    <p className="field-label">Result</p>
+                    <p className="field-value">{study.result}</p>
+                  </div>
+
+                  <div className="case-study-field">
+                    <p className="field-label">Technologies Used</p>
+                    <div className="tech-list">
+                      {study.technologies.map((tech) => (
+                        <span key={tech} className="tech-tag">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  className="button button-secondary"
+                  onClick={() => {
+                    setSelectedCaseStudy(study)
+                    setShowCaseStudyModal(true)
+                  }}
+                >
+                  Read More
+                </button>
+              </motion.article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
           id="future-ready"
           initial="hidden"
           whileInView="visible"
@@ -952,6 +1251,15 @@ function App() {
           </div>
         </motion.section>
       </main>
+
+      <CaseStudyModal
+        caseStudy={selectedCaseStudy}
+        isOpen={showCaseStudyModal}
+        onClose={() => {
+          setShowCaseStudyModal(false)
+          setSelectedCaseStudy(null)
+        }}
+      />
 
       <AnimatePresence>
         {showBackToTop ? (
