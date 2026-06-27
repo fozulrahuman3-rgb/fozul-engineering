@@ -11,8 +11,8 @@ const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Clients', href: '#clients' },
+  { label: 'Expertise', href: '#expertise' },
+  { label: 'Why Us', href: '#why-choose' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -31,17 +31,46 @@ const aboutHighlights = [
   'Specialist in earthworks, concrete, HDPE liner, geotextile, and civil infrastructure quality systems',
 ]
 
-const expertiseItems = [
-  { icon: 'quality', title: 'Quality Management', description: 'Strategic systems that strengthen compliance, traceability, and quality culture.' },
-  { icon: 'inspection', title: 'Inspection & Testing', description: 'Rigorous field and lab oversight for concrete, earthworks, liner, and geosynthetics.' },
-  { icon: 'plan', title: 'Project Quality Plan', description: 'Clear quality frameworks aligned with contract, client, and consultant requirements.' },
-  { icon: 'plan', title: 'ITP Preparation', description: 'Inspection test plans built for effective execution and audit readiness.' },
-  { icon: 'document', title: 'Method Statements', description: 'Practical work methods that are safe, compliant, and easy to implement.' },
-  { icon: 'quality', title: 'Material Approval', description: 'Controlled approval workflow for materials, submittals, and vendor release.' },
-  { icon: 'inspection', title: 'Vendor Inspection', description: 'Supplier qualification and factory inspection to secure reliable project delivery.' },
-  { icon: 'plan', title: 'Site Quality Audits', description: 'Structured audits that protect performance, safety, and long-term value.' },
-  { icon: 'quality', title: 'Civil Construction', description: 'Hands-on leadership across infrastructure, industrial, and heavy civil works.' },
-  { icon: 'document', title: 'Documentation', description: 'Complete QA/QC records, NCR tracks, and client-ready documentation packages.' },
+const consultancyServices = [
+  { title: 'Root Cause Analysis', description: 'Independent investigation of defects, failures, and performance issues with clear technical findings and practical corrective action.' },
+  { title: 'Concrete Crack Investigation', description: 'Field assessment and diagnostic review of cracking patterns, movement, and structural implications.' },
+  { title: 'Concrete Repair Solutions', description: 'Repair strategy development for spalling, debonding, delamination, and durability issues with long-term performance focus.' },
+  { title: 'Structural Assessment', description: 'Assessment of existing structures, distress mechanisms, and material condition to support dependable engineering decisions.' },
+  { title: 'Rebar Corrosion Investigation', description: 'Corrosion mapping, risk evaluation, and remediation recommendations for reinforcement degradation.' },
+  { title: 'Waterproofing Failure Analysis', description: 'Investigation of waterproofing issues, membrane breakdown, leakage points, and system compatibility.' },
+  { title: 'Material Selection & Recommendation', description: 'Selection of repair materials, coatings, systems, and products aligned with environment and service conditions.' },
+  { title: 'QA/QC Consultancy', description: 'Tailored quality systems that strengthen inspection discipline, compliance, and project execution confidence.' },
+  { title: 'Project Quality Documentation', description: 'Preparation of quality plans, method statements, ITPs, and client-ready technical documentation packages.' },
+  { title: 'Vendor & Factory Inspection', description: 'Supplier evaluation and inspection support to secure reliable materials, workmanship, and project delivery.' },
+]
+
+const engineeringExpertise = [
+  { title: 'Concrete Technology', description: 'Durability, mix design oversight, and performance-based concrete quality strategy.' },
+  { title: 'Repair Materials', description: 'Selection and review of repair mortars, grouts, polymer systems, and protective products.' },
+  { title: 'Epoxy Systems', description: 'Application guidance and quality assurance for bonding, anchoring, and structural repair systems.' },
+  { title: 'Grouting', description: 'Injection, void filling, and stabilization strategies for structural and civil works.' },
+  { title: 'Protective Coatings', description: 'Coating system review, surface preparation, and inspection planning for long-term protection.' },
+  { title: 'Fireproofing', description: 'Technical support for fire protection systems and inspection readiness on industrial assets.' },
+  { title: 'HDPE Liner', description: 'Civil and geosynthetic quality oversight for containment, barrier, and environmental systems.' },
+  { title: 'Geotextiles', description: 'Material compatibility, installation quality, and performance verification for geotechnical works.' },
+  { title: 'Earthworks', description: 'Compaction, subgrade, and earthwork quality leadership for infrastructure and industrial projects.' },
+  { title: 'Structural Concrete', description: 'Inspection and quality control for structural concrete works from placement through cure and handover.' },
+]
+
+const whyChooseItems = [
+  { value: '25+ Years Experience', description: 'A long-standing record of engineering and quality leadership across complex industrial environments.' },
+  { value: 'Industrial Projects', description: 'Practical experience supporting major oil, gas, petrochemical, and infrastructure programs.' },
+  { value: 'Saudi Arabia Experience', description: 'Deep regional delivery knowledge aligned with local execution, compliance, and site expectations.' },
+  { value: 'Engineering Solutions', description: 'A balance of technical reasoning, inspection discipline, and repair strategy development.' },
+  { value: 'Quality Leadership', description: 'Structured systems and client-focused leadership that protect performance, safety, and value.' },
+]
+
+const futureReadyPages = [
+  'Engineering Blog',
+  'Knowledge Center',
+  'Training Academy',
+  'Case Studies',
+  'Consultation Booking',
 ]
 
 const clients = ['Ma\'aden', 'Saudi Chevron Phillips', 'Sadara', 'Samsung Engineering', 'L&T', 'Doosan', 'Sinopec']
@@ -299,24 +328,24 @@ function App() {
               <h2>International Engineering Consultancy</h2>
             </div>
           </div>
-          <p className="eyebrow">Civil QA/QC | Engineering Assurance | Project Delivery</p>
-          <h1>Engineering excellence with uncompromising quality.</h1>
+          <p className="eyebrow">Engineering Consultancy | QA/QC | Asset Integrity</p>
+          <h1>Engineering Quality &amp; Asset Integrity Solutions</h1>
           <p className="hero-subtitle">
-            Delivering premium civil QA/QC, inspection, and engineering consultancy services across oil & gas, petrochemical, industrial, and infrastructure projects worldwide.
+            Helping industries solve engineering problems through quality, inspection, root cause analysis and practical repair solutions backed by 25+ years of experience.
           </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
-              Download Resume
+            <a className="button button-primary" href="#contact">
+              Book Consultation
             </a>
-            <a className="button button-secondary" href="#contact">
-              Contact Us
+            <a className="button button-secondary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
+              Download CV
             </a>
           </div>
           <div className="hero-highlights">
             <span>25+ Years Experience</span>
-            <span>Global Delivery</span>
-            <span>QA/QC Leadership</span>
-            <span>Client Trusted</span>
+            <span>Industrial Projects</span>
+            <span>Saudi Arabia Experience</span>
+            <span>Engineering Solutions</span>
           </div>
         </div>
 
@@ -348,7 +377,7 @@ function App() {
         >
           <SectionHeading
             eyebrow="About"
-            title="Premium QA/QC leadership for complex civil and industrial projects"
+            title="Engineering consultancy grounded in quality, integrity, and asset performance"
             subtitle="With over two decades of field and management experience, I deliver quality systems that protect schedule, cost, compliance, and long-term asset reliability."
           />
 
@@ -389,27 +418,98 @@ function App() {
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Expertise"
-            title="Specialized capabilities for high-value civil quality delivery"
-            subtitle="Every service is tailored to improve inspection discipline, compliance, and project performance."
+            eyebrow="Engineering Consultancy Services"
+            title="Premium engineering support for investigations, quality, and repair strategy"
+            subtitle="Each engagement is structured to deliver clarity, technical confidence, and practical next steps for asset integrity and performance."
           />
 
-          <div className="card-grid">
-            {expertiseItems.map((item, index) => (
+          <div className="service-grid">
+            {consultancyServices.map((item, index) => (
               <motion.article
                 key={item.title}
-                className="info-card"
+                className="service-card"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.45, delay: index * 0.04 }}
+                transition={{ duration: 0.45, delay: index * 0.03 }}
               >
-                <div className="info-icon"><PremiumIcon name={item.icon} /></div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
+                <div className="service-index">0{index + 1}</div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
               </motion.article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="expertise"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Engineering Expertise"
+            title="Technical depth across concrete, repair systems, coatings, and geosynthetics"
+            subtitle="A broad engineering foundation supports inspections, repairs, material recommendations, and quality leadership."
+          />
+
+          <div className="expertise-grid">
+            {engineeringExpertise.map((item) => (
+              <article key={item.title} className="expertise-card">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="why-choose"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Why Choose Me"
+            title="Trusted by owners, consultants, and project teams for decisive engineering support"
+            subtitle="The combination of technical experience, field credibility, and quality leadership helps projects move forward with confidence."
+          />
+
+          <div className="why-choose-grid">
+            {whyChooseItems.map((item) => (
+              <article key={item.value} className="why-choose-card">
+                <h3>{item.value}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="future-ready"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Future Ready Design"
+            title="A platform prepared for the next phase of thought leadership"
+            subtitle="This space is ready for future content expansion, including technical articles, learning resources, and consultation booking flows."
+          />
+
+          <div className="future-ready-grid">
+            {futureReadyPages.map((item) => (
+              <article key={item} className="future-ready-card">
+                <span>Coming Soon</span>
+                <h3>{item}</h3>
+                <p>Planned for the next stage of the consultancy platform.</p>
+              </article>
             ))}
           </div>
         </motion.section>
@@ -618,13 +718,13 @@ function App() {
             <h4>Quick Links</h4>
             <a href="#home">Home</a>
             <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
+            <a href="#expertise">Expertise</a>
           </div>
           <div>
             <h4>Services</h4>
-            <a href="#services">QA/QC Management</a>
-            <a href="#services">Inspection Planning</a>
-            <a href="#services">Documentation</a>
+            <a href="#services">Consultancy Services</a>
+            <a href="#expertise">Engineering Expertise</a>
+            <a href="#why-choose">Why Choose Me</a>
           </div>
           <div>
             <h4>Social Media</h4>
