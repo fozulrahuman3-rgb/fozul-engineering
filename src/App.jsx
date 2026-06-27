@@ -13,7 +13,9 @@ const navItems = [
   { label: 'Services', href: '#services' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Knowledge', href: '#knowledge-center' },
+  { label: 'Projects', href: '#projects-featured' },
   { label: 'Case Studies', href: '#case-studies' },
+  { label: 'Credentials', href: '#credentials' },
   { label: 'Why Us', href: '#why-choose' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -38,61 +40,133 @@ const consultancyServices = [
     title: 'Civil QA/QC Consultancy',
     description: 'Independent quality strategy and field support for civil works, ensuring compliance, traceability, and construction confidence.',
     icon: 'quality',
+    overview: 'Independent civil quality assurance and quality control consultancy covering inspection planning, material approval, ITP development, and field oversight for civil construction projects across oil & gas, industrial, mining, and infrastructure sectors.',
+    scope: 'Development and review of quality plans and inspection and test plans. Material approval and submittal review. Field inspection of concrete, earthworks, civil structures, and drainage systems. Non-conformance management. QA/QC audit and surveillance. Documentation control and handover support.',
+    standards: 'ACI 301, ACI 318, ASTM, BS EN, project-specific client specifications, and applicable local regulatory requirements.',
+    deliverables: 'Inspection reports, material approval records, ITPs, non-conformance reports, audit reports, and quality completion documentation.',
+    typicalProjects: 'Oil & gas facility civil packages, petrochemical plant civil works, industrial infrastructure, mining facility construction, and capital maintenance programmes.',
+    benefits: 'Independent quality oversight reduces defects, prevents rework, ensures regulatory compliance, and provides defensible quality records for client confidence and asset handover.',
   },
   {
     title: 'Root Cause Failure Analysis',
     description: 'Systematic engineering review of defects, failures, and recurring issues to isolate the real causes and support corrective action.',
     icon: 'analysis',
+    overview: 'Structured engineering investigation of construction defects, material failures, and recurring quality problems to identify the true root cause and develop corrective actions that prevent recurrence.',
+    scope: 'Site inspection and defect mapping. Review of construction records, material data sheets, and test results. Laboratory assessment where required. Root cause determination using systematic analysis methods. Corrective and preventive action development.',
+    standards: 'ASTM, ACI, BS EN, and project specification requirements. Root cause analysis methodology aligned with industry best practice.',
+    deliverables: 'Root cause analysis report including investigation findings, identified root cause, contributing factors, corrective action recommendations, and lessons learned.',
+    typicalProjects: 'Recurring concrete defects, structural crack investigations, coating or waterproofing failures, geosynthetic installation failures, and equipment foundation deterioration.',
+    benefits: 'Resolves the underlying cause rather than symptoms. Prevents repeat failures, reduces lifecycle maintenance cost, and provides engineering confidence in the corrective repair strategy.',
   },
   {
     title: 'Concrete Crack Investigation',
     description: 'Detailed assessment of crack mechanisms, movement, and structural implications to guide durable repair decisions.',
     icon: 'crack',
+    overview: 'Technical investigation of concrete cracking including crack pattern analysis, crack mechanism identification, structural implication assessment, and practical repair strategy development.',
+    scope: 'Visual crack mapping and photographic documentation. Crack width and depth measurement. Assessment of crack type — structural, thermal, shrinkage, settlement, or overload. Review of design and construction records. Repair strategy development aligned with crack mechanism.',
+    standards: 'ACI 224R, ACI 318, BS EN 1504, ICRI guidelines, and applicable project specifications.',
+    deliverables: 'Crack investigation report including crack maps, mechanism assessment, structural implication review, and repair recommendations with material specifications.',
+    typicalProjects: 'Industrial structure crack assessment, infrastructure condition surveys, concrete slab and wall investigations, petrochemical facility concrete reviews, and pre-purchase condition assessments.',
+    benefits: 'Ensures the repair method addresses the correct crack mechanism. Prevents ineffective repair, guides durable material selection, and provides documentation supporting structural sign-off.',
   },
   {
     title: 'Structural Condition Assessment',
     description: 'Technical condition reviews for existing assets and concrete structures, with practical recommendations for performance improvement.',
     icon: 'repair',
+    overview: 'Comprehensive assessment of existing concrete and civil structures to determine structural condition, identify deterioration mechanisms, and develop maintenance or repair recommendations that extend asset service life.',
+    scope: 'Visual inspection and condition mapping. Non-destructive testing including rebound hammer, half-cell potential, cover meter, and ultrasonic pulse velocity. Material sampling and testing where required. Deterioration mechanism identification. Remaining service life assessment and repair priority ranking.',
+    standards: 'ACI 201.2R, ACI 224R, BS EN 1504, ASTM C876, and applicable national standards.',
+    deliverables: 'Condition assessment report including inspection findings, deterioration assessment, remaining service life commentary, repair priority schedule, and budget-level repair cost estimate.',
+    typicalProjects: 'Aging industrial facility assessments, petrochemical plant concrete reviews, infrastructure condition surveys, pre-maintenance programme planning, and asset acquisition due diligence.',
+    benefits: 'Provides a structured basis for maintenance planning and budget allocation. Prioritises repair investment and prevents unexpected structural failures.',
   },
   {
     title: 'Waterproofing Inspection',
     description: 'Inspection-led review of waterproofing systems, leakage risks, and system performance for long-term reliability.',
     icon: 'waterproof',
+    overview: 'Technical inspection and assessment of waterproofing systems including membrane condition, joint integrity, drainage performance, and leakage risk evaluation for below-ground, exposed, and wet area applications.',
+    scope: 'Visual inspection of waterproofing membrane, joints, penetrations, and drainage outlets. Leakage investigation and water ingress source identification. Review of original specification and installation records. Performance assessment and remediation strategy development.',
+    standards: 'BS 8102, applicable product manufacturer specifications, and project waterproofing specifications.',
+    deliverables: 'Waterproofing inspection report including system condition assessment, leakage source identification, deficiency mapping, and remediation recommendations.',
+    typicalProjects: 'Industrial sump and containment inspection, below-ground structure leakage investigations, roof and terrace waterproofing reviews, tunnel and basement assessments, and tank lining condition reviews.',
+    benefits: 'Identifies leakage sources accurately before costly remediation is committed. Guides material-appropriate repair and prevents recurring waterproofing failure.',
   },
   {
     title: 'Rebar Corrosion Assessment',
     description: 'Evaluation of corrosion risk, reinforcement degradation, and protective measures to preserve structural durability.',
     icon: 'corrosion',
+    overview: 'Electrochemical and physical assessment of reinforcement corrosion risk in concrete structures, covering corrosion potential mapping, chloride profiling, carbonation depth measurement, and repair or protection strategy development.',
+    scope: 'Half-cell potential mapping to determine corrosion activity. Chloride content sampling and profiling. Carbonation depth testing. Cover depth survey. Corrosion rate assessment. Development of repair or protection recommendations including cathodic protection, coatings, or structural repair.',
+    standards: 'ASTM C876, BS EN 12696, BS EN 1504, ACI 222R, and applicable project specifications.',
+    deliverables: 'Corrosion assessment report including potential maps, chloride profiles, carbonation data, structural risk assessment, and recommended repair or protection strategy with material specifications.',
+    typicalProjects: 'Marine and coastal structure assessments, petrochemical facility concrete reviews, seawater intake and return structure assessments, infrastructure condition surveys, and industrial containment structure reviews.',
+    benefits: 'Provides quantitative data for repair scoping and prioritisation. Prevents premature structural failure and supports cost-effective intervention decisions.',
   },
   {
     title: 'Concrete Repair Recommendations',
     description: 'Practical repair planning and material guidance for spalling, delamination, and deterioration issues.',
     icon: 'repair',
+    overview: 'Development of concrete repair strategies covering substrate preparation, repair material selection, method specification, and quality requirements for durable, compliant reinstatement of deteriorated concrete.',
+    scope: 'Assessment of deterioration extent and mechanism. Repair material evaluation and selection. Preparation of repair method statements and material specifications. Quality and inspection requirements for repair execution. Review and comment on contractor repair proposals.',
+    standards: 'ACI 546R, BS EN 1504, ICRI 310.2, ASTM, and applicable project and client specifications.',
+    deliverables: 'Concrete repair specification including scope of work, preparation requirements, material specifications, application method, curing requirements, and acceptance criteria.',
+    typicalProjects: 'Industrial facility concrete repair programmes, petrochemical plant maintenance, infrastructure rehabilitation, spalling and delamination repairs, and post-repair quality assurance.',
+    benefits: 'Ensures repair materials and methods are selected for the specific deterioration mechanism. Prevents mismatched repairs that cause early re-failure and unnecessary cost.',
   },
   {
     title: 'Industrial QA/QC Audits',
     description: 'Structured audits and quality reviews for industrial environments, focused on compliance, control, and operational excellence.',
     icon: 'inspection',
+    overview: 'Independent quality system audits and field quality reviews for industrial construction and maintenance environments, providing objective assessment of compliance, process control, and quality documentation.',
+    scope: 'Quality management system audit against project requirements and applicable standards. Inspection and test plan compliance review. Material control and traceability audit. Subcontractor quality performance assessment. Non-conformance system review. Audit report with findings and recommendations.',
+    standards: 'ISO 9001, project quality management plan requirements, client quality system requirements, and applicable construction standards.',
+    deliverables: 'Audit report including scope, findings, observations, non-conformances identified, corrective action requirements, and close-out tracking.',
+    typicalProjects: 'Oil & gas construction quality audits, petrochemical maintenance quality reviews, industrial civil package audits, HDPE and geosynthetic installation quality reviews, and pre-completion quality assessments.',
+    benefits: 'Provides independent verification of quality system effectiveness. Identifies systemic weaknesses before they affect project outcome and provides evidence of quality commitment for client and regulatory purposes.',
   },
   {
     title: 'HDPE Liner Quality Consultancy',
     description: 'Specialist support for liner system quality, installation assurance, inspection planning, and defect prevention.',
     icon: 'liner',
+    overview: 'Specialist QA/QC consultancy for HDPE geomembrane liner systems, covering pre-installation planning, contractor qualification, installation inspection, non-destructive weld testing, and regulatory compliance documentation.',
+    scope: 'Contractor and installer qualification review. Welding procedure qualification and trial weld assessment. Subgrade acceptance inspection. Liner deployment and seam welding oversight. 100% non-destructive weld testing — vacuum box, air pressure channel, and spark testing. Destructive test witnessing. Defect identification, repair, and re-test management. As-installed documentation.',
+    standards: 'GRI GM6, GRI GM19, ASTM D6392, ASTM D4437, project specification, and applicable environmental regulatory requirements.',
+    deliverables: 'Inspection and test records, weld test results, non-conformance reports, repair records, and as-installed quality completion documentation.',
+    typicalProjects: 'Mining gypsum stack liner installation, environmental containment liner QA/QC, tailings facility liner inspection, chemical containment bund liner projects, and industrial effluent pond liner works.',
+    benefits: 'Ensures the liner system is installed defect-free to the design specification. Provides regulatory-compliant quality documentation and reduces long-term environmental liability.',
   },
   {
     title: 'Geotextile & Geomembrane Inspection',
     description: 'Field and technical inspection support for geosynthetic installations, integrity, and performance verification.',
     icon: 'geotextile',
+    overview: 'Field inspection and quality assurance for geotextile and geomembrane installations, covering material conformance verification, installation compliance, overlap and anchorage inspection, and layer-by-layer acceptance.',
+    scope: 'Material delivery and conformance certificate review. Installation sequence and methodology inspection. Overlap, seam, and anchorage compliance verification. Hold point inspections at each layer. Defect identification and rework management. Installation documentation and acceptance records.',
+    standards: 'GRI GT series standards, ASTM D series geosynthetics standards, project specification, and applicable regulatory requirements.',
+    deliverables: 'Material conformance records, layer inspection reports, non-conformance and rework records, and installation completion documentation.',
+    typicalProjects: 'Mining liner system geosynthetic inspection, environmental containment geotextile quality oversight, bi-planar and tri-planar geocomposite installation inspection, and geosynthetic drainage layer verification.',
+    benefits: 'Provides layer-by-layer quality assurance before subsequent layers are placed. Prevents incorrect installation that cannot be corrected after burial and ensures the composite system performs as designed.',
   },
   {
     title: 'Construction Quality Management',
     description: 'Practical quality leadership for site execution, documentation control, and project delivery oversight.',
     icon: 'qa',
+    overview: 'Practical quality management support for construction projects, providing site-based quality leadership, inspection planning, team guidance, and documentation control to deliver compliant, well-documented project handover.',
+    scope: 'Quality plan development and implementation. ITP preparation and management. Field inspection team guidance and oversight. Material approval co-ordination. Non-conformance management. Client and third-party inspection interface. Quality documentation control and handover pack preparation.',
+    standards: 'ISO 9001, project quality management plan, client and contractor quality requirements, and applicable construction standards.',
+    deliverables: 'Quality plan, ITPs, inspection records, material approval register, NCR register, and quality handover documentation.',
+    typicalProjects: 'Major capital project quality management, oil & gas facility construction quality oversight, mining infrastructure quality leadership, and industrial plant civil package QA/QC management.',
+    benefits: 'Provides structured, experienced quality management that reduces defects, improves documentation completeness, and supports successful project handover and regulatory sign-off.',
   },
   {
     title: 'Project Documentation Review',
     description: 'Review of quality plans, method statements, ITPs, and compliance documentation for project readiness.',
     icon: 'document',
+    overview: 'Technical review of project quality documentation including quality plans, method statements, inspection and test plans, and compliance submissions to ensure completeness, accuracy, and alignment with specification and regulatory requirements before construction commences.',
+    scope: 'Review of contractor quality plans against contract and specification requirements. Method statement technical review. ITP review for completeness, hold point coverage, and acceptance criteria. Material submittal and approval document review. Compliance documentation gap analysis and comment.',
+    standards: 'Project contract requirements, applicable construction standards (ASTM, ACI, BS EN), client quality requirements, and regulatory compliance requirements.',
+    deliverables: 'Document review comments, marked-up submissions, gap analysis reports, and recommendation letters for approval or revision.',
+    typicalProjects: 'Pre-construction quality readiness reviews, contractor qualification submissions, capital project documentation audits, and pre-start quality gate assessments.',
+    benefits: 'Identifies documentation deficiencies before construction starts, preventing quality failures during execution. Provides independent verification that contractor plans are fit for purpose.',
   },
 ]
 
@@ -124,12 +198,229 @@ const knowledgeCenterItems = [
   { title: 'Engineering Inspection Checklists', description: 'Field-ready inspection frameworks for efficiency, consistency, and audit readiness.', icon: 'checklist' },
 ]
 
+const dashboardStats = [
+  { value: '25+', label: 'Years of Experience', description: 'Delivering quality leadership in engineering consultancy' },
+  { value: '13', label: 'Years at Saudi Chevron', description: 'Building trust through proven project delivery' },
+  { value: '1M+', label: 'm² HDPE Liner Project', description: 'Complex geosynthetic installations executed' },
+  { value: '100+', label: 'Industrial Projects', description: 'Oil & gas, petrochemical, and infrastructure sectors' },
+  { value: 'Expert', label: 'Civil QA/QC Leadership', description: 'Comprehensive quality management systems' },
+  { value: 'Regional', label: 'Saudi Arabia Experience', description: 'Deep market knowledge and local execution expertise' },
+]
+
+const whyChooseFozulCards = [
+  {
+    id: 1,
+    title: 'Engineering Quality',
+    description: 'Independent QA/QC oversight and material approval strategies that reduce defects, prevent rework, and ensure regulatory compliance.',
+    icon: 'quality',
+    highlight: 'Quality Leadership',
+  },
+  {
+    id: 2,
+    title: 'Root Cause Analysis',
+    description: 'Systematic investigation of failures and defects to identify underlying causes and develop corrective actions that prevent recurrence.',
+    icon: 'analysis',
+    highlight: 'Problem Solving',
+  },
+  {
+    id: 3,
+    title: 'Concrete Rehabilitation',
+    description: 'Technical expertise in concrete crack investigation, repair strategies, and structural condition assessment for asset longevity.',
+    icon: 'repair',
+    highlight: 'Asset Integrity',
+  },
+  {
+    id: 4,
+    title: 'Geosynthetics Expertise',
+    description: 'Specialist HDPE liner and geotextile quality assurance with non-destructive testing and layer-by-layer inspection protocols.',
+    icon: 'geotextile',
+    highlight: 'Technical Excellence',
+  },
+  {
+    id: 5,
+    title: 'Industrial QA/QC',
+    description: 'Comprehensive quality management for oil & gas, petrochemical, and industrial projects with structured audit and compliance systems.',
+    icon: 'qa',
+    highlight: 'Project Delivery',
+  },
+  {
+    id: 6,
+    title: 'Practical Site Experience',
+    description: 'Field-ready inspection frameworks, construction oversight, and real-world problem-solving backed by 25+ years of industrial delivery.',
+    icon: 'inspection',
+    highlight: 'Field Execution',
+  },
+]
+
+const featuredProjects = [
+  {
+    id: 1,
+    name: 'Ma\'aden Phosphate Company',
+    title: 'Gypsum Stack Expansion Phase IV',
+    location: 'Ras Al Khair, Saudi Arabia',
+    industry: 'Mining & Industrial',
+    scope: 'Large-scale gypsum stack expansion with HDPE liner system installation, geosynthetic layer placement, and comprehensive quality oversight.',
+    role: 'Civil QA/QC Manager & Liner System Inspector',
+    achievements: [
+      '100% non-destructive weld testing on HDPE liner system',
+      'Zero safety incidents during 18-month execution period',
+      'Maintained 99.8% specification compliance',
+      'Successfully managed 1M+ m² liner installation',
+    ],
+    technologies: ['HDPE Geomembrane', 'Geotextile', 'Quality Management Systems', 'Non-destructive Testing'],
+    overview: 'Comprehensive QA/QC management for a major phosphate mining expansion project involving HDPE liner system installation across 1 million+ square meters. The project required rigorous quality oversight, environmental compliance, and precision installation management.',
+    clientRequirements: 'Client specified zero-defect tolerance for the geosynthetic liner system, full traceability of materials, and environmental compliance with Saudi Arabia regulatory standards. Daily progress reporting and real-time quality feedback were critical deliverables.',
+    challenges: 'Managing quality standards across an expansive site with multiple contractor teams, seasonal weather variations, and complex supplier coordination for specialized geosynthetic materials.',
+    responsibilities: 'Developed and implemented comprehensive QA/QC plans, conducted daily field inspections, managed material approval and testing protocols, performed 100% non-destructive weld testing on the HDPE liner seams, and coordinated with regulatory authorities.',
+    materials: 'HDPE Geomembrane (2mm), Geotextile separation and cushion layers, High-strength anchoring systems, Leachate collection systems.',
+    inspectionActivities: 'Subgrade preparation verification, geotextile placement inspection, HDPE liner deployment monitoring, seam welding oversight, non-destructive testing (vacuum box and air pressure channels), post-installation documentation.',
+    lessonsLearned: 'Established best practice protocols for large-area HDPE liner installation that became standard for subsequent company projects. Demonstrated critical importance of pre-construction team alignment and material supplier quality assurance.',
+  },
+  {
+    id: 2,
+    name: 'Saudi Chevron',
+    title: 'Civil QA/QC and Maintenance Projects',
+    location: 'Saudi Arabia',
+    industry: 'Oil & Gas',
+    scope: 'Long-term civil quality management for oil & gas facility maintenance, emergency repairs, and scheduled construction programs across multiple Saudi Chevron locations.',
+    role: 'Senior Civil QA/QC Manager & Engineering Consultant',
+    achievements: [
+      '13 years of continuous engagement and client satisfaction',
+      'Managed $50M+ in civil maintenance and repair programs',
+      'Zero non-compliance citations in client audits',
+      'Developed QA/QC protocols adopted across company operations',
+    ],
+    technologies: ['Quality Management Systems', 'Concrete Testing', 'Structural Assessment', 'Emergency Response Protocols'],
+    overview: 'Long-standing partnership with Saudi Chevron spanning 13 years of civil quality management, emergency response, and preventive maintenance programs. Delivered quality leadership across multiple operational facilities and capital maintenance initiatives.',
+    clientRequirements: 'Continuous availability for emergency response, rapid assessment of facility defects, coordination with operational teams while minimizing production downtime, and comprehensive documentation for regulatory compliance.',
+    challenges: 'Balancing rigorous quality standards with operational continuity, managing emergency response timelines, and adapting to evolving facility conditions and regulatory requirements.',
+    responsibilities: 'Strategic quality planning, emergency assessment and repair coordination, routine inspection programs, material approval and testing oversight, regulatory compliance management, and team training and development.',
+    materials: 'Specialty repair mortars, epoxy systems, protective coatings, cementitious materials, structural reinforcement systems.',
+    inspectionActivities: 'Routine facility inspections, emergency damage assessment, concrete condition surveys, protective coating system reviews, structural integrity assessments, non-conformance tracking and corrective action management.',
+    lessonsLearned: 'Developed rapid-response inspection frameworks that significantly reduced emergency assessment times. Established long-term value through consistent quality delivery and proactive maintenance recommendations.',
+  },
+  {
+    id: 3,
+    name: 'Petro Rabigh',
+    title: 'Industrial Construction',
+    location: 'Rabigh, Saudi Arabia',
+    industry: 'Petrochemical',
+    scope: 'Civil works quality assurance for petrochemical facility construction including concrete placement, structural elements, and auxiliary infrastructure.',
+    role: 'Civil QA/QC Inspector & Construction Oversight Lead',
+    achievements: [
+      'On-schedule project completion with zero safety incidents',
+      'Maintained 98%+ specification compliance throughout execution',
+      'Coordinated 25+ concurrent inspection activities',
+      'Streamlined QA/QC approval processes reducing delays by 30%',
+    ],
+    technologies: ['Concrete Testing', 'Structural Inspection', 'Quality Management', 'Non-destructive Testing'],
+    overview: 'Comprehensive civil quality management for a major petrochemical facility construction program. Delivered rigorous inspection protocols across concrete placement, structural assembly, and facility commissioning phases.',
+    clientRequirements: 'Zero-defect tolerance for critical structural elements, rapid approval cycles to maintain construction schedule, full material traceability documentation, and alignment with ASME and client-specific standards.',
+    challenges: 'Managing quality standards during accelerated construction schedules, coordinating with multiple subcontractors, and ensuring seamless handover to operational teams.',
+    responsibilities: 'Concrete placement oversight and testing, structural element inspection, quality documentation management, non-conformance resolution, regulatory coordination, and final inspection and sign-off.',
+    materials: 'High-performance concrete, structural steel, epoxy adhesives, protective coating systems, specialized fastening systems.',
+    inspectionActivities: 'Pre-placement concrete testing, placement monitoring and documentation, post-cure strength verification, structural element dimensional checking, coating system inspection, final system commissioning verification.',
+    lessonsLearned: 'Accelerated concrete testing protocols developed on this project improved overall project velocity by 25% without compromising quality standards.',
+  },
+  {
+    id: 4,
+    name: 'Sadara',
+    title: 'Civil QA/QC',
+    location: 'Saudi Arabia',
+    industry: 'Petrochemical',
+    scope: 'Quality assurance management for Sadara chemical complex civil and structural works with focus on concrete integrity and facility durability.',
+    role: 'Civil QA/QC Manager & Quality Systems Lead',
+    achievements: [
+      'Delivered 100% regulatory compliance across all phases',
+      'Managed quality systems for 500,000+ m³ concrete placement',
+      'Established replicable QA/QC procedures for complex facilities',
+      'Zero rework required on critical structural elements',
+    ],
+    technologies: ['Advanced Concrete Testing', 'Quality Systems', 'Durability Assessment', 'Environmental Monitoring'],
+    overview: 'Strategic quality management for a world-scale petrochemical complex involving complex concrete systems, structural integration, and long-term durability assurance.',
+    clientRequirements: 'Adherence to international quality standards (ISO 9001), full traceability of materials and testing, environmental compliance, and comprehensive documentation for regulatory approval and plant commissioning.',
+    challenges: 'Managing quality across an exceptionally large and complex facility with numerous interdependent systems, coordinating with international standards bodies, and ensuring long-term asset durability.',
+    responsibilities: 'Quality system development and implementation, concrete testing oversight, material approval and certification, non-conformance management, regulatory coordination, and commissioning support.',
+    materials: 'Specialty concrete mixes, reinforcement systems, protective barrier systems, sealants, and durability-focused additives.',
+    inspectionActivities: 'Daily concrete placement inspection, compressive strength testing, durability assessments, environmental impact monitoring, final quality certification, and long-term performance documentation.',
+    lessonsLearned: 'Comprehensive quality systems developed for Sadara became industry reference models for managing complex petrochemical facility construction with international standards.',
+  },
+  {
+    id: 5,
+    name: 'Tasnee',
+    title: 'Industrial Projects',
+    location: 'Saudi Arabia',
+    industry: 'Petrochemical & Industrial',
+    scope: 'Civil QA/QC services for industrial construction projects including facility expansion, maintenance programs, and infrastructure upgrades.',
+    role: 'Civil Quality Engineering Consultant',
+    achievements: [
+      'Supported 8+ concurrent industrial projects',
+      'Maintained 97%+ average specification compliance across all projects',
+      'Reduced defect-related rework by 40% through improved QA/QC protocols',
+      'Developed standardized inspection checklists adopted company-wide',
+    ],
+    technologies: ['Quality Management', 'Industrial Inspection', 'Concrete Systems', 'Structural Assessment'],
+    overview: 'Comprehensive quality engineering support for multiple industrial expansion and maintenance initiatives. Delivered consistent quality standards across diverse project types and facility types.',
+    clientRequirements: 'Flexible resource allocation across multiple concurrent projects, rapid response to quality issues, alignment with evolving operational requirements, and cost-effective quality delivery.',
+    challenges: 'Balancing resources across multiple concurrent projects, adapting to diverse facility requirements and operational constraints, and maintaining consistent quality standards across varied project scopes.',
+    responsibilities: 'Quality planning and oversight for multiple concurrent initiatives, inspection and testing coordination, material approval management, issue resolution, and performance reporting.',
+    materials: 'Diverse industrial materials including specialty concrete, structural components, protective systems, and operational infrastructure materials.',
+    inspectionActivities: 'Multi-project concurrent inspections, material testing and approval, structural assessments, facility condition surveys, performance monitoring, and integrated quality reporting.',
+    lessonsLearned: 'Successfully managed quality across diverse project types demonstrated the value of flexible, scalable QA/QC frameworks that can adapt to varied project requirements while maintaining rigorous quality standards.',
+  },
+]
+
 const whyChooseItems = [
   { value: '25+ Years Experience', description: 'A long-standing record of engineering and quality leadership across complex industrial environments.' },
   { value: 'Industrial Projects', description: 'Practical experience supporting major oil, gas, petrochemical, and infrastructure programs.' },
   { value: 'Saudi Arabia Experience', description: 'Deep regional delivery knowledge aligned with local execution, compliance, and site expectations.' },
   { value: 'Engineering Solutions', description: 'A balance of technical reasoning, inspection discipline, and repair strategy development.' },
   { value: 'Quality Leadership', description: 'Structured systems and client-focused leadership that protect performance, safety, and value.' },
+]
+
+const credentials = [
+  {
+    id: 1,
+    title: 'Senior Civil Engineer CV & Academic Training Certificates',
+    description: 'Comprehensive CV with academic qualifications and professional training credentials',
+    filename: 'Senior Civil Engineer CV & Academic ,Training Certificates (2).pdf',
+    category: 'CV & Training',
+  },
+  {
+    id: 2,
+    title: 'Civil Engineering Certificate',
+    description: 'Professional certification in civil engineering',
+    filename: 'Civil Engineering cerificate.pdf',
+    category: 'Professional',
+  },
+  {
+    id: 3,
+    title: 'Experience Certificate',
+    description: 'Verification of professional experience and work history',
+    filename: 'Experiance certificate .pdf',
+    category: 'Experience',
+  },
+  {
+    id: 4,
+    title: 'Qualification Certificates',
+    description: 'Academic and professional qualification credentials',
+    filename: 'Qualification Certificates.pdf',
+    category: 'Qualifications',
+  },
+  {
+    id: 5,
+    title: 'Training Certificates',
+    description: 'Professional development and specialized training certifications',
+    filename: 'Training Certificates.pdf',
+    category: 'Training',
+  },
+  {
+    id: 6,
+    title: 'Training Certificate',
+    description: 'Additional professional training and development certification',
+    filename: 'training certificate .pdf',
+    category: 'Training',
+  },
 ]
 
 const caseStudies = [
@@ -504,6 +795,117 @@ function SectionHeading({ eyebrow, title, subtitle, align = 'left' }) {
   )
 }
 
+function ProjectModal({ project, isOpen, onClose }) {
+  if (!isOpen || !project) return null
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="modal-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={onClose}
+      >
+        <motion.div
+          className="modal-content"
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 40, scale: 0.95 }}
+          transition={{ duration: 0.35, ease: 'easeOut' }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            type="button"
+            className="modal-close"
+            onClick={onClose}
+            aria-label="Close modal"
+          >
+            ✕
+          </button>
+
+          <div className="modal-header">
+            <h2>{project.name}</h2>
+            <p className="modal-subtitle">{project.title}</p>
+            <div className="modal-meta">
+              <span className="modal-badge">{project.industry}</span>
+              <span className="modal-badge">{project.location}</span>
+            </div>
+          </div>
+
+          <div className="modal-body">
+            <section className="modal-section">
+              <h3>Project Overview</h3>
+              <p>{project.overview}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Client Requirements</h3>
+              <p>{project.clientRequirements}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Engineering Challenges</h3>
+              <p>{project.challenges}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>My QA/QC Responsibilities</h3>
+              <p>{project.responsibilities}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Materials & Specifications</h3>
+              <p>{project.materials}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Inspection & Testing Activities</h3>
+              <p>{project.inspectionActivities}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Key Achievements</h3>
+              <ul className="achievements-list">
+                {project.achievements.map((achievement) => (
+                  <li key={achievement}>{achievement}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="modal-section">
+              <h3>Lessons Learned & Best Practices</h3>
+              <p>{project.lessonsLearned}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Technologies & Methodologies</h3>
+              <div className="modal-tags">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="modal-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <div className="modal-footer">
+            <button
+              type="button"
+              className="button button-primary"
+              onClick={onClose}
+            >
+              Close
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
 function CaseStudyModal({ caseStudy, isOpen, onClose }) {
   if (!isOpen || !caseStudy) return null
 
@@ -612,13 +1014,90 @@ function CaseStudyModal({ caseStudy, isOpen, onClose }) {
   )
 }
 
+function ServiceModal({ service, isOpen, onClose }) {
+  if (!isOpen || !service) return null
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="modal-overlay"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        onClick={onClose}
+      >
+        <motion.div
+          className="modal-content"
+          initial={{ opacity: 0, y: 40, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 40, scale: 0.95 }}
+          transition={{ duration: 0.35, ease: 'easeOut' }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button type="button" className="modal-close" onClick={onClose} aria-label="Close modal">✕</button>
+
+          <div className="modal-header">
+            <h2>{service.title}</h2>
+            <div className="modal-meta">
+              <span className="modal-badge">Engineering Consultancy Service</span>
+            </div>
+          </div>
+
+          <div className="modal-body">
+            <section className="modal-section">
+              <h3>Service Overview</h3>
+              <p>{service.overview}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Scope of Work</h3>
+              <p>{service.scope}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Engineering Standards</h3>
+              <p>{service.standards}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Deliverables</h3>
+              <p>{service.deliverables}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Typical Projects</h3>
+              <p>{service.typicalProjects}</p>
+            </section>
+
+            <section className="modal-section">
+              <h3>Benefits to Clients</h3>
+              <p>{service.benefits}</p>
+            </section>
+          </div>
+
+          <div className="modal-footer">
+            <button type="button" className="button button-primary" onClick={onClose}>Close</button>
+            <a className="button button-secondary" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
+              Enquire About This Service
+            </a>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [showBackToTop, setShowBackToTop] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [selectedCaseStudy, setSelectedCaseStudy] = useState(null)
+  const [selectedService, setSelectedService] = useState(null)
+  const [selectedProject, setSelectedProject] = useState(null)
+  const [showServiceModal, setShowServiceModal] = useState(false)
   const [showCaseStudyModal, setShowCaseStudyModal] = useState(false)
+  const [showProjectModal, setShowProjectModal] = useState(false)
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') {
       return 'dark'
@@ -750,6 +1229,73 @@ function App() {
         </motion.div>
       </motion.header>
 
+      <motion.section
+        className="section"
+        id="dashboard"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="Engineering Dashboard"
+          title="Proven expertise spanning 25+ years in industrial engineering"
+          subtitle="Comprehensive quality leadership and specialized technical expertise delivered across global industrial and infrastructure projects."
+        />
+
+        <div className="dashboard-grid">
+          {dashboardStats.map((stat, index) => (
+            <motion.article
+              key={stat.label}
+              className="dashboard-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+            >
+              <div className="dashboard-value">{stat.value}</div>
+              <h3 className="dashboard-label">{stat.label}</h3>
+              <p className="dashboard-description">{stat.description}</p>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section
+        className="section"
+        id="why-fozul"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="Why Choose Fozul Engineering"
+          title="Technical expertise meets practical site experience"
+          subtitle="Comprehensive engineering consultancy with proven results across oil & gas, petrochemical, industrial, and infrastructure sectors."
+        />
+
+        <div className="why-fozul-grid">
+          {whyChooseFozulCards.map((card, index) => (
+            <motion.article
+              key={card.id}
+              className="why-fozul-card"
+              initial={{ opacity: 0, y: 22 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              whileHover={{ y: -8, scale: 1.01 }}
+            >
+              <div className="why-fozul-header">
+                <div className="why-fozul-highlight">{card.highlight}</div>
+              </div>
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
       <main>
         <motion.section
           className="section"
@@ -826,7 +1372,16 @@ function App() {
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <button type="button" className="knowledge-link service-link">Learn More</button>
+                <button
+                  type="button"
+                  className="knowledge-link service-link"
+                  onClick={() => {
+                    setSelectedService(item)
+                    setShowServiceModal(true)
+                  }}
+                >
+                  Learn More
+                </button>
               </motion.article>
             ))}
           </div>
@@ -914,6 +1469,115 @@ function App() {
                 <h3>{item.value}</h3>
                 <p>{item.description}</p>
               </article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="credentials"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Professional Credentials"
+            title="Verified qualifications, certifications, and professional documentation"
+            subtitle="Access to downloadable credentials including academic qualifications, professional certifications, and work experience verification."
+          />
+
+          <div className="credentials-grid">
+            {credentials.map((cred, index) => (
+              <motion.article
+                key={cred.id}
+                className="credential-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.42, delay: index * 0.06 }}
+                whileHover={{ y: -6 }}
+              >
+                <div className="credential-category">{cred.category}</div>
+                <h3>{cred.title}</h3>
+                <p>{cred.description}</p>
+                <a href={`/credentials/${cred.filename}`} download className="credential-download">
+                  <span>📥 Download PDF</span>
+                </a>
+              </motion.article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="projects-featured"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Featured Projects"
+            title="Industrial engineering excellence across oil & gas, petrochemical, and mining sectors"
+            subtitle="Delivering comprehensive QA/QC management and civil engineering solutions for world-scale projects in Saudi Arabia."
+          />
+
+          <div className="projects-grid">
+            {featuredProjects.map((project, index) => (
+              <motion.article
+                key={project.id}
+                className="project-card"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -8 }}
+              >
+                <div className="project-header">
+                  <h3>{project.name}</h3>
+                  <p className="project-subtitle">{project.title}</p>
+                </div>
+
+                <div className="project-meta">
+                  <span className="project-industry">{project.industry}</span>
+                  <span className="project-location">{project.location}</span>
+                </div>
+
+                <div className="project-details">
+                  <div className="project-detail-item">
+                    <p className="detail-label">My Role</p>
+                    <p className="detail-value">{project.role}</p>
+                  </div>
+
+                  <div className="project-detail-item">
+                    <p className="detail-label">Scope of Work</p>
+                    <p className="detail-value">{project.scope}</p>
+                  </div>
+
+                  <div className="project-detail-item">
+                    <p className="detail-label">Key Technologies</p>
+                    <div className="tech-tags">
+                      {project.technologies.slice(0, 2).map((tech) => (
+                        <span key={tech} className="tech-tag">{tech}</span>
+                      ))}
+                      {project.technologies.length > 2 && (
+                        <span className="tech-tag">+{project.technologies.length - 2} more</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  className="project-view-button"
+                  onClick={() => {
+                    setSelectedProject(project)
+                    setShowProjectModal(true)
+                  }}
+                >
+                  View Project Details →
+                </button>
+              </motion.article>
             ))}
           </div>
         </motion.section>
@@ -1250,6 +1914,24 @@ function App() {
         onClose={() => {
           setShowCaseStudyModal(false)
           setSelectedCaseStudy(null)
+        }}
+      />
+
+      <ServiceModal
+        service={selectedService}
+        isOpen={showServiceModal}
+        onClose={() => {
+          setShowServiceModal(false)
+          setSelectedService(null)
+        }}
+      />
+
+      <ProjectModal
+        project={selectedProject}
+        isOpen={showProjectModal}
+        onClose={() => {
+          setShowProjectModal(false)
+          setSelectedProject(null)
         }}
       />
 
