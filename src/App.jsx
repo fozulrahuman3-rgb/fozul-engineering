@@ -857,6 +857,50 @@ function App() {
 
         <motion.section
           className="section"
+          id="consultation"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Book a Consultation"
+            title="Need Professional Engineering Advice?"
+            subtitle="I provide online engineering consultation for civil quality, concrete defects, QA/QC, HDPE liner systems, inspections, root cause analysis and repair recommendations."
+          />
+
+          <div className="consultation-cta">
+            <a className="button button-primary consultation-button" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
+              Book a Consultation
+            </a>
+          </div>
+
+          <div className="consultation-grid">
+            <a className="consultation-card" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
+              <div className="consultation-icon"><PremiumIcon name="quality" /></div>
+              <h3>WhatsApp Consultation</h3>
+              <p>Quick discussion for urgent engineering support and technical guidance.</p>
+            </a>
+            <a className="consultation-card" href="mailto:fozulur@yahoo.com">
+              <div className="consultation-icon"><PremiumIcon name="document" /></div>
+              <h3>Email Consultation</h3>
+              <p>Share your project details for a detailed consultation response.</p>
+            </a>
+            <a className="consultation-card" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
+              <div className="consultation-icon"><PremiumIcon name="plan" /></div>
+              <h3>Download CV</h3>
+              <p>Review technical experience, credentials, and project background.</p>
+            </a>
+            <a className="consultation-card" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">
+              <div className="consultation-icon"><PremiumIcon name="globe" /></div>
+              <h3>LinkedIn Profile</h3>
+              <p>Connect for professional discussion and engineering collaboration.</p>
+            </a>
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
           id="contact"
           initial="hidden"
           whileInView="visible"
