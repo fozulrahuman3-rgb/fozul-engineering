@@ -150,13 +150,6 @@ const caseStudies = [
     repairMethod: 'Removal of all deteriorated concrete to sound substrate. Application of cementitious structural repair mortar. Controlled halogen light curing during the initial setting period to accelerate early strength gain. Immediate application of curing compound after initial hardening to retain moisture and maintain hydration. Protective coating applied within schedule.',
     lessonsLearned: 'Repair material selection cannot be finalised without reviewing all active protection systems on the structure. Halogen light curing is an effective field technique for accelerating early strength development in time-critical shutdown repairs, provided curing conditions are controlled and documented.',
   },
-    background: 'A critical seawater intake sump structure showed signs of accelerated deterioration from 12+ years of direct marine exposure. Chloride-rich seawater ingress had initiated aggressive rebar corrosion and concrete spalling. Independent assessment was required to evaluate structural remaining life and recommend durable remediation.',
-    challenge: 'Harsh marine environment with continuous saltwater exposure, structural load continuity requirements, and need for long-term corrosion arrest without major reconstruction.',
-    technicalAssessment: 'Electrochemical corrosion rate determination, chloride diffusion modeling using Fick equations, concrete permeability assessment, and rebar degradation trajectory analysis.',
-    calculations: 'Corrosion current density calculation (mA/m²), chloride ion diffusion coefficient determination, cathodic protection current requirement estimation, and service life projection modeling.',
-    repairMethod: 'Controlled substrate preparation, impressed current cathodic protection installation with reference electrode monitoring, surface preparation to removal of loose concrete, epoxy primer application with corrosion inhibitors, and protective topcoat.',
-    lessonsLearned: 'Electrochemical monitoring provides quantitative assessment for marine concrete repair planning. Early intervention with cathodic protection systems delivers superior ROI compared to reactive patching in high-chloride environments.',
-  },
   {
     id: 2,
     title: 'CFRP Strengthening of Corroded Concrete Wall & Structural Reinforcement',
