@@ -396,6 +396,167 @@ const whyChooseFozulCards = [
   },
 ]
 
+// Featured Expertise - Highlighted Skills
+const featuredExpertise = [
+  { title: 'QA/QC Management', icon: 'qa', description: 'Strategic quality leadership and operational excellence' },
+  { title: 'Concrete Investigation', icon: 'inspection', description: 'Advanced NDT including Rebound Hammer & UPV Testing' },
+  { title: 'Rebound Hammer Testing', icon: 'inspection', description: 'Concrete strength estimation and durability assessment' },
+  { title: 'UPV Testing', icon: 'inspection', description: 'Ultrasonic pulse velocity for concrete density & crack detection' },
+  { title: 'HDPE Liner Systems', icon: 'liner', description: 'Geosynthetic quality assurance and non-destructive weld testing' },
+  { title: 'Geosynthetics', icon: 'geotextile', description: 'Material installation quality and performance verification' },
+  { title: 'Earthworks', icon: 'earthwork', description: 'Compaction control and subgrade quality oversight' },
+  { title: 'Industrial Construction', icon: 'quality', description: 'Oil & gas, petrochemical, and mining project delivery' },
+  { title: 'Petrochemical Projects', icon: 'quality', description: 'ASME-compliant quality systems and compliance management' },
+  { title: 'Mining Projects', icon: 'quality', description: 'Environmental compliance and asset integrity programs' },
+]
+
+// Saudi Chevron Concrete Investigation Specialization
+const saudiChevronExperience = {
+  title: 'Saudi Chevron Concrete Investigation & Repair Experience',
+  period: '13+ Years Continuous Engagement',
+  overview: 'Over 13 years of specialized concrete investigation, assessment, and repair consultancy for Saudi Chevron operational facilities. Deep expertise in rapid-response inspections, structural assessments, and durable repair solutions.',
+  specializations: [
+    {
+      name: 'Rebound Hammer Testing',
+      description: 'Non-destructive concrete strength estimation to assess structural capacity and deterioration extent. Rapid mobilization for emergency condition assessments.',
+      experience: 'Hundreds of facilities assessed using rebound hammer protocols',
+    },
+    {
+      name: 'Ultrasonic Pulse Velocity (UPV) Testing',
+      description: 'Advanced NDT for concrete density mapping, crack detection, and deterioration mechanism identification. Complementary to rebound hammer for comprehensive condition assessment.',
+      experience: '200+ UPV surveys for condition assessment and repair planning',
+    },
+    {
+      name: 'Concrete Crack Investigation',
+      description: 'Systematic investigation of cracking mechanisms, movement patterns, and structural implications. Crack mapping, mechanism classification, and repair strategy development.',
+      experience: 'Crack investigation for industrial structures, foundations, and operational assets',
+    },
+    {
+      name: 'Structural Condition Assessment',
+      description: 'Comprehensive structural evaluation using visual inspection, NDT methods, and engineering analysis. Remaining service life assessment and maintenance priority ranking.',
+      experience: 'Facility condition surveys supporting maintenance planning and capital budgeting',
+    },
+    {
+      name: 'Epoxy Injection Solutions',
+      description: 'Crack sealing, bonding, and structural continuity restoration using epoxy injection techniques. Substrate preparation and quality assurance for durable repairs.',
+      experience: 'Hundreds of epoxy injection repairs executed and supervised',
+    },
+    {
+      name: 'Sika Repair Systems',
+      description: 'Selection and application guidance for Sika repair mortars, bonding agents, and protective coatings. Performance durability in GCC climatic conditions.',
+      experience: '100+ Sika system applications for concrete spalling and structural repairs',
+    },
+    {
+      name: 'Fosroc Repair Materials',
+      description: 'Expertise in Fosroc repair products including cementitious mortars and injection systems. Material compatibility and long-term performance in industrial environments.',
+      experience: 'Fosroc system expertise across multiple facility types and repair applications',
+    },
+    {
+      name: 'Emergency Response & Rapid Repairs',
+      description: 'Rapid mobilization for critical structural failures. Temporary shoring, immediate assessments, and interim repair solutions.',
+      experience: 'Emergency response protocols and rapid-turnaround technical solutions',
+    },
+  ],
+}
+
+// Professional Achievements
+const professionalAchievements = [
+  {
+    title: 'Built Trust Through 13 Years of Continuous Partnership',
+    subtitle: 'Saudi Chevron Company',
+    description: 'Maintained zero audit non-compliances and continuous client confidence through disciplined QA/QC delivery and rapid emergency response.',
+    metric: '13 Years | $50M+ Programs',
+  },
+  {
+    title: 'Delivered 1M+ m² HDPE Liner Installation',
+    subtitle: 'Ma\'aden Phosphate Gypsum Stack Expansion',
+    description: '100% non-destructive weld testing and 99.8% specification compliance on complex geosynthetic installation. Zero safety incidents.',
+    metric: 'Current | 1,000,000+ m²',
+  },
+  {
+    title: 'Established Quality Leadership Across Multiple Sectors',
+    subtitle: 'Oil & Gas, Petrochemical, Mining & Infrastructure',
+    description: 'Developed and implemented QA/QC protocols adopted across operational facilities, contractor networks, and regulatory frameworks.',
+    metric: '25+ Years | 500+ Projects',
+  },
+  {
+    title: 'Expert in Concrete Investigation & NDT Methods',
+    subtitle: 'Rebound Hammer, UPV, Crack Assessment',
+    description: 'Conducted hundreds of concrete condition assessments guiding maintenance investments and preventing structural failures.',
+    metric: '200+ NDT Surveys | 100+ Investigations',
+  },
+  {
+    title: 'Zero-Defect HDPE Liner Quality Assurance',
+    subtitle: 'Advanced Non-Destructive Testing & Installation Oversight',
+    description: 'Implemented comprehensive NDT protocols for weld integrity, ensuring environmental compliance and long-term asset performance.',
+    metric: '100% NDT Coverage | 99.8% Compliance',
+  },
+  {
+    title: 'Rapid Emergency Response & Problem-Solving',
+    subtitle: 'Critical Facility Assessments & Interim Repairs',
+    description: 'Mobilized within hours for emergency inspections, root cause analysis, and implementation of interim solutions.',
+    metric: 'On-Call | 24-Hour Turnaround',
+  },
+]
+
+// Why Hire Me - Value Propositions
+const whyHireMe = [
+  {
+    title: 'Senior QA/QC Leader With Deep Saudi Arabia Experience',
+    points: [
+      '25+ years of quality leadership in challenging environments',
+      '13 years continuous partnership with Saudi Chevron',
+      'Deep market knowledge and local execution expertise',
+      'Proven ability to build trust and maintain zero compliance citations',
+    ],
+  },
+  {
+    title: 'Expert in Concrete & Structural Integrity',
+    points: [
+      'Advanced NDT methods including Rebound Hammer and UPV testing',
+      'Systematic crack investigation and repair strategy development',
+      'Material expertise in Sika, Fosroc, and epoxy repair systems',
+      'Hundreds of successful concrete assessments and repairs',
+    ],
+  },
+  {
+    title: 'Specialist in Complex Geosynthetic & HDPE Projects',
+    points: [
+      '1M+ m² HDPE liner installation oversight',
+      '100% non-destructive weld testing protocols',
+      'Layer-by-layer geosynthetic quality assurance',
+      'Environmental compliance and regulatory expertise',
+    ],
+  },
+  {
+    title: 'Practical Problem-Solver & Emergency Responder',
+    points: [
+      'Rapid mobilization for critical assessments',
+      'Root cause failure analysis expertise',
+      'Implementation of interim and permanent repair solutions',
+      'Real-world field experience across industrial sectors',
+    ],
+  },
+  {
+    title: 'Strategic Quality Management & Documentation',
+    points: [
+      'Development of QA/QC plans and inspection/test procedures',
+      'Quality systems adopted across operational networks',
+      'Comprehensive project documentation for regulatory compliance',
+      'Material approval and non-conformance management systems',
+    ],
+  },
+  {
+    title: 'Future Vision: FAHEEM Engineering Consultancy',
+    points: [
+      'Building premier engineering consultancy focused on quality leadership',
+      'Knowledge platform for concrete investigation and repair solutions',
+      'Industry partnership network',
+      'Training and professional development programs',
+    ],
+  },
+]
+
 const featuredProjects = [
   {
     id: 1,
@@ -1717,6 +1878,153 @@ function App() {
               </div>
               <h3>{card.title}</h3>
               <p>{card.description}</p>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Featured Expertise Section */}
+      <motion.section
+        className="section"
+        id="featured-expertise"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="Featured Expertise"
+          title="Specialized Technical Skills"
+          subtitle="Deep expertise in concrete investigation, geosynthetic quality assurance, and industrial QA/QC leadership."
+        />
+
+        <div className="expertise-grid">
+          {featuredExpertise.map((expertise, index) => (
+            <motion.div
+              key={expertise.title}
+              className="expertise-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.06 }}
+              whileHover={{ y: -6, scale: 1.02 }}
+            >
+              <div className="expertise-icon">
+                <PremiumIcon name={expertise.icon} />
+              </div>
+              <h4>{expertise.title}</h4>
+              <p>{expertise.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Saudi Chevron Concrete Investigation Section */}
+      <motion.section
+        className="section"
+        id="saudi-chevron-experience"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="13+ Years Partnership"
+          title="Saudi Chevron Concrete Investigation & Repair Experience"
+          subtitle="Specialized concrete investigation, structural assessment, and repair consultancy across multiple operational facilities."
+        />
+
+        <div className="chevron-specializations">
+          {saudiChevronExperience.specializations.map((spec, index) => (
+            <motion.article
+              key={spec.name}
+              className="specialization-card"
+              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+            >
+              <div className="spec-header">
+                <h4>{spec.name}</h4>
+              </div>
+              <p className="spec-description">{spec.description}</p>
+              <p className="spec-experience">
+                <span className="experience-label">Experience:</span> {spec.experience}
+              </p>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Professional Achievements Section */}
+      <motion.section
+        className="section"
+        id="professional-achievements"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="Track Record"
+          title="Professional Achievements"
+          subtitle="Proven results delivering quality leadership and engineering solutions across industrial sectors."
+        />
+
+        <div className="achievements-grid">
+          {professionalAchievements.map((achievement, index) => (
+            <motion.article
+              key={achievement.title}
+              className="achievement-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.07 }}
+              whileHover={{ y: -8 }}
+            >
+              <div className="achievement-metric">{achievement.metric}</div>
+              <h4>{achievement.title}</h4>
+              <p className="achievement-subtitle">{achievement.subtitle}</p>
+              <p className="achievement-description">{achievement.description}</p>
+            </motion.article>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Why Hire Me Section */}
+      <motion.section
+        className="section"
+        id="why-hire-me"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionAnimation}
+      >
+        <SectionHeading
+          eyebrow="Value Proposition"
+          title="Why Hire Mohamed Haneefa Fozul Rahuman?"
+          subtitle="Strategic leadership, technical expertise, and proven results delivering engineering quality across industrial sectors."
+        />
+
+        <div className="hire-reasons-grid">
+          {whyHireMe.map((reason, index) => (
+            <motion.article
+              key={reason.title}
+              className="hire-reason-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+            >
+              <h4>{reason.title}</h4>
+              <ul className="hire-points">
+                {reason.points.map((point) => (
+                  <li key={point}>
+                    <span className="check">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </motion.article>
           ))}
         </div>
