@@ -12,6 +12,7 @@ const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Expertise', href: '#expertise' },
+  { label: 'Knowledge', href: '#knowledge-center' },
   { label: 'Why Us', href: '#why-choose' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -32,16 +33,42 @@ const aboutHighlights = [
 ]
 
 const consultancyServices = [
-  { title: 'Root Cause Analysis', description: 'Independent investigation of defects, failures, and performance issues with clear technical findings and practical corrective action.' },
-  { title: 'Concrete Crack Investigation', description: 'Field assessment and diagnostic review of cracking patterns, movement, and structural implications.' },
-  { title: 'Concrete Repair Solutions', description: 'Repair strategy development for spalling, debonding, delamination, and durability issues with long-term performance focus.' },
-  { title: 'Structural Assessment', description: 'Assessment of existing structures, distress mechanisms, and material condition to support dependable engineering decisions.' },
-  { title: 'Rebar Corrosion Investigation', description: 'Corrosion mapping, risk evaluation, and remediation recommendations for reinforcement degradation.' },
-  { title: 'Waterproofing Failure Analysis', description: 'Investigation of waterproofing issues, membrane breakdown, leakage points, and system compatibility.' },
-  { title: 'Material Selection & Recommendation', description: 'Selection of repair materials, coatings, systems, and products aligned with environment and service conditions.' },
-  { title: 'QA/QC Consultancy', description: 'Tailored quality systems that strengthen inspection discipline, compliance, and project execution confidence.' },
-  { title: 'Project Quality Documentation', description: 'Preparation of quality plans, method statements, ITPs, and client-ready technical documentation packages.' },
-  { title: 'Vendor & Factory Inspection', description: 'Supplier evaluation and inspection support to secure reliable materials, workmanship, and project delivery.' },
+  {
+    title: 'Civil QA/QC Consultancy',
+    description: 'End-to-end quality leadership for civil and industrial projects with strong field execution and documentation discipline.',
+    highlights: ['Project Quality Planning', 'ITP Review', 'Method Statement Review', 'Inspection Support'],
+    icon: 'quality',
+  },
+  {
+    title: 'Root Cause Analysis',
+    description: 'Independent technical investigation of defects, structural issues, and recurring failures with clear corrective insight.',
+    highlights: ['Concrete Defects', 'Structural Cracks', 'Corrosion Investigation', 'Failure Investigation'],
+    icon: 'analysis',
+  },
+  {
+    title: 'Repair & Rehabilitation',
+    description: 'Practical rehabilitation strategies for durability, structural recovery, and long-term asset performance.',
+    highlights: ['Concrete Repair Recommendations', 'Epoxy Injection', 'Protective Coating Systems', 'Repair Material Selection'],
+    icon: 'repair',
+  },
+  {
+    title: 'Geosynthetics Engineering',
+    description: 'Specialized support for geosynthetic systems, installations, integrity checks, and quality assurance.',
+    highlights: ['HDPE Liner QA/QC', 'Geotextile Inspection', 'Geomembrane Welding', 'Leak Detection Support'],
+    icon: 'liner',
+  },
+  {
+    title: 'Construction Quality Audit',
+    description: 'Structured audits and improvement programs that strengthen site control, accountability, and compliance.',
+    highlights: ['Site Quality Audit', 'NCR Investigation', 'CAPA Implementation', 'Quality Improvement'],
+    icon: 'inspection',
+  },
+  {
+    title: 'Technical Training',
+    description: 'Practical training solutions for site engineers, inspectors, and quality teams to raise performance standards.',
+    highlights: ['QA/QC Training', 'Inspection Training', 'Site Engineer Training', 'Practical Workshops'],
+    icon: 'plan',
+  },
 ]
 
 const engineeringExpertise = [
@@ -55,6 +82,21 @@ const engineeringExpertise = [
   { title: 'Geotextiles', description: 'Material compatibility, installation quality, and performance verification for geotechnical works.' },
   { title: 'Earthworks', description: 'Compaction, subgrade, and earthwork quality leadership for infrastructure and industrial projects.' },
   { title: 'Structural Concrete', description: 'Inspection and quality control for structural concrete works from placement through cure and handover.' },
+]
+
+const knowledgeCenterItems = [
+  { title: 'Concrete Crack Investigation', description: 'Diagnostic insight into crack mechanisms, movement, and structural implications for actionable repair planning.', icon: 'crack' },
+  { title: 'Root Cause Analysis', description: 'Structured investigation of defects and failures to identify the underlying technical drivers.', icon: 'analysis' },
+  { title: 'Rebar Corrosion', description: 'Assessment of corrosion risk, penetration pathways, and reinforcement durability concerns.', icon: 'corrosion' },
+  { title: 'Concrete Repair Methods', description: 'Practical repair approaches for spalling, delamination, and material deterioration.', icon: 'repair' },
+  { title: 'Waterproofing Failures', description: 'Investigation of leakage, membrane failure, and moisture ingress to support durable remediation.', icon: 'waterproof' },
+  { title: 'Epoxy Injection', description: 'Injection-based repair strategies for crack sealing, tensile recovery, and structural continuity.', icon: 'epoxy' },
+  { title: 'Grouting Solutions', description: 'Advanced void filling, stabilization, and support methods for civil and structural applications.', icon: 'grout' },
+  { title: 'HDPE Liner Engineering', description: 'Engineering guidance for liner system quality, containment performance, and installation assurance.', icon: 'liner' },
+  { title: 'Geotextile Systems', description: 'Material selection and quality control support for separation, filtration, and reinforcement functions.', icon: 'geotextile' },
+  { title: 'Earthwork Quality Control', description: 'Best-practice oversight for compaction, subgrade, and earthwork execution standards.', icon: 'earthwork' },
+  { title: 'Industrial QA/QC Best Practices', description: 'Quality leadership methods to strengthen compliance, traceability, and execution discipline.', icon: 'qa' },
+  { title: 'Engineering Inspection Checklists', description: 'Field-ready inspection frameworks for efficiency, consistency, and audit readiness.', icon: 'checklist' },
 ]
 
 const whyChooseItems = [
@@ -214,6 +256,108 @@ function PremiumIcon({ name }) {
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 21s5-5.2 5-10a5 5 0 1 0-10 0c0 4.8 5 10 5 10Z" />
           <circle cx="12" cy="11" r="2" />
+        </svg>
+      )
+    case 'crack':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 19c2.4-4 3.8-6.7 5-9 1.2-2.3 2.5-4.2 4-6" />
+          <path d="M7 20c2-2.9 3.3-5.7 4.5-8.2 1.2-2.6 2.3-4.7 4.5-7.8" />
+        </svg>
+      )
+    case 'analysis':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6" />
+          <path d="m20 20-4.2-4.2" />
+          <path d="M8 11h6" />
+          <path d="M11 8v6" />
+        </svg>
+      )
+    case 'corrosion':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18c0-3.4 2.5-5.8 5-6.8 2.5-1 4.4-2.6 4.4-5.2 0-1.4-.7-2.6-1.9-3.4" />
+          <path d="M13 20c0-2.2 1.3-3.8 3.3-4.6 2-0.8 3.7-2 3.7-4.6 0-1.2-.4-2.2-1.1-3" />
+        </svg>
+      )
+    case 'repair':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 6 6 14l4 4 8-8z" />
+          <path d="m5 19 3-3" />
+          <path d="m16 4 4 4" />
+        </svg>
+      )
+    case 'waterproof':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c4.4 2.8 7 5.1 7 8.5 0 3.9-3.1 6.8-7 8.5-3.9-1.7-7-4.6-7-8.5C5 8.1 7.6 5.8 12 3Z" />
+          <path d="M9 11.5 11 13.5l4-4.5" />
+        </svg>
+      )
+    case 'epoxy':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 4h8" />
+          <path d="M7 8h10" />
+          <path d="M6 12h12" />
+          <path d="M5 16h14" />
+          <path d="M4 20h16" />
+        </svg>
+      )
+    case 'grout':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="5" width="16" height="14" rx="2" />
+          <path d="M8 10h8" />
+          <path d="M8 14h5" />
+        </svg>
+      )
+    case 'liner':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 7h14" />
+          <path d="M5 12h14" />
+          <path d="M5 17h14" />
+          <path d="M7 4v16" />
+          <path d="M17 4v16" />
+        </svg>
+      )
+    case 'geotextile':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16" />
+          <path d="M4 12h16" />
+          <path d="M4 18h16" />
+          <path d="M7 4v16" />
+          <path d="M17 4v16" />
+        </svg>
+      )
+    case 'earthwork':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 18h16" />
+          <path d="m7 18 2-6 3 3 3-6 2 5" />
+        </svg>
+      )
+    case 'qa':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 4h10l2 2v14H8z" />
+          <path d="M14 4v4h4" />
+          <path d="m10 13 1.8 1.8 3.2-3.6" />
+        </svg>
+      )
+    case 'checklist':
+      return (
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 6h11" />
+          <path d="M9 12h11" />
+          <path d="M9 18h11" />
+          <path d="m4 7 1.5 1.5L8 5" />
+          <path d="m4 13 1.5 1.5L8 11" />
+          <path d="m4 19 1.5 1.5L8 17" />
         </svg>
       )
     default:
@@ -432,10 +576,21 @@ function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.45, delay: index * 0.03 }}
+                whileHover={{ y: -8, scale: 1.01 }}
               >
-                <div className="service-index">0{index + 1}</div>
+                <div className="service-header">
+                  <div className="service-index">0{index + 1}</div>
+                  <div className="service-icon">
+                    <PremiumIcon name={item.icon} />
+                  </div>
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <ul className="service-highlights">
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
               </motion.article>
             ))}
           </div>
@@ -461,6 +616,44 @@ function App() {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </article>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="knowledge-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Engineering Knowledge Center"
+            title="A premium resource library for engineering insight and practical decision support"
+            subtitle="Technical reference material for concrete diagnostics, repair planning, field inspection, and quality leadership."
+          />
+
+          <div className="knowledge-grid">
+            {knowledgeCenterItems.map((item, index) => (
+              <motion.article
+                key={item.title}
+                className="knowledge-card"
+                initial={{ opacity: 0, y: 22 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.42, delay: index * 0.03 }}
+                whileHover={{ y: -6, scale: 1.01 }}
+              >
+                <div className="knowledge-icon">
+                  <PremiumIcon name={item.icon} />
+                </div>
+                <div className="knowledge-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <button type="button" className="knowledge-link">Read More</button>
+                </div>
+              </motion.article>
             ))}
           </div>
         </motion.section>
