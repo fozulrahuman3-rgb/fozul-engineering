@@ -7,6 +7,44 @@ import projectOperations from './assets/project-operations.svg'
 import feLogo from './assets/faheem-premium-logo.svg'
 import './App.css'
 
+// SEO Strategy - Page Titles, Meta Descriptions & Keywords
+const seoStrategy = {
+  homePage: {
+    title: 'FAHEEM Engineering Consultancy | Senior QA/QC Engineer & Consultant',
+    description: 'Mohamed Haneefa Fozul Rahuman - 25+ years of QA/QC engineering expertise. ISO 9001 certified consultancy specializing in civil quality management, NDT testing, concrete investigation, and asset integrity for oil & gas, petrochemical, mining projects across Saudi Arabia.',
+    keywords: 'QA/QC engineer, quality assurance engineer, civil QA/QC consultant, NDT testing, concrete investigation, HDPE liner QA/QC, Saudi Arabia engineering consultant, quality control management, asset integrity engineer',
+    ogTitle: 'FAHEEM Engineering Consultancy | 25+ Years QA/QC Excellence',
+    ogDescription: 'Senior QA/QC Engineer delivering quality leadership and technical consulting for industrial and infrastructure projects across GCC region.',
+    twitterTitle: 'QA/QC Engineer | FAHEEM Engineering Consultancy',
+    twitterDescription: '25+ years of quality assurance expertise. ISO 9001 certified consultant.',
+  },
+  aboutPage: {
+    title: 'About Mohamed Haneefa Fozul Rahuman | QA/QC Engineering Expert',
+    description: 'Executive profile: Mohamed Haneefa Fozul Rahuman, Senior QA/QC Engineer with 25+ years delivering quality leadership, engineering solutions, and consultancy expertise for major industrial projects in Saudi Arabia and GCC.',
+    keywords: 'Mohamed Haneefa Fozul Rahuman, QA/QC engineer, engineering consultant, civil quality engineer, quality management professional, ISO 9001 lead auditor, NDT specialist',
+  },
+  servicesPage: {
+    title: 'Engineering QA/QC Services | Consultancy, Testing & Assessment',
+    description: 'Specialized civil QA/QC consultancy services: quality management, root cause analysis, concrete investigation, NDT testing (rebound hammer, UPV), structural assessment, repair planning, and HDPE liner quality control.',
+    keywords: 'QA/QC services, civil quality consultant, NDT testing services, concrete investigation, structural assessment, root cause analysis, quality management system, HDPE liner inspection, asset integrity',
+  },
+  expertisePage: {
+    title: 'Core Competencies | QA/QC Leadership & Engineering Expertise',
+    description: 'Expert capabilities in quality management, materials testing, non-destructive testing (NDT), concrete assessment, geosynthetics quality control, engineering problem-solving, and technical documentation.',
+    keywords: 'quality management expertise, NDT methods, concrete testing, materials control, geosynthetics, quality leadership, inspection protocols, compliance management',
+  },
+  projectsPage: {
+    title: 'Portfolio & Case Studies | 500+ Projects, 25+ Years QA/QC',
+    description: 'Detailed case studies showcasing concrete repair, HDPE liner quality control, earthwork compaction, geosynthetic systems, and structural rehabilitation across Saudi Chevron, Ma\'aden, and major regional projects.',
+    keywords: 'QA/QC case studies, concrete repair projects, HDPE liner projects, quality management portfolio, infrastructure projects, petrochemical QA/QC, mining consultancy',
+  },
+  contactPage: {
+    title: 'Contact QA/QC Engineer | FAHEEM Engineering Consultancy',
+    description: 'Get in touch with Mohamed Haneefa Fozul Rahuman for consulting, quality management, engineering investigations, or employment inquiries. Available for full-time and consulting roles.',
+    keywords: 'contact engineer, QA/QC consulting inquiry, engineering consultant contact, quality management services, hire QA/QC engineer',
+  },
+}
+
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },

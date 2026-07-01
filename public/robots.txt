@@ -1,5 +1,5 @@
-# Robots.txt for Mohamed Haneefa Fozul Rahuman - Engineering Consultancy
-# https://mohamedhaneeafozul.com
+# FAHEEM Engineering Consultancy - Robots.txt
+# Comprehensive crawl and indexing strategy for engineering consultancy website
 
 # Default rule for all bots
 User-agent: *
@@ -7,26 +7,55 @@ Allow: /
 Disallow: /node_modules/
 Disallow: /.env
 Disallow: /.git
-Disallow: /dist
+Disallow: /dist/
+Disallow: /tmp/
+Disallow: /.htaccess
+Disallow: /package.json
+Disallow: /vite.config.js
+Disallow: /*.json$ (excluding manifest.json)
 
-# Specific rules for Google
+# Allow crawling of important assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.jpg$
+Allow: /*.png$
+
+# Specific rules for Google (Googlebot)
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
+Request-rate: 100/1h
 
-# Specific rules for Bing
+# Specific rules for Bing (Bingbot)
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+Request-rate: 50/1h
 
-# Search engines
+# Mobile-specific crawlers
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+# Major search engines - allow full access
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 2
 
-# Blocklist for bad bots
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandexbot
+Allow: /
+Crawl-delay: 2
+
+# Block bad bots and scrapers that don't respect robots.txt
 User-agent: AhrefsBot
 Disallow: /
 
@@ -36,5 +65,63 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-# Sitemap location
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot-Site
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Sitemap locations
 Sitemap: https://mohamedhaneeafozul.com/sitemap.xml
+Sitemap: https://mohamedhaneeafozul.com/robots.txt
+
+# Performance optimization - set crawl delay for less important areas
+User-agent: *
+Crawl-delay: 1
+Request-rate: 50/1h
+
+# Prevent crawling of these patterns
+Disallow: */admin
+Disallow: */private
+Disallow: */temp
+Disallow: *?*
+Disallow: *.zip$
+Disallow: *.rar$
+Disallow: *.tar$
+
+# Allow crawling with common parameters
+Allow: /?*
+Allow: /*?utm_
+Allow: /*?ref_
+
+# Clean URLs - prefer non-trailing slash
+User-agent: *
+Disallow: *?id=
+
+# Security headers - do not allow scraping of sensitive data
+Disallow: /contact/email
+Disallow: /api/
+Disallow: /config/
+
+# End of robots.txt

@@ -1,69 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Home Page -->
   <url>
     <loc>https://mohamedhaneeafozul.com/</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- About / Executive Profile -->
   <url>
     <loc>https://mohamedhaneeafozul.com/#about</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
+
+  <!-- Services & Consultancy -->
   <url>
     <loc>https://mohamedhaneeafozul.com/#services</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Core Competencies & Expertise -->
   <url>
     <loc>https://mohamedhaneeafozul.com/#expertise</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohamedhaneeafozul.com/#projects-featured</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <!-- Knowledge Center & Resources -->
   <url>
-    <loc>https://mohamedhaneeafozul.com/#case-studies</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://mohamedhaneeafozul.com/#technical-downloads</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohamedhaneeafozul.com/#featured-articles</loc>
-    <lastmod>2026-06-27</lastmod>
+    <loc>https://mohamedhaneeafozul.com/#knowledge-center</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Featured Projects -->
   <url>
-    <loc>https://mohamedhaneeafozul.com/#testimonials</loc>
-    <lastmod>2026-06-27</lastmod>
+    <loc>https://mohamedhaneeafozul.com/#projects-featured</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Case Studies -->
   <url>
-    <loc>https://mohamedhaneeafozul.com/#faq</loc>
-    <lastmod>2026-06-27</lastmod>
+    <loc>https://mohamedhaneeafozul.com/#case-studies</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- Technical Downloads & Templates -->
   <url>
-    <loc>https://mohamedhaneeafozul.com/#contact</loc>
-    <lastmod>2026-06-27</lastmod>
+    <loc>https://mohamedhaneeafozul.com/#technical-downloads</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Featured Articles & Thought Leadership -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#featured-articles</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Credentials & Certifications -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#credentials</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Why Hire / Testimonials -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#why-choose</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#faq</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#contact</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Service Areas & Industries -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#services</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Employment History / Professional Timeline -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/#about</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal & Policy Pages (if applicable) -->
+  <url>
+    <loc>https://mohamedhaneeafozul.com/privacy</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>
