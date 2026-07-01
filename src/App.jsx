@@ -1475,27 +1475,27 @@ const timelineItems = [
   {
     title: 'QA/QC Engineer',
     company: 'Al Yamama Company',
-    period: '2026 – Present',
-    details: 'Leading QA/QC systems for major civil and geosynthetic works on the Ma’aden Phosphate Gypsum Stack Expansion Phase IV project.',
+    period: '2024 – Present',
+    details: 'Leading QA/QC systems for major civil and geosynthetic works on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project.',
   },
   {
     title: 'Senior QA/QC Specialist',
     company: 'Major Industrial & Infrastructure Projects',
-    period: '2016 – 2025',
+    period: '2018 – 2025',
     details: 'Delivered quality leadership across petrochemical, industrial, and infrastructure environments with strong client and consultant alignment.',
   },
   {
     title: 'Civil QA/QC Professional',
     company: 'Regional Construction Delivery',
-    period: '2000 – 2015',
+    period: '2000 – 2012',
     details: 'Built strong quality operations in civil construction, materials control, contractor oversight, and site inspection execution.',
   },
 ]
 
 const projectItems = [
   {
-    title: 'Ma’aden Gypsum Stack Expansion Phase IV',
-    client: 'Ma’aden',
+    title: 'Ma\'aden Gypsum Stack Expansion Phase IV',
+    client: 'Ma\'aden',
     location: 'Ras Al Khair, Saudi Arabia',
     scope: 'Quality leadership for earthworks, HDPE liner, geotextile, and geocomposite systems.',
   },
@@ -3318,7 +3318,7 @@ function App() {
         >
           <SectionHeading
             eyebrow="Contact"
-            title="Let’s discuss quality leadership for your next project"
+            title="Let's discuss quality leadership for your next project"
             subtitle="Open for senior civil QA/QC roles, consulting, and project quality advisory opportunities."
           />
 
