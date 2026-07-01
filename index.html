@@ -10,6 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#060816" />
     
     <!-- SEO & Description -->
@@ -34,6 +35,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.linkedin.com" />
     <link rel="dns-prefetch" href="https://wa.me" />
+
+    <!-- Font Loading Strategy -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" />
+
+    <!-- Image Preload for Critical Path -->
+    <link rel="preload" as="image" href="/favicon.svg" />
+
+    <!-- Critical CSS Preload -->
+    <link rel="preload" as="style" href="/src/App.css" />
     
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website" />
