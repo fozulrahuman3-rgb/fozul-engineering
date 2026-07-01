@@ -1,0 +1,68 @@
+<svg viewBox="0 0 950 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Page Background -->
+  <rect width="950" height="1200" fill="#f7f9ff"/>
+
+  <!-- Top Accent Border -->
+  <rect x="0" y="0" width="950" height="6" fill="#35d2ff"/>
+
+  <!-- Header Section -->
+  <rect x="40" y="30" width="870" height="120" fill="#060816" rx="8"/>
+
+  <!-- Logo and Company Name -->
+  <image x="50" y="40" width="100" height="75" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Company Info -->
+  <text x="170" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#f7f9ff">FAHEEM</text>
+  <text x="170" y="75" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#f7f9ff">Engineering Consultancy</text>
+  <text x="170" y="95" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#35d2ff" letter-spacing="0.5">PREMIUM QUALITY ASSURANCE & ENGINEERING SOLUTIONS</text>
+
+  <!-- Contact Info Right Side -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Email: fozulur@yahoo.com</text>
+  <text x="600" y="72" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Phone: +966-58-121-2378</text>
+  <text x="600" y="89" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Location: Saudi Arabia</text>
+  <text x="600" y="106" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Web: www.faheem-consultancy.com</text>
+
+  <!-- Divider Line -->
+  <line x1="40" y1="165" x2="910" y2="165" stroke="#5b87ff" stroke-width="2"/>
+
+  <!-- Date and Reference -->
+  <text x="40" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Date:</text>
+  <text x="140" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#060816">_________________</text>
+
+  <text x="500" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Ref No:</text>
+  <text x="600" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#060816">_________________</text>
+
+  <!-- Recipient Section -->
+  <text x="40" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">To:</text>
+  <text x="40" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#060816">_________________________________________</text>
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#060816">_________________________________________</text>
+  <text x="40" y="320" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#060816">_________________________________________</text>
+
+  <!-- Content Area -->
+  <text x="40" y="380" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Dear Sir/Madam,</text>
+
+  <!-- Lines for content -->
+  <line x1="40" y1="410" x2="910" y2="410" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="435" x2="910" y2="435" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="460" x2="910" y2="460" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="485" x2="910" y2="485" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="510" x2="910" y2="510" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="535" x2="910" y2="535" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="560" x2="910" y2="560" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="585" x2="910" y2="585" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="610" x2="910" y2="610" stroke="#e0e7f1" stroke-width="1"/>
+
+  <!-- Signature Area -->
+  <text x="40" y="670" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Sincerely,</text>
+  <line x1="40" y1="710" x2="250" y2="710" stroke="#060816" stroke-width="1"/>
+  <text x="40" y="730" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Mohamed Haneefa Fozul Rahuman</text>
+  <text x="40" y="750" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Founder & Senior QA/QC Manager</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1100" width="950" height="100" fill="#060816"/>
+  <text x="40" y="1130" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#35d2ff">FAHEEM Engineering Consultancy</text>
+  <text x="40" y="1148" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc">Premium Quality Assurance | Asset Integrity | Practical Engineering Solutions</text>
+  <text x="40" y="1166" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc">25+ Years of Experience | ISO 9001 Certified | Saudi Arabia & GCC Region</text>
+
+  <text x="620" y="1130" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc" text-anchor="end">© 2026 FAHEEM Engineering Consultancy. All Rights Reserved.</text>
+</svg>

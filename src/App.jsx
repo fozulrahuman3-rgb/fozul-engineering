@@ -4,7 +4,7 @@ import profilePhoto from './assets/profile-photo.jpg'
 import engineeringPlant from './assets/engineering-plant.svg'
 import siteInspection from './assets/site-inspection.svg'
 import projectOperations from './assets/project-operations.svg'
-import feLogo from './assets/fe-logo.svg'
+import feLogo from './assets/faheem-premium-logo.svg'
 import './App.css'
 
 const navItems = [
@@ -39,8 +39,8 @@ const aboutHighlights = [
 const aboutMeData = {
   title: 'Executive Profile',
   subtitle: 'Senior Engineering Quality Leader & Consultancy Expert',
-  summary: 'Mohamed Haneefa Fozul Rahuman is an internationally experienced QA/QC Manager and engineering consultancy expert with 25+ years of proven track record delivering quality leadership, project excellence, and practical engineering solutions across oil & gas, petrochemical, mining, and industrial sectors in Saudi Arabia and the GCC region. Recognized for transforming quality operations, reducing defects through disciplined QA/QC systems, and building high-performing teams that exceed client expectations.',
-  professionalStatement: 'Driven by a mission to establish FAHEEM Engineering Consultancy—a premier engineering consultancy firm focused on quality assurance, asset integrity, and practical repair solutions. Currently QA/QC Manager at Al Yamama Company, leading critical quality systems on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project.',
+  summary: 'Mohamed Haneefa Fozul Rahuman is an internationally experienced QA/QC Engineer and engineering consultancy expert with 25+ years of proven track record delivering quality leadership, project excellence, and practical engineering solutions across oil & gas, petrochemical, mining, and industrial sectors in Saudi Arabia and the GCC region. Recognized for transforming quality operations, reducing defects through disciplined QA/QC systems, and building high-performing teams that exceed client expectations.',
+  professionalStatement: 'Driven by a mission to establish FAHEEM Engineering Consultancy—a premier engineering consultancy firm focused on quality assurance, asset integrity, and practical repair solutions. Currently QA/QC Engineer at Al Yamama Company, leading critical quality systems on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project.',
   coreValue: 'Engineering quality is not just compliance—it\'s about delivering lasting value to clients, protecting assets, and building trust through measurable, defensible quality outcomes.',
 }
 
@@ -129,7 +129,7 @@ const certifications = [
 const professionalBackground = [
   {
     period: '2026 – Present',
-    title: 'QA/QC Manager',
+    title: 'QA/QC Engineer',
     company: 'Al Yamama Company',
     location: 'Saudi Arabia',
     description: 'Leading comprehensive QA/QC systems and quality oversight for major civil and geosynthetic works on the Ma\'aden Phosphate Gypsum Stack Expansion Phase IV project. Responsible for quality planning, inspection protocols, material approval, non-destructive testing, and regulatory compliance.',
@@ -141,7 +141,7 @@ const professionalBackground = [
   },
   {
     period: '2013 – 2025',
-    title: 'Senior Civil QA/QC Manager',
+    title: 'Senior Civil QA/QC Engineer',
     company: 'Saudi Chevron Company',
     location: 'Saudi Arabia',
     description: 'Delivered over 13 years of continuous civil quality management, emergency response, and preventive maintenance programs across multiple Saudi Chevron operational facilities. Managed $50M+ in civil maintenance and repair programs with zero regulatory non-compliance.',
@@ -154,7 +154,7 @@ const professionalBackground = [
   },
   {
     period: '2000 – 2012',
-    title: 'Civil Quality Engineer & Project Manager',
+    title: 'Civil QA/QC Inspector / Civil QA/QC Engineer',
     company: 'Various Regional Contractors & Developers',
     location: 'Saudi Arabia & GCC Region',
     description: 'Built strong quality operations across civil construction, materials control, contractor oversight, and site inspection execution. Specialized in infrastructure, industrial, and capital project delivery with comprehensive quality systems.',
@@ -565,7 +565,7 @@ const featuredProjects = [
     location: 'Ras Al Khair, Saudi Arabia',
     industry: 'Mining & Industrial',
     scope: 'Large-scale gypsum stack expansion with HDPE liner system installation, geosynthetic layer placement, and comprehensive quality oversight.',
-    role: 'Civil QA/QC Manager & Liner System Inspector',
+    role: 'Civil QA/QC Engineer & Liner System Inspector',
     achievements: [
       '100% non-destructive weld testing on HDPE liner system',
       'Zero safety incidents during 18-month execution period',
@@ -588,7 +588,7 @@ const featuredProjects = [
     location: 'Saudi Arabia',
     industry: 'Oil & Gas',
     scope: 'Long-term civil quality management for oil & gas facility maintenance, emergency repairs, and scheduled construction programs across multiple Saudi Chevron locations.',
-    role: 'Senior Civil QA/QC Manager & Engineering Consultant',
+    role: 'Senior Civil QA/QC Engineer & Engineering Consultant',
     achievements: [
       '13 years of continuous engagement and client satisfaction',
       'Managed $50M+ in civil maintenance and repair programs',
@@ -634,7 +634,7 @@ const featuredProjects = [
     location: 'Saudi Arabia',
     industry: 'Petrochemical',
     scope: 'Quality assurance management for Sadara chemical complex civil and structural works with focus on concrete integrity and facility durability.',
-    role: 'Civil QA/QC Manager & Quality Systems Lead',
+    role: 'Civil QA/QC Engineer & Quality Systems Lead',
     achievements: [
       'Delivered 100% regulatory compliance across all phases',
       'Managed quality systems for 500,000+ m³ concrete placement',
@@ -790,7 +790,7 @@ const caseStudies = [
     solution: 'A full-scope QA/QC programme was implemented covering subgrade acceptance, liner deployment, seam welding, non-destructive testing of all welds, anchor trench inspection, and final acceptance documentation.',
     result: 'HDPE liner installation was completed to specification with all weld testing requirements met. Regulatory documentation was completed for environmental compliance sign-off. [Specific quantities and outcomes to be added.]',
     technologies: ['HDPE Geomembrane', 'Thermal Fusion Welding', 'Vacuum Box Testing', 'Air Pressure Testing', 'Anchor Trench Inspection'],
-    background: 'Ma\'aden Phosphate Gypsum Stack Expansion Phase IV required installation of an HDPE geomembrane liner system as the primary environmental containment barrier. As QA/QC Manager, independent oversight of all liner installation activities was a key project responsibility. The liner system integrity was critical to regulatory compliance and long-term environmental protection.',
+    background: 'Ma\'aden Phosphate Gypsum Stack Expansion Phase IV required installation of an HDPE geomembrane liner system as the primary environmental containment barrier. As QA/QC Engineer, independent oversight of all liner installation activities was a key project responsibility. The liner system integrity was critical to regulatory compliance and long-term environmental protection.',
     challenge: 'The scale of the installation, site environmental conditions, and the critical containment function of the liner required a rigorous quality programme that could be consistently applied across a large project area without compromising installation productivity.',
     technicalAssessment: 'Subgrade condition acceptance criteria were established. Welding procedure qualification testing was completed. Non-destructive test methods — including vacuum box, air pressure, and spark testing — were applied in accordance with the project specification and relevant standards.',
     calculations: '[Weld test acceptance criteria, testing frequency, and destructive test sample results to be added.]',
@@ -1094,7 +1094,7 @@ const homepageFeaturedProjects = [
       '99.8% specification compliance',
       'Zero safety incidents',
     ],
-    role: 'Civil QA/QC Manager & Liner System Inspector',
+    role: 'Civil QA/QC Engineer & Liner System Inspector',
     technologies: ['HDPE Geomembrane', 'Geosynthetics', 'NDT', 'Quality Management'],
     link: '#case-studies',
   },
@@ -1111,7 +1111,7 @@ const homepageFeaturedProjects = [
       'Zero audit non-compliances',
       'Rapid-response inspection protocols',
     ],
-    role: 'Senior Civil QA/QC Manager',
+    role: 'Senior Civil QA/QC Engineer',
     technologies: ['Concrete Testing', 'Structural Assessment', 'Emergency Response', 'Quality Systems'],
     link: '#case-studies',
   },
@@ -1128,7 +1128,7 @@ const homepageFeaturedProjects = [
       'Zero-defect tolerance projects',
       'Multi-contractor coordination',
     ],
-    role: 'Civil QA/QC Manager & Quality Systems Lead',
+    role: 'Civil QA/QC Engineer & Quality Systems Lead',
     technologies: ['ASME Standards', 'Process Safety', 'Material Inspection', 'Quality Systems'],
     link: '#case-studies',
   },
@@ -1159,7 +1159,7 @@ const socialLinks = [
 
 const timelineItems = [
   {
-    title: 'QA/QC Manager',
+    title: 'QA/QC Engineer',
     company: 'Al Yamama Company',
     period: '2026 – Present',
     details: 'Leading QA/QC systems for major civil and geosynthetic works on the Ma’aden Phosphate Gypsum Stack Expansion Phase IV project.',
@@ -1805,7 +1805,7 @@ function App() {
           </div>
           <div className="hero-profile-card">
             <h3>Mohamed Haneefa Fozul Rahuman</h3>
-            <p>QA/QC Manager | Civil Quality Manager</p>
+            <p>QA/QC Engineer | Civil Quality Manager</p>
             <div className="profile-metrics">
               <span>Oil & Gas</span>
               <span>Petrochemical</span>
@@ -2059,7 +2059,7 @@ function App() {
               </div>
               <div className="profile-info">
                 <h2>Mohamed Haneefa Fozul Rahuman</h2>
-                <p className="profile-title">QA/QC Manager | Engineering Quality Consultant</p>
+                <p className="profile-title">QA/QC Engineer | Engineering Quality Consultant</p>
                 <p className="profile-summary">{aboutMeData.summary}</p>
                 <div className="profile-cta">
                   <a className="button button-primary" href="mailto:fozulur@yahoo.com">Get in Touch</a>
@@ -3012,7 +3012,7 @@ function App() {
             <div className="contact-card-main">
               <p className="section-label">Contact</p>
               <h3>Discuss your next engineering or QA/QC requirement</h3>
-              <p>Reach out for senior consultancy support, quality leadership, and international project delivery partnerships as QA/QC Manager at Al Yamama Company.</p>
+              <p>Reach out for senior consultancy support, quality leadership, and international project delivery partnerships as QA/QC Engineer at Al Yamama Company.</p>
               <div className="contact-actions">
                 <a className="button button-primary" href="mailto:fozulur@yahoo.com">Email Us</a>
                 <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -3092,7 +3092,7 @@ function App() {
             ))}
           </div>
         </div>
-        <p className="footer-copy">© 2026 Mohamed Haneefa Fozul Rahuman | QA/QC Manager, Al Yamama Company</p>
+        <p className="footer-copy">© 2026 Mohamed Haneefa Fozul Rahuman | QA/QC Engineer, Al Yamama Company</p>
       </footer>
     </div>
   )

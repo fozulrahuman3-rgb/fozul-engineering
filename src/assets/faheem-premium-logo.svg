@@ -1,0 +1,31 @@
+<svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg" width="260" height="60">
+
+  <!-- Refined Minimalist FE Monogram - 25% Thicker -->
+
+  <!-- F Letter (Left) - Thicker -->
+  <rect x="11" y="10" width="4.4" height="38" fill="#FFFFFF"/>
+  <rect x="11" y="10" width="16" height="3.75" fill="#FFFFFF"/>
+  <rect x="11" y="27" width="13" height="3.1" fill="#D4AF37"/>
+
+  <!-- E Letter (Right) - Thicker -->
+  <rect x="32" y="10" width="4.4" height="38" fill="#FFFFFF"/>
+  <rect x="32" y="10" width="16" height="3.75" fill="#FFFFFF"/>
+  <rect x="32" y="27" width="14" height="3.1" fill="#FFFFFF"/>
+  <rect x="32" y="45" width="16" height="3.75" fill="#FFFFFF"/>
+
+  <!-- Engineering Connection - Thicker Gold Line -->
+  <line x1="28" y1="29" x2="30" y2="29" stroke="#D4AF37" stroke-width="1.9"/>
+
+  <!-- Accent Element - Larger Cyan Dot -->
+  <circle cx="29" cy="29" r="1" fill="#38BDF8" opacity="0.8"/>
+
+  <!-- FAHEEM Text (Increased spacing) -->
+  <text x="60" y="32" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#FFFFFF" letter-spacing="2">FAHEEM</text>
+
+  <!-- Gold Divider Line (Shortened to end under FAHEEM) -->
+  <line x1="60" y1="38" x2="228" y2="38" stroke="#D4AF37" stroke-width="1" opacity="0.8"/>
+
+  <!-- Engineering Consultancy Subtitle (20% Larger) -->
+  <text x="60" y="53" font-family="Arial, sans-serif" font-size="10.2" font-weight="700" fill="#38BDF8" letter-spacing="1.2">ENGINEERING CONSULTANCY</text>
+
+</svg>

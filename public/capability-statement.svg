@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060816;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#capGrad)"/>
+
+  <!-- Accent Elements -->
+  <circle cx="120" cy="100" r="130" fill="#35d2ff" opacity="0.08"/>
+  <circle cx="1150" cy="620" r="160" fill="#5b87ff" opacity="0.1"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1280" height="8" fill="#35d2ff"/>
+
+  <!-- Left Vertical Stripe -->
+  <rect x="0" y="0" width="10" height="720" fill="#5b87ff"/>
+
+  <!-- Logo -->
+  <image x="80" y="50" width="160" height="130" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Document Type -->
+  <text x="80" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#35d2ff" letter-spacing="2">CAPABILITY</text>
+  <text x="80" y="255" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#35d2ff" letter-spacing="2">STATEMENT</text>
+
+  <!-- Main Headline -->
+  <text x="80" y="360" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#f7f9ff">Premium Quality</text>
+  <text x="80" y="450" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#f7f9ff">Engineering</text>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#35d2ff">Leadership</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="565" x2="450" y2="565" stroke="#35d2ff" stroke-width="3"/>
+
+  <!-- Right Side Content -->
+  <text x="530" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#35d2ff" letter-spacing="1">ORGANIZATIONAL OVERVIEW</text>
+
+  <!-- Company Summary -->
+  <text x="530" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#f7f9ff">FAHEEM Engineering Consultancy</text>
+  <text x="530" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#bcc7dc">Established authority in premium quality assurance, independent verification,</text>
+  <text x="530" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#bcc7dc">and practical engineering solutions across oil & gas, petrochemical,</text>
+  <text x="530" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#bcc7dc">mining, and infrastructure sectors with 25+ years of proven excellence.</text>
+
+  <!-- Key Expertise -->
+  <text x="530" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#35d2ff" letter-spacing="1">CORE COMPETENCIES</text>
+
+  <circle cx="537" cy="305" r="3" fill="#35d2ff"/>
+  <text x="550" y="308" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Quality Assurance & QC Management Systems</text>
+
+  <circle cx="537" cy="335" r="3" fill="#35d2ff"/>
+  <text x="550" y="338" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Inspection, Testing & Technical Assessment</text>
+
+  <circle cx="537" cy="365" r="3" fill="#35d2ff"/>
+  <text x="550" y="368" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Concrete Investigation & Material Certification</text>
+
+  <circle cx="537" cy="395" r="3" fill="#35d2ff"/>
+  <text x="550" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Root Cause Analysis & Repair Engineering</text>
+
+  <!-- Certifications -->
+  <text x="530" y="460" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#35d2ff" letter-spacing="1">CERTIFICATIONS & STANDARDS</text>
+
+  <rect x="530" y="475" width="280" height="50" fill="rgba(53, 210, 255, 0.15)" stroke="#35d2ff" stroke-width="1.5" rx="6"/>
+  <text x="545" y="500" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff">ISO 9001 • API 650 • ASME • ACI • ASTM</text>
+  <text x="545" y="520" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff">Saudi Aramco Standards • International Best Practice</text>
+
+  <!-- Footer -->
+  <text x="530" y="630" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#bcc7dc">Contact: fozulur@yahoo.com | +966-58-121-2378 | www.faheem-consultancy.com</text>
+  <text x="530" y="660" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#8b94a5">© 2026 FAHEEM Engineering Consultancy. Premium Quality Assurance Leadership.</text>
+
+  <!-- Right Bottom Accent -->
+  <polygon points="1280,720 1100,720 1280,550" fill="#35d2ff" opacity="0.1"/>
+</svg>

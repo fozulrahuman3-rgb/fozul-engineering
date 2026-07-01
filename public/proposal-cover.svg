@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="proposalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8eef8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#proposalGrad)"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1280" height="8" fill="#35d2ff"/>
+
+  <!-- Left Sidebar -->
+  <rect x="0" y="0" width="420" height="720" fill="#060816" rx="12"/>
+
+  <!-- Accent Circle -->
+  <circle cx="200" cy="150" r="140" fill="#35d2ff" opacity="0.15"/>
+
+  <!-- Logo on Sidebar -->
+  <image x="40" y="50" width="140" height="110" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Company Name Sidebar -->
+  <text x="40" y="200" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#f7f9ff">FAHEEM</text>
+  <text x="40" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#f7f9ff">Engineering</text>
+  <text x="40" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="900" fill="#35d2ff">Consultancy</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="285" x2="380" y2="285" stroke="#35d2ff" stroke-width="2"/>
+
+  <!-- Sidebar Content -->
+  <text x="40" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">KEY OFFERING</text>
+  <text x="40" y="355" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Premium Quality Assurance Services</text>
+  <text x="40" y="385" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Comprehensive QA/QC Management, Testing, and Engineering Consultancy</text>
+
+  <!-- Features -->
+  <text x="40" y="430" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">EXPERTISE</text>
+
+  <circle cx="45" cy="460" r="2" fill="#35d2ff"/>
+  <text x="55" y="463" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Oil & Gas QA/QC</text>
+
+  <circle cx="45" cy="485" r="2" fill="#35d2ff"/>
+  <text x="55" y="488" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Petrochemical Projects</text>
+
+  <circle cx="45" cy="510" r="2" fill="#35d2ff"/>
+  <text x="55" y="513" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Mining Operations</text>
+
+  <circle cx="45" cy="535" r="2" fill="#35d2ff"/>
+  <text x="55" y="538" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Infrastructure Works</text>
+
+  <!-- Sidebar Bottom -->
+  <text x="40" y="600" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">CREDENTIALS</text>
+  <text x="40" y="630" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">ISO 9001 Certified • 25+ Years Experience</text>
+  <text x="40" y="650" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">International Standards Compliance</text>
+
+  <!-- Main Content Area -->
+  <text x="520" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#5b87ff" letter-spacing="2">PROFESSIONAL</text>
+  <text x="520" y="155" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#5b87ff" letter-spacing="2">PROPOSAL</text>
+
+  <!-- Proposal Title -->
+  <text x="520" y="250" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#060816">Engineering</text>
+  <text x="520" y="330" font-family="Arial, sans-serif" font-size="56" font-weight="900" fill="#060816">Quality Solutions</text>
+
+  <!-- Proposal Details -->
+  <line x1="520" y1="370" x2="1200" y2="370" stroke="#35d2ff" stroke-width="3"/>
+
+  <text x="520" y="430" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#060816">Prepared by: Mohamed Haneefa Fozul Rahuman</text>
+  <text x="520" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="#4f6078">Founder & Senior QA/QC Manager, FAHEEM Engineering Consultancy</text>
+
+  <!-- Date Placeholder -->
+  <text x="520" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#5b87ff">Date: _______________</text>
+  <text x="520" y="590" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#5b87ff">Proposal Valid Until: _______________</text>
+
+  <!-- Contact Footer -->
+  <text x="520" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#4f6078">Email: fozulur@yahoo.com | Phone: +966-58-121-2378</text>
+  <text x="520" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#4f6078">Web: www.faheem-consultancy.com | Location: Saudi Arabia</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="presentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060816;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a1022;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#presentGrad)"/>
+
+  <!-- Accent Elements -->
+  <circle cx="150" cy="100" r="150" fill="#35d2ff" opacity="0.08"/>
+  <circle cx="1200" cy="650" r="180" fill="#5b87ff" opacity="0.1"/>
+  <polygon points="0,0 200,0 0,200" fill="#5b87ff" opacity="0.05"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1280" height="8" fill="#35d2ff"/>
+
+  <!-- Left Vertical Accent -->
+  <rect x="0" y="0" width="8" height="720" fill="#5b87ff"/>
+
+  <!-- Logo -->
+  <image x="80" y="80" width="160" height="120" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Presentation Title Section -->
+  <text x="80" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#35d2ff" letter-spacing="2">PRESENTATION</text>
+
+  <!-- Main Title -->
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#f7f9ff">Premium</text>
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#f7f9ff">Quality Leadership</text>
+  <text x="80" y="500" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#35d2ff">&</text>
+  <text x="200" y="500" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#35d2ff">Engineering Excellence</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="570" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#bcc7dc">FAHEEM Engineering Consultancy - 25+ Years of Proven Excellence</text>
+
+  <!-- Bottom Details -->
+  <text x="80" y="640" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#bcc7dc">Mohamed Haneefa Fozul Rahuman | Founder & Senior QA/QC Manager</text>
+  <text x="80" y="665" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#bcc7dc">fozulur@yahoo.com | +966-58-121-2378 | www.faheem-consultancy.com</text>
+
+  <!-- Decorative Line -->
+  <line x1="80" y1="520" x2="800" y2="520" stroke="#35d2ff" stroke-width="3" opacity="0.5"/>
+</svg>

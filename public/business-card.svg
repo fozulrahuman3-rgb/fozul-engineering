@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1050 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Front Side Background -->
+  <rect x="50" y="50" width="450" height="500" fill="#060816" stroke="#35d2ff" stroke-width="1.5" rx="12"/>
+
+  <!-- Accent Line -->
+  <line x1="50" y1="50" x2="500" y2="50" stroke="#35d2ff" stroke-width="3"/>
+
+  <!-- Logo -->
+  <image x="60" y="70" width="80" height="60" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Name -->
+  <text x="60" y="160" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#f7f9ff">MOHAMED HANEEFA</text>
+  <text x="60" y="182" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#f7f9ff">FOZUL RAHUMAN</text>
+
+  <!-- Title -->
+  <text x="60" y="210" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">FOUNDER & SENIOR QA/QC MANAGER</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="225" x2="480" y2="225" stroke="#35d2ff" stroke-width="1"/>
+
+  <!-- Contact Info -->
+  <text x="60" y="255" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Email</text>
+  <text x="60" y="270" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#f7f9ff">fozulur@yahoo.com</text>
+
+  <text x="60" y="295" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Phone</text>
+  <text x="60" y="310" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#f7f9ff">+966-58-121-2378</text>
+
+  <text x="60" y="335" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">Location</text>
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#f7f9ff">Saudi Arabia</text>
+
+  <text x="60" y="375" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#bcc7dc">LinkedIn</text>
+  <text x="60" y="390" font-family="Arial, sans-serif" font-size="11" font-weight="500" fill="#f7f9ff">linkedin.com/in/mfozulrahuman</text>
+
+  <!-- Company Info -->
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#35d2ff" letter-spacing="0.5">FAHEEM ENGINEERING CONSULTANCY</text>
+  <text x="60" y="445" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc">Premium Quality Assurance & Engineering Solutions</text>
+  <text x="60" y="458" font-family="Arial, sans-serif" font-size="8" font-weight="500" fill="#bcc7dc">25+ Years Experience | ISO 9001 Certified</text>
+
+  <!-- Back Side Background -->
+  <rect x="550" y="50" width="450" height="500" fill="#f7f9ff" stroke="#5b87ff" stroke-width="1.5" rx="12"/>
+
+  <!-- Accent Line Back -->
+  <line x1="550" y1="50" x2="1000" y2="50" stroke="#5b87ff" stroke-width="3"/>
+
+  <!-- Brand Statement Back -->
+  <text x="570" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#060816">Premium Quality Leadership</text>
+
+  <text x="570" y="135" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#4f6078" line-height="18">Over 25 years of excellence in civil QA/QC management, delivering world-class quality assurance solutions across oil & gas, petrochemical, mining, and infrastructure sectors.</text>
+
+  <!-- Core Services -->
+  <text x="570" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#060816">Core Services:</text>
+
+  <circle cx="572" cy="200" r="3" fill="#35d2ff"/>
+  <text x="585" y="203" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#060816">QA/QC Management & Oversight</text>
+
+  <circle cx="572" cy="225" r="3" fill="#35d2ff"/>
+  <text x="585" y="228" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#060816">Concrete Investigation & Testing</text>
+
+  <circle cx="572" cy="250" r="3" fill="#35d2ff"/>
+  <text x="585" y="253" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#060816">Root Cause Analysis</text>
+
+  <circle cx="572" cy="275" r="3" fill="#35d2ff"/>
+  <text x="585" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#060816">Material Certification & Quality Control</text>
+
+  <!-- Certifications -->
+  <text x="570" y="320" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#060816">Certifications:</text>
+  <text x="570" y="340" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">ISO 9001 • API 650 • ASME Boiler & Pressure Vessel Code</text>
+
+  <!-- Footer -->
+  <rect x="550" y="520" width="450" height="30" fill="#060816" rx="6"/>
+  <text x="570" y="540" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#35d2ff">www.faheem-consultancy.com</text>
+</svg>

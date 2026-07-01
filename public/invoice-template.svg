@@ -1,0 +1,100 @@
+<svg viewBox="0 0 950 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Page Background -->
+  <rect width="950" height="1200" fill="#f7f9ff"/>
+
+  <!-- Top Accent -->
+  <rect x="0" y="0" width="950" height="8" fill="#35d2ff"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="870" height="100" fill="#060816" rx="8"/>
+
+  <!-- Logo -->
+  <image x="50" y="40" width="90" height="70" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Invoice Title -->
+  <text x="160" y="65" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#f7f9ff">INVOICE</text>
+  <text x="160" y="105" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#35d2ff">Premium Engineering Consultancy Services</text>
+
+  <!-- Invoice Number and Date -->
+  <text x="650" y="55" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#bcc7dc">Invoice No:</text>
+  <text x="650" y="75" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#f7f9ff">INV-2026-_______</text>
+
+  <text x="650" y="95" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#bcc7dc">Date:</text>
+  <text x="650" y="115" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#f7f9ff">_________________</text>
+
+  <!-- Bill From -->
+  <text x="40" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#060816">BILL FROM:</text>
+  <text x="40" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">FAHEEM Engineering Consultancy</text>
+  <text x="40" y="208" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Founder: Mohamed Haneefa Fozul Rahuman</text>
+  <text x="40" y="224" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Email: fozulur@yahoo.com</text>
+  <text x="40" y="240" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Phone: +966-58-121-2378</text>
+  <text x="40" y="256" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Location: Saudi Arabia</text>
+
+  <!-- Bill To -->
+  <text x="550" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#060816">BILL TO:</text>
+  <text x="550" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">_________________________________</text>
+  <text x="550" y="208" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">_________________________________</text>
+  <text x="550" y="224" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">_________________________________</text>
+  <text x="550" y="240" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">_________________________________</text>
+  <text x="550" y="256" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">_________________________________</text>
+
+  <!-- Items Table Header -->
+  <rect x="40" y="290" width="870" height="35" fill="#5b87ff"/>
+  <text x="50" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f7f9ff">DESCRIPTION</text>
+  <text x="600" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f7f9ff">QTY</text>
+  <text x="680" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f7f9ff">RATE</text>
+  <text x="800" y="315" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#f7f9ff">AMOUNT</text>
+
+  <!-- Item Rows -->
+  <line x1="40" y1="330" x2="910" y2="330" stroke="#e0e7f1" stroke-width="1"/>
+  <text x="50" y="360" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">QA/QC Management Services</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___</text>
+  <text x="680" y="360" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+  <text x="800" y="360" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+
+  <line x1="40" y1="375" x2="910" y2="375" stroke="#e0e7f1" stroke-width="1"/>
+  <text x="50" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">Inspection & Testing</text>
+  <text x="600" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___</text>
+  <text x="680" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+  <text x="800" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+
+  <line x1="40" y1="420" x2="910" y2="420" stroke="#e0e7f1" stroke-width="1"/>
+  <text x="50" y="450" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">Concrete Investigation</text>
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___</text>
+  <text x="680" y="450" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+  <text x="800" y="450" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#060816">___________</text>
+
+  <line x1="40" y1="465" x2="910" y2="465" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="510" x2="910" y2="510" stroke="#e0e7f1" stroke-width="1"/>
+  <line x1="40" y1="530" x2="910" y2="530" stroke="#e0e7f1" stroke-width="1"/>
+
+  <!-- Totals Section -->
+  <rect x="600" y="545" width="250" height="90" fill="#f0f4f9" stroke="#5b87ff" stroke-width="1" rx="6"/>
+
+  <text x="620" y="570" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Subtotal</text>
+  <text x="800" y="570" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">____________</text>
+
+  <text x="620" y="595" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">Tax (5%)</text>
+  <text x="800" y="595" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#060816">____________</text>
+
+  <rect x="610" y="605" width="230" height="2" fill="#5b87ff"/>
+
+  <text x="620" y="630" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#5b87ff">TOTAL DUE</text>
+  <text x="800" y="630" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#5b87ff">____________</text>
+
+  <!-- Terms -->
+  <text x="40" y="670" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#060816">PAYMENT TERMS:</text>
+  <text x="40" y="690" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Due within 30 days from invoice date. Bank transfer to designated account.</text>
+  <text x="40" y="710" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Late payments subject to 1.5% monthly interest.</text>
+
+  <!-- Notes -->
+  <text x="40" y="760" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#060816">NOTES:</text>
+  <text x="40" y="785" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#4f6078">Thank you for your business. All services rendered in accordance with ISO 9001 standards.</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1070" width="950" height="130" fill="#060816"/>
+  <text x="40" y="1100" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#35d2ff">FAHEEM Engineering Consultancy</text>
+  <text x="40" y="1120" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc">Email: fozulur@yahoo.com | Phone: +966-58-121-2378 | Web: www.faheem-consultancy.com</text>
+  <text x="40" y="1140" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc">Location: Saudi Arabia | Business Type: Engineering Consultancy | ISO 9001 Certified</text>
+  <text x="620" y="1120" font-family="Arial, sans-serif" font-size="9" font-weight="500" fill="#bcc7dc" text-anchor="end">© 2026 FAHEEM. All Rights Reserved.</text>
+</svg>

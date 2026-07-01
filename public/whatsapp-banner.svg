@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="whatsappGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060816;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1f3b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="628" fill="url(#whatsappGrad)"/>
+
+  <!-- Accent Elements -->
+  <circle cx="100" cy="100" r="120" fill="#35d2ff" opacity="0.08"/>
+  <circle cx="1100" cy="500" r="150" fill="#5b87ff" opacity="0.1"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="#35d2ff"/>
+
+  <!-- Left Panel -->
+  <rect x="0" y="0" width="450" height="628" fill="rgba(53, 210, 255, 0.03)"/>
+
+  <!-- Logo Section -->
+  <image x="40" y="40" width="140" height="110" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Company Name -->
+  <text x="40" y="190" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="#f7f9ff">FAHEEM</text>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#f7f9ff">Engineering</text>
+  <text x="40" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="#35d2ff">Consultancy</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="265" x2="410" y2="265" stroke="#35d2ff" stroke-width="2"/>
+
+  <!-- About -->
+  <text x="40" y="300" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">ABOUT US</text>
+  <text x="40" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#f7f9ff">Premium Quality Leadership</text>
+  <text x="40" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">25+ Years in Civil QA/QC Management & Engineering Consultancy</text>
+
+  <!-- Services -->
+  <text x="40" y="400" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#35d2ff" letter-spacing="0.5">SERVICES</text>
+
+  <circle cx="45" cy="425" r="2.5" fill="#35d2ff"/>
+  <text x="55" y="428" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">QA/QC Management</text>
+
+  <circle cx="45" cy="450" r="2.5" fill="#35d2ff"/>
+  <text x="55" y="453" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Quality Inspections</text>
+
+  <circle cx="45" cy="475" r="2.5" fill="#35d2ff"/>
+  <text x="55" y="478" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Testing & Analysis</text>
+
+  <circle cx="45" cy="500" r="2.5" fill="#35d2ff"/>
+  <text x="55" y="503" font-family="Arial, sans-serif" font-size="10" font-weight="500" fill="#bcc7dc">Engineering Consulting</text>
+
+  <!-- Right Panel - Main Message -->
+  <text x="520" y="80" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#f7f9ff">Professional</text>
+  <text x="520" y="145" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#f7f9ff">Engineering</text>
+  <text x="520" y="210" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#35d2ff">Consultancy</text>
+
+  <!-- Tagline -->
+  <text x="520" y="260" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#bcc7dc">Expert Quality Assurance & Technical Solutions</text>
+  <text x="520" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#bcc7dc">for Global Engineering Projects</text>
+
+  <!-- Key Features -->
+  <rect x="520" y="330" width="620" height="2" fill="#35d2ff"/>
+
+  <text x="520" y="380" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#f7f9ff">✓ ISO 9001 Certified</text>
+  <text x="520" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#f7f9ff">✓ 25+ Years Experience</text>
+  <text x="520" y="450" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#f7f9ff">✓ Oil & Gas | Petrochemical | Mining</text>
+  <text x="520" y="485" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#f7f9ff">✓ International Standards Compliance</text>
+
+  <!-- CTA -->
+  <text x="520" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#35d2ff">Message us for premium engineering support</text>
+  <text x="520" y="580" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#bcc7dc">Email: fozulur@yahoo.com | Web: www.faheem-consultancy.com</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060816;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1500" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Accent Bar Top -->
+  <rect x="0" y="0" width="1500" height="8" fill="#35d2ff"/>
+
+  <!-- Accent Line Left -->
+  <rect x="0" y="0" width="8" height="500" fill="#5b87ff"/>
+
+  <!-- Geometric Accent Elements -->
+  <circle cx="1400" cy="50" r="80" fill="#35d2ff" opacity="0.1"/>
+  <circle cx="1420" cy="450" r="120" fill="#5b87ff" opacity="0.08"/>
+
+  <!-- Logo -->
+  <image x="50" y="50" width="120" height="100" href="data:image/svg+xml,%3Csvg viewBox='0 0 260 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='15' width='14' height='30' fill='%235b87ff'/%3E%3Crect x='28' y='35' width='14' height='10' fill='%2335d2ff'/%3E%3Cline x1='46' y1='30' x2='56' y2='30' stroke='%23ffd60a' stroke-width='1.5'/%3E%3Ccircle cx='60' cy='26' r='2' fill='%2335d2ff'/%3E%3Ctext x='80' y='48' font-family='Arial, sans-serif' font-size='18' font-weight='900' fill='%23f7f9ff'%3EFAHEEM%3C/text%3E%3Ctext x='80' y='58' font-family='Arial, sans-serif' font-size='8' font-weight='700' fill='%2335d2ff' letter-spacing='1'%3EENGINEERING%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Main Headline -->
+  <text x="220" y="90" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#f7f9ff">FAHEEM</text>
+  <text x="220" y="145" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#f7f9ff">Engineering Consultancy</text>
+
+  <!-- Tagline -->
+  <text x="220" y="185" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#35d2ff" letter-spacing="1">Premium Quality Assurance & Engineering Solutions</text>
+
+  <!-- Subtitle -->
+  <text x="220" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#bcc7dc">25+ Years of Proven Excellence in QA/QC Management</text>
+  <text x="220" y="245" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#bcc7dc">Oil & Gas • Petrochemical • Mining • Infrastructure</text>
+
+  <!-- Core Competencies Pills -->
+  <rect x="220" y="280" width="140" height="40" fill="rgba(53, 210, 255, 0.2)" stroke="#35d2ff" stroke-width="1.5" rx="8"/>
+  <text x="230" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#35d2ff">QA/QC Management</text>
+
+  <rect x="380" y="280" width="140" height="40" fill="rgba(91, 135, 255, 0.2)" stroke="#5b87ff" stroke-width="1.5" rx="8"/>
+  <text x="390" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5b87ff">Quality Leadership</text>
+
+  <rect x="540" y="280" width="140" height="40" fill="rgba(53, 210, 255, 0.2)" stroke="#35d2ff" stroke-width="1.5" rx="8"/>
+  <text x="550" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#35d2ff">ISO 9001 Certified</text>
+
+  <!-- CTA Section -->
+  <text x="220" y="380" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#f7f9ff">Visit: www.faheem-consultancy.com</text>
+  <text x="220" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#bcc7dc">Contact: fozulur@yahoo.com | +966-58-121-2378</text>
+
+  <!-- Accent Line Right -->
+  <line x1="900" y1="100" x2="1350" y2="100" stroke="#35d2ff" stroke-width="2" opacity="0.5"/>
+</svg>
