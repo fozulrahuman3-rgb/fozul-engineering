@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import profilePhoto from './assets/profile-photo.jpg'
+import profilePhoto from './assets/hero.png'
 import engineeringPlant from './assets/engineering-plant.svg'
 import siteInspection from './assets/site-inspection.svg'
 import projectOperations from './assets/project-operations.svg'
