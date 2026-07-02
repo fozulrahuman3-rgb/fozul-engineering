@@ -1806,8 +1806,8 @@ function ProjectModal({ project, isOpen, onClose }) {
             <section className="modal-section">
               <h3>Key Achievements</h3>
               <ul className="achievements-list">
-                {project.achievements.map((achievement) => (
-                  <li key={achievement}>{achievement}</li>
+                {project.achievements.map((achievement, achIndex) => (
+                  <li key={`${achievement}-${achIndex}`}>{achievement}</li>
                 ))}
               </ul>
             </section>
@@ -1820,8 +1820,8 @@ function ProjectModal({ project, isOpen, onClose }) {
             <section className="modal-section">
               <h3>Technologies & Methodologies</h3>
               <div className="modal-tags">
-                {project.technologies.map((tech) => (
-                  <span key={tech} className="modal-tag">
+                {project.technologies.map((tech, techIndex) => (
+                  <span key={`${tech}-${techIndex}`} className="modal-tag">
                     {tech}
                   </span>
                 ))}
@@ -1920,8 +1920,8 @@ function CaseStudyModal({ caseStudy, isOpen, onClose }) {
             <section className="modal-section">
               <h3>Technologies & Methods Applied</h3>
               <div className="modal-tags">
-                {caseStudy.technologies.map((tech) => (
-                  <span key={tech} className="modal-tag">
+                {caseStudy.technologies.map((tech, techIndex) => (
+                  <span key={`${tech}-${techIndex}`} className="modal-tag">
                     {tech}
                   </span>
                 ))}
@@ -2253,7 +2253,7 @@ function App() {
         <div className="expertise-grid">
           {featuredExpertise.map((expertise, index) => (
             <motion.div
-              key={expertise.title}
+              key={`expertise-${index}`}
               className="expertise-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -2289,7 +2289,7 @@ function App() {
         <div className="chevron-specializations">
           {saudiChevronExperience.specializations.map((spec, index) => (
             <motion.article
-              key={spec.name}
+              key={`spec-${index}`}
               className="specialization-card"
               initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -2326,7 +2326,7 @@ function App() {
         <div className="achievements-grid">
           {professionalAchievements.map((achievement, index) => (
             <motion.article
-              key={achievement.title}
+              key={`achievement-${index}`}
               className="achievement-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -2361,7 +2361,7 @@ function App() {
         <div className="hire-reasons-grid">
           {whyHireMe.map((reason, index) => (
             <motion.article
-              key={reason.title}
+              key={`hire-reason-${index}`}
               className="hire-reason-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -2370,8 +2370,8 @@ function App() {
             >
               <h4>{reason.title}</h4>
               <ul className="hire-points">
-                {reason.points.map((point) => (
-                  <li key={point}>
+                {reason.points.map((point, pointIndex) => (
+                  <li key={`${point}-${pointIndex}`}>
                     <span className="check">✓</span>
                     {point}
                   </li>
@@ -2446,8 +2446,8 @@ function App() {
                 >
                   <h4>{category.category}</h4>
                   <ul className="skill-list-items">
-                    {category.skills.map((skill) => (
-                      <li key={skill}>
+                    {category.skills.map((skill, skillIndex) => (
+                      <li key={`${skill}-${skillIndex}`}>
                         <span className="skill-dot">●</span>
                         {skill}
                       </li>
@@ -2464,7 +2464,7 @@ function App() {
             <div className="background-timeline">
               {professionalBackground.map((role, index) => (
                 <motion.div
-                  key={role.title}
+                  key={`background-${index}`}
                   className="background-card"
                   initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -2479,8 +2479,8 @@ function App() {
                   </div>
                   <p className="background-description">{role.description}</p>
                   <ul className="background-achievements">
-                    {role.achievements.map((achievement) => (
-                      <li key={achievement}>
+                    {role.achievements.map((achievement, achIndex) => (
+                      <li key={`${achievement}-${achIndex}`}>
                         <span className="check-mark">✓</span>
                         {achievement}
                       </li>
@@ -2497,7 +2497,7 @@ function App() {
             <div className="certifications-display">
               {certifications.map((cert, index) => (
                 <motion.div
-                  key={cert}
+                  key={`${cert.title}-${index}`}
                   className="certification-badge"
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -2505,7 +2505,7 @@ function App() {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                 >
                   <span className="cert-icon">🏆</span>
-                  {cert}
+                  {cert.title}
                 </motion.div>
               ))}
             </div>
@@ -2574,7 +2574,7 @@ function App() {
           <div className="service-grid">
             {consultancyServices.map((item, index) => (
               <motion.article
-                key={item.title}
+                key={`service-${index}`}
                 className="service-card"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -2620,8 +2620,8 @@ function App() {
           />
 
           <div className="expertise-grid">
-            {engineeringExpertise.map((item) => (
-              <article key={item.title} className="expertise-card">
+            {engineeringExpertise.map((item, index) => (
+              <article key={`expertise-${index}`} className="expertise-card">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </article>
@@ -2669,8 +2669,8 @@ function App() {
                   <div className="project-highlights">
                     <p className="highlights-label">Key Achievements:</p>
                     <ul className="highlights-list">
-                      {project.highlights.map((highlight) => (
-                        <li key={highlight}>{highlight}</li>
+                      {project.highlights.map((highlight, highlightIndex) => (
+                        <li key={`${highlight}-${highlightIndex}`}>{highlight}</li>
                       ))}
                     </ul>
                   </div>
@@ -2681,8 +2681,8 @@ function App() {
                   </div>
 
                   <div className="project-tech">
-                    {project.technologies.map((tech) => (
-                      <span key={tech} className="tech-badge">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={`${tech}-${techIndex}`} className="tech-badge">
                         {tech}
                       </span>
                     ))}
@@ -2717,7 +2717,7 @@ function App() {
           <div className="knowledge-grid">
             {knowledgeCenterItems.map((item, index) => (
               <motion.article
-                key={item.title}
+                key={`knowledge-${index}`}
                 className="knowledge-card"
                 initial={{ opacity: 0, y: 22 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -2753,8 +2753,8 @@ function App() {
           />
 
           <div className="why-choose-grid">
-            {whyChooseItems.map((item) => (
-              <article key={item.value} className="why-choose-card">
+            {whyChooseItems.map((item, index) => (
+              <article key={`why-choose-${index}`} className="why-choose-card">
                 <h3>{item.value}</h3>
                 <p>{item.description}</p>
               </article>
@@ -2847,8 +2847,8 @@ function App() {
                   <div className="project-detail-item">
                     <p className="detail-label">Key Technologies</p>
                     <div className="tech-tags">
-                      {project.technologies.slice(0, 2).map((tech) => (
-                        <span key={tech} className="tech-tag">{tech}</span>
+                      {project.technologies.slice(0, 2).map((tech, techIndex) => (
+                        <span key={`${tech}-${techIndex}`} className="tech-tag">{tech}</span>
                       ))}
                       {project.technologies.length > 2 && (
                         <span className="tech-tag">+{project.technologies.length - 2} more</span>
@@ -2922,8 +2922,8 @@ function App() {
                   <div className="case-study-field">
                     <p className="field-label">Technologies Used</p>
                     <div className="tech-list">
-                      {study.technologies.map((tech) => (
-                        <span key={tech} className="tech-tag">
+                      {study.technologies.map((tech, techIndex) => (
+                        <span key={`${tech}-${techIndex}`} className="tech-tag">
                           {tech}
                         </span>
                       ))}
@@ -3186,7 +3186,7 @@ function App() {
           <div className="timeline">
             {timelineItems.map((item, index) => (
               <motion.article
-                key={item.title}
+                key={`timeline-${index}`}
                 className="timeline-item"
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -3220,8 +3220,8 @@ function App() {
           />
 
           <div className="gallery-grid">
-            {gallery.map((item) => (
-              <article key={item.title} className="gallery-card">
+            {gallery.map((item, index) => (
+              <article key={`gallery-${index}`} className="gallery-card">
                 <img src={item.image} alt={item.title} loading="lazy" />
                 <div className="gallery-content">
                   <h3>{item.title}</h3>
@@ -3268,8 +3268,8 @@ function App() {
           />
 
           <div className="skill-list">
-            {skillData.map((skill) => (
-              <div key={skill.name} className="skill-item">
+            {skillData.map((skill, index) => (
+              <div key={`skill-${index}`} className="skill-item">
                 <div className="skill-labels">
                   <span>{skill.name}</span>
                   <span>{skill.value}%</span>
