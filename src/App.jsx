@@ -2387,6 +2387,7 @@ function App() {
           className="section"
           id="about"
           initial="hidden"
+          animate="visible"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
           variants={sectionAnimation}
@@ -2561,6 +2562,7 @@ function App() {
           className="section"
           id="services"
           initial="hidden"
+          animate="visible"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionAnimation}
