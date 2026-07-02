@@ -2437,7 +2437,7 @@ function App() {
             <div className="competencies-grid">
               {coreCompetencies.map((category, index) => (
                 <motion.div
-                  key={category.category}
+                  key={`${category.category}-${index}`}
                   className="competency-card"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -3043,8 +3043,8 @@ function App() {
 
                 <div className="article-footer">
                   <div className="article-tags">
-                    {article.tags.map((tag) => (
-                      <span key={tag} className="tag">
+                    {article.tags.map((tag, tagIndex) => (
+                      <span key={`${tag}-${tagIndex}`} className="tag">
                         {tag}
                       </span>
                     ))}
@@ -3247,8 +3247,8 @@ function App() {
           />
 
           <div className="chip-list certifications-list">
-            {certifications.map((item) => (
-              <span key={item}>{item}</span>
+            {certifications.map((item, index) => (
+              <span key={`${item.title}-${index}`}>{item.title}</span>
             ))}
           </div>
         </motion.section>
@@ -3439,8 +3439,8 @@ function App() {
           </div>
           <div>
             <h4>Social Media</h4>
-            {socialLinks.map((link) => (
-              <a key={link.label} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+            {socialLinks.map((link, linkIndex) => (
+              <a key={`${link.label}-${linkIndex}`} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
             ))}
           </div>
         </div>
