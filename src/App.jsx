@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import profilePhoto from './assets/hero.png'
+import profilePhoto from './assets/hero.png.png'
 import engineeringPlant from './assets/engineering-plant.svg'
 import siteInspection from './assets/site-inspection.svg'
 import projectOperations from './assets/project-operations.svg'
-import feLogo from './assets/faheem-premium-logo.svg'
+import feLogo from "./assets/faheem-monogram-gold.png";
 import './App.css'
 
 // SEO Strategy - Page Titles, Meta Descriptions & Keywords

@@ -155,20 +155,19 @@ a {
 }
 
 .nav-logo {
-  width: 132px;
-  height: 32px;
-  flex-shrink: 0;
-  object-fit: contain;
-  object-position: left center;
+    width: 260px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: left center;
 }
-
 .navbar-brand span {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  line-height: 1;
-  text-transform: uppercase;
-  color: var(--brand-silver);
+    font-size: 0.90rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--brand-silver);
 }
 
 .navbar-links {
