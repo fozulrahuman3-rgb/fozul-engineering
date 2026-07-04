@@ -58,8 +58,8 @@ engineering consultancy" />
 - `og:type`: website
 - `og:title`: "FAHEEM Engineering Consultancy | 25+ Years QA/QC Excellence"
 - `og:description`: "Senior QA/QC Engineer delivering quality leadership and technical consulting for industrial and infrastructure projects across GCC region. ISO 9001 certified. 500+ projects completed."
-- `og:image`: https://mohamedhaneeafozul.com/og-faheem-logo.svg (1200x630)
-- `og:url`: https://mohamedhaneeafozul.com
+- `og:image`: https://faheemengineering.com/og-faheem-logo.svg (1200x630)
+- `og:url`: https://faheemengineering.com
 - `og:site_name`: FAHEEM Engineering Consultancy
 - `og:locale`: en_US
 
@@ -80,7 +80,7 @@ engineering consultancy" />
 ISO 9001 certified consultant specializing in NDT testing, concrete investigation, 
 and asset integrity management." />
 <meta name="twitter:creator" content="@mohamedhaneeafozul" />
-<meta name="twitter:image" content="https://mohamedhaneeafozul.com/og-faheem-logo.svg" />
+<meta name="twitter:image" content="https://faheemengineering.com/og-faheem-logo.svg" />
 <meta name="twitter:site" content="@mohamedhaneeafozul" />
 ```
 
@@ -103,7 +103,7 @@ and asset integrity management." />
   "jobTitle": "Senior QA/QC Engineer",
   "email": "fozulur@yahoo.com",
   "telephone": "+966581212378",
-  "url": "https://mohamedhaneeafozul.com",
+  "url": "https://faheemengineering.com",
   "worksFor": { "name": "Al Yamama Company" },
   "sameAs": ["https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman"]
 }
@@ -114,8 +114,8 @@ and asset integrity management." />
 {
   "@type": "Organization",
   "name": "FAHEEM Engineering Consultancy",
-  "url": "https://mohamedhaneeafozul.com",
-  "logo": "https://mohamedhaneeafozul.com/favicon.svg",
+  "url": "https://faheemengineering.com",
+  "logo": "https://faheemengineering.com/favicon.svg",
   "email": "fozulur@yahoo.com",
   "telephone": "+966581212378",
   "founder": {
@@ -172,9 +172,9 @@ and asset integrity management." />
 {
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "position": 1, "name": "Home", "item": "https://mohamedhaneeafozul.com" },
-    { "position": 2, "name": "About", "item": "https://mohamedhaneeafozul.com/#about" },
-    { "position": 3, "name": "Services", "item": "https://mohamedhaneeafozul.com/#services" }
+    { "position": 1, "name": "Home", "item": "https://faheemengineering.com" },
+    { "position": 2, "name": "About", "item": "https://faheemengineering.com/#about" },
+    { "position": 3, "name": "Services", "item": "https://faheemengineering.com/#services" }
   ]
 }
 ```
@@ -209,7 +209,7 @@ and asset integrity management." />
 **Search Appearance Strategy**
 - **Title**: 55 characters (displays fully in desktop/mobile)
 - **Meta Description**: 158 characters (displays completely in most browsers)
-- **URL**: Clean, descriptive (mohamedhaneeafozul.com)
+- **URL**: Clean, descriptive (faheemengineering.com)
 
 **Targeted Rich Snippets**
 1. **FAQ Rich Results** - For Q&A content (implemented via FAQPage schema)
@@ -220,7 +220,7 @@ and asset integrity management." />
 **Expected Google Search Result**
 ```
 Title: Mohamed Haneefa Fozul Rahuman | Senior QA/QC Engineer & Engineering Consultant
-URL: mohamedhaneeafozul.com
+URL: faheemengineering.com
 Description: Mohamed Haneefa Fozul Rahuman - 25+ years of QA/QC engineering expertise. 
 ISO 9001 certified consultancy specializing in civil quality management, NDT testing, 
 concrete investigation, and asset integrity for oil & gas...
@@ -262,7 +262,7 @@ Allow: /
 Disallow: /node_modules/, /.env, /.git, /dist/, /tmp/
 Crawl-delay: 1
 Request-rate: 50/1h
-Sitemap: https://mohamedhaneeafozul.com/sitemap.xml
+Sitemap: https://faheemengineering.com/sitemap.xml
 ```
 
 **Features Implemented**

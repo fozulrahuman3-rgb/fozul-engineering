@@ -82,7 +82,7 @@ dist/assets/index-B3amtlIx.js           458.70 kB │ gzip: 133.88 kB
 ```
 
 ### ✅ Website Verification
-- **URL:** http://localhost:5178/
+- **URL:** https://faheemengineering.com/
 - **Status:** Running and updated
 - **Hero Section:** Displaying "Engineering Quality & Asset Integrity Solutions" with FAHEEM branding
 - **Footer:** Shows "Founder, FAHEEM Engineering Consultancy"

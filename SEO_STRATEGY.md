@@ -76,8 +76,8 @@
 <meta property="og:title" content="FAHEEM Engineering Consultancy | 25+ Years QA/QC Excellence" />
 <meta property="og:description" content="Senior QA/QC Engineer delivering quality leadership and technical consulting for industrial and infrastructure projects across GCC region. ISO 9001 certified. 500+ projects completed." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://mohamedhaneeafozul.com" />
-<meta property="og:image" content="https://mohamedhaneeafozul.com/og-faheem-logo.svg" />
+<meta property="og:url" content="https://faheemengineering.com" />
+<meta property="og:image" content="https://faheemengineering.com/og-faheem-logo.svg" />
 ```
 
 ### LinkedIn Profile OG Tags
@@ -171,7 +171,7 @@
 ### Example Google Search Snippet
 ```
 Title: Mohamed Haneefa Fozul Rahuman | Senior QA/QC Engineer & Engineering Consultant
-URL: mohamedhaneeafozul.com
+URL: faheemengineering.com
 Description: Mohamed Haneefa Fozul Rahuman - 25+ years of QA/QC engineering expertise. 
 ISO 9001 certified consultancy specializing in civil quality management, NDT testing, 
 concrete investigation, and asset integrity...

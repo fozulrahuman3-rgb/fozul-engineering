@@ -136,7 +136,7 @@
 ## 📲 DIGITAL PRESENCE GUIDELINES
 
 ### Website
-- **Domain:** www.faheem-consultancy.com
+- **Domain:** faheemengineering.com
 - **Platform:** React + Vite (Premium 500-level consulting firm design)
 - **Brand Elements:** Full brand identity, premium dark/light theme, responsive design
 
@@ -247,7 +247,7 @@
 **Phone:** +966-58-121-2378  
 **Location:** Saudi Arabia  
 **LinkedIn:** linkedin.com/in/mfozulrahuman  
-**Website:** www.faheem-consultancy.com  
+**Website:** faheemengineering.com  
 
 **Company Certifications:**
 - ISO 9001:2015 Quality Management System
