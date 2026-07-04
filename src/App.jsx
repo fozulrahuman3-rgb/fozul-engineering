@@ -1,13 +1,8 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import profilePhoto from './assets/hero.webp'
-import engineeringPlant from './assets/engineering-plant.svg'
-import siteInspection from './assets/site-inspection.svg'
-import projectOperations from './assets/project-operations.svg'
 import feLogo from "./assets/faheem-monogram-gold.webp";
 import './App.css'
-
-const BelowHeroHighlights = lazy(() => import('./components/BelowHeroHighlights.jsx'))
 
 // SEO Strategy - Page Titles, Meta Descriptions & Keywords
 const seoStrategy = {
@@ -49,15 +44,203 @@ const seoStrategy = {
 
 const navItems = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
+  { label: 'Company', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Expertise', href: '#expertise' },
-  { label: 'Knowledge', href: '#knowledge-center' },
+  { label: 'Industries', href: '#industries-we-serve' },
+  { label: 'Why FAHEEM', href: '#why-choose' },
   { label: 'Projects', href: '#projects-featured' },
-  { label: 'Case Studies', href: '#case-studies' },
-  { label: 'Credentials', href: '#credentials' },
-  { label: 'Why Us', href: '#why-choose' },
+  { label: 'Leadership', href: '#leadership-preview' },
   { label: 'Contact', href: '#contact' },
+]
+
+const companyIntroCards = [
+  {
+    title: 'Engineering Excellence',
+    description:
+      'FAHEEM Engineering Consultancy delivers high-integrity engineering support for critical civil and industrial infrastructure.',
+  },
+  {
+    title: 'Quality Leadership',
+    description:
+      'Our consultancy approach combines quality systems, field verification, and practical execution oversight to protect project outcomes.',
+  },
+  {
+    title: 'International Standards',
+    description:
+      'We align with internationally recognized QA/QC and inspection standards to ensure compliance, reliability, and long-term asset confidence.',
+  },
+  {
+    title: 'Professional Consultancy',
+    description:
+      'From planning to handover, FAHEEM provides independent technical guidance that strengthens client decisions and delivery certainty.',
+  },
+]
+
+const coreServiceCards = [
+  {
+    title: 'QA/QC Consultancy',
+    description: 'Quality-led consultancy for disciplined project execution, compliance confidence, and reduced rework risk.',
+    icon: 'quality',
+    items: ['Project Quality Planning', 'Inspection Coordination', 'Quality Systems', 'Quality Assurance', 'Quality Control'],
+  },
+  {
+    title: 'Civil Engineering Consultancy',
+    description: 'Practical civil engineering support for planning, technical review, and robust site delivery decisions.',
+    icon: 'plan',
+    items: ['Construction Methodology', 'Technical Advisory', 'Site Engineering', 'Engineering Reviews'],
+  },
+  {
+    title: 'Construction Quality Management',
+    description: 'Structured construction quality governance that aligns teams, approvals, and documentation workflows.',
+    icon: 'qa',
+    items: ['ITP Development', 'Material Approval', 'Inspection Planning', 'Quality Documentation'],
+  },
+  {
+    title: 'Third Party Inspection',
+    description: 'Independent inspection assurance for critical suppliers, fabrication processes, and acceptance milestones.',
+    icon: 'inspection',
+    items: ['Vendor Inspection', 'Factory Inspection', 'Material Verification', 'Witness Testing'],
+  },
+  {
+    title: 'Material Engineering',
+    description: 'Technical material governance ensuring specification alignment, submittal quality, and compliance traceability.',
+    icon: 'document',
+    items: ['Material Submittals', 'MAR Review', 'Technical Compliance', 'Specification Verification'],
+  },
+  {
+    title: 'Geosynthetics Consultancy',
+    description: 'Specialist consultancy for geosynthetic systems where installation quality directly drives long-term performance.',
+    icon: 'liner',
+    items: ['HDPE Lining', 'Geotextiles', 'Geocomposites', 'Installation QA/QC'],
+  },
+  {
+    title: 'Infrastructure Engineering',
+    description: 'Engineering quality support for infrastructure scopes with strong constructability and durability focus.',
+    icon: 'earthwork',
+    items: ['Earthworks', 'Concrete', 'Drainage', 'Roads', 'Industrial Facilities'],
+  },
+  {
+    title: 'Quality Audits',
+    description: 'Targeted quality audits that surface risks early and strengthen compliance maturity across project teams.',
+    icon: 'checklist',
+    items: ['Internal Audits', 'Vendor Audits', 'Site Audits', 'Compliance Reviews'],
+  },
+  {
+    title: 'Root Cause Analysis',
+    description: 'Engineering-led investigations to resolve recurring issues and enable durable corrective actions.',
+    icon: 'analysis',
+    items: ['Failure Investigation', 'NCR Investigation', 'CAPA', 'Engineering Recommendations'],
+  },
+  {
+    title: 'Technical Documentation',
+    description: 'High-quality technical documentation packages that improve clarity, approvals, and project control.',
+    icon: 'document',
+    items: ['Method Statements', 'ITPs', 'Quality Plans', 'Inspection Checklists', 'Procedures', 'Technical Queries'],
+  },
+]
+
+const servicePageWhyChoose = [
+  {
+    value: 'International EPC Readiness',
+    description: 'Consultancy delivery aligned with owner, EPC, and contractor interface requirements.',
+  },
+  {
+    value: 'Technical Depth with Field Practicality',
+    description: 'Engineering recommendations grounded in constructability, inspection realities, and site constraints.',
+  },
+  {
+    value: 'Quality and Compliance Confidence',
+    description: 'Clear systems, traceable records, and disciplined controls that support approvals and audits.',
+  },
+  {
+    value: 'Risk and Rework Reduction',
+    description: 'Early quality intervention to prevent defects, delays, and avoidable commercial exposure.',
+  },
+]
+
+const industriesServed = [
+  { name: 'Oil & Gas', description: 'Quality-critical facility development, maintenance, and integrity support.', icon: 'quality' },
+  { name: 'Mining', description: 'Large-scale containment, geosynthetics, and industrial civil quality systems.', icon: 'liner' },
+  { name: 'Infrastructure', description: 'Civil infrastructure inspection, assessment, and quality assurance.', icon: 'earthwork' },
+  { name: 'Industrial Plants', description: 'Operationally sensitive quality oversight for industrial environments.', icon: 'inspection' },
+  { name: 'Water', description: 'Water-retaining structures, waterproofing, and durability-focused QA/QC.', icon: 'waterproof' },
+  { name: 'Energy', description: 'Engineering quality leadership for high-reliability energy assets.', icon: 'repair' },
+  { name: 'Commercial Construction', description: 'Structured quality controls for schedule-driven commercial programs.', icon: 'plan' },
+]
+
+const whyChooseFaheem = [
+  {
+    value: '25+ Years Experience',
+    description: 'Established engineering quality leadership across complex international project environments.',
+  },
+  {
+    value: 'International Project Exposure',
+    description: 'Proven delivery support across oil & gas, petrochemical, mining, and infrastructure sectors.',
+  },
+  {
+    value: 'Quality-Driven Delivery',
+    description: 'Inspection discipline, preventive quality systems, and measurable compliance performance.',
+  },
+  {
+    value: 'Standards Compliance',
+    description: 'Alignment with recognized standards and client specifications for confident approvals.',
+  },
+  {
+    value: 'Risk Reduction',
+    description: 'Early technical intervention to prevent defects, rework, and schedule disruption.',
+  },
+  {
+    value: 'Professional Engineering Solutions',
+    description: 'Independent, practical consultancy tailored to business-critical engineering decisions.',
+  },
+]
+
+const featuredCapabilities = [
+  {
+    id: 1,
+    title: 'Mining Containment Quality Programmes',
+    status: 'Consultancy Capability',
+    location: 'Saudi Arabia',
+    industry: 'Mining',
+    description:
+      'Delivery of structured QA/QC systems for large-area geosynthetic and HDPE containment installations under strict environmental requirements.',
+    highlights: [
+      'Large-scale liner quality oversight',
+      'Non-destructive testing governance',
+      'Regulatory documentation readiness',
+      'Multi-contractor coordination',
+    ],
+  },
+  {
+    id: 2,
+    title: 'Oil & Gas Asset Integrity Consultancy',
+    status: 'Consultancy Capability',
+    location: 'Saudi Arabia & GCC',
+    industry: 'Oil & Gas',
+    description:
+      'Engineering advisory, inspection, and quality management support for maintenance, shutdowns, and critical civil reliability improvements.',
+    highlights: [
+      'Concrete investigation and repair strategy',
+      'Rapid assessment and corrective planning',
+      'Quality compliance for live facilities',
+      'Long-term partnership delivery model',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Industrial and Infrastructure QA/QC Advisory',
+    status: 'Consultancy Capability',
+    location: 'Regional Delivery',
+    industry: 'Industrial & Infrastructure',
+    description:
+      'End-to-end quality advisory for civil packages, inspection systems, and handover assurance across high-value programs.',
+    highlights: [
+      'Construction quality management frameworks',
+      'Material and vendor quality controls',
+      'Audit and compliance improvement',
+      'Documentation and handover confidence',
+    ],
+  },
 ]
 
 const stats = [
@@ -1385,11 +1568,7 @@ const testimonials = [
   },
 ]
 
-const gallery = [
-  { image: engineeringPlant, title: 'Industrial Facility Delivery', label: 'Civil & Process Infrastructure' },
-  { image: siteInspection, title: 'Site Inspection Excellence', label: 'Quality Audits & Field Verification' },
-  { image: projectOperations, title: 'Engineering Operations', label: 'Turnaround Planning & Execution' },
-]
+const gallery = []
 
 const faqItems = [
   {
@@ -2132,24 +2311,24 @@ function App() {
               <h2>International Engineering Consultancy</h2>
             </div>
           </div>
-          <p className="eyebrow">Engineering Consultancy | QA/QC | Asset Integrity</p>
-          <h1>Engineering Quality &amp; Asset Integrity Solutions</h1>
+          <p className="eyebrow">Professional Engineering Consultancy</p>
+          <h1>Engineering Confidence for Critical Infrastructure</h1>
           <p className="hero-subtitle">
-            Helping industries solve engineering problems through quality, inspection, root cause analysis and practical repair solutions backed by 25+ years of experience.
+            FAHEEM Engineering Consultancy provides premium QA/QC, inspection, construction quality management, and engineering advisory solutions across industrial sectors.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">
-              Book Consultation
+              Request Consultancy
             </a>
-            <a className="button button-secondary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
-              Download CV
+            <a className="button button-secondary" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
+              Discuss Your Project
             </a>
           </div>
           <div className="hero-highlights">
             <span>25+ Years Experience</span>
-            <span>Industrial Projects</span>
-            <span>Saudi Arabia Experience</span>
-            <span>Engineering Solutions</span>
+            <span>International Standards</span>
+            <span>Quality-Driven Delivery</span>
+            <span>Industrial Sectors</span>
           </div>
         </div>
 
@@ -2158,8 +2337,8 @@ function App() {
             <img src={profilePhoto} alt="Mohamed Haneefa Fozul Rahuman portrait" loading="eager" />
           </div>
           <div className="hero-profile-card">
-            <h3>Mohamed Haneefa Fozul Rahuman</h3>
-            <p>QA/QC Engineer | Civil Quality Manager</p>
+            <h3>FAHEEM Engineering Consultancy</h3>
+            <p>Professional engineering quality solutions across critical sectors</p>
             <div className="profile-metrics">
               <span>Oil & Gas</span>
               <span>Petrochemical</span>
@@ -2170,193 +2349,34 @@ function App() {
         </motion.div>
       </motion.header>
 
-      <Suspense fallback={null}>
-        <BelowHeroHighlights
-          sectionAnimation={sectionAnimation}
-          dashboardStats={dashboardStats}
-          whyChooseFozulCards={whyChooseFozulCards}
-          featuredExpertise={featuredExpertise}
-          saudiChevronExperience={saudiChevronExperience}
-          professionalAchievements={professionalAchievements}
-          whyHireMe={whyHireMe}
-          SectionHeading={SectionHeading}
-          PremiumIcon={PremiumIcon}
-        />
-      </Suspense>
-
       <main>
         <motion.section
           className="section"
           id="about"
           initial="hidden"
-          animate="visible"
           whileInView="visible"
           viewport={{ once: true, amount: 0.25 }}
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Executive Profile"
-            title="International Engineering Quality Leader"
-            subtitle="25+ years of proven expertise transforming quality operations across oil & gas, petrochemical, industrial, and infrastructure sectors."
+            eyebrow="Company Introduction"
+            title="FAHEEM Engineering Consultancy"
+            subtitle="We are a premium engineering consultancy focused on engineering excellence, quality leadership, international standards, and client confidence."
           />
-
-          {/* Executive Summary Card */}
-          <motion.div
-            className="executive-profile"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="profile-header">
-              <div className="profile-image">
-                <img src={profilePhoto} alt="Mohamed Haneefa Fozul Rahuman" loading="lazy" />
-              </div>
-              <div className="profile-info">
-                <h2>Mohamed Haneefa Fozul Rahuman</h2>
-                <p className="profile-title">QA/QC Engineer | Engineering Quality Consultant</p>
-                <p className="profile-summary">{aboutMeData.summary}</p>
-                <div className="profile-cta">
-                  <a className="button button-primary" href="mailto:fozulur@yahoo.com">Get in Touch</a>
-                  <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="profile-statement">
-              <p className="statement-label">Professional Mission</p>
-              <p>{aboutMeData.professionalStatement}</p>
-            </div>
-
-            <div className="profile-value">
-              <p className="value-label">Core Philosophy</p>
-              <p className="value-quote">"{aboutMeData.coreValue}"</p>
-            </div>
-          </motion.div>
-
-          {/* Core Competencies Section */}
-          <div className="about-section">
-            <h3 className="section-subtitle">Core Competencies</h3>
-            <div className="competencies-grid">
-              {coreCompetencies.map((category, index) => (
-                <motion.div
-                  key={`${category.category}-${index}`}
-                  className="competency-card"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <h4>{category.category}</h4>
-                  <ul className="skill-list-items">
-                    {category.skills.map((skill, skillIndex) => (
-                      <li key={`${skill}-${skillIndex}`}>
-                        <span className="skill-dot">●</span>
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Professional Background */}
-          <div className="about-section">
-            <h3 className="section-subtitle">Professional Background</h3>
-            <div className="background-timeline">
-              {professionalBackground.map((role, index) => (
-                <motion.div
-                  key={`background-${index}`}
-                  className="background-card"
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="background-header">
-                    <p className="background-period">{role.period}</p>
-                    <h4>{role.title}</h4>
-                    <p className="background-company">{role.company}</p>
-                    <p className="background-location">{role.location}</p>
-                  </div>
-                  <p className="background-description">{role.description}</p>
-                  <ul className="background-achievements">
-                    {role.achievements.map((achievement, achIndex) => (
-                      <li key={`${achievement}-${achIndex}`}>
-                        <span className="check-mark">✓</span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Certifications & Standards */}
-          <div className="about-section">
-            <h3 className="section-subtitle">Professional Certifications & Standards</h3>
-            <div className="certifications-display">
-              {certifications.map((cert, index) => (
-                <motion.div
-                  key={`${cert.title}-${index}`}
-                  className="certification-badge"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                >
-                  <span className="cert-icon">🏆</span>
-                  {cert.title}
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Key Stats */}
-          <div className="about-stats">
-            <div className="stats-grid">
-              <motion.div
-                className="stat-item"
+          <div className="profile-intro-grid">
+            {companyIntroCards.map((item, index) => (
+              <motion.article
+                key={`${item.title}-${index}`}
+                className="profile-intro-card"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: index * 0.06 }}
               >
-                <h3>25+</h3>
-                <p>Years of Experience</p>
-              </motion.div>
-              <motion.div
-                className="stat-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-              >
-                <h3>13</h3>
-                <p>Years at Saudi Chevron</p>
-              </motion.div>
-              <motion.div
-                className="stat-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-              >
-                <h3>100+</h3>
-                <p>Industrial Projects</p>
-              </motion.div>
-              <motion.div
-                className="stat-item"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-              >
-                <h3>$50M+</h3>
-                <p>Managed Programs</p>
-              </motion.div>
-            </div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </motion.article>
+            ))}
           </div>
         </motion.section>
 
@@ -2365,24 +2385,46 @@ function App() {
           id="services"
           initial="hidden"
           animate="visible"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Engineering Consultancy Services"
-            title="Premium engineering support for investigations, quality, and repair strategy"
-            subtitle="Each engagement is structured to deliver clarity, technical confidence, and practical next steps for asset integrity and performance."
+            eyebrow="Services"
+            title="Premium Engineering Consultancy Services"
+            subtitle="World-class technical consultancy for international EPC companies, industrial clients, government organizations, and recruiters."
           />
 
+          <div className="services-hero">
+            <h3>Engineering Quality, Technical Confidence, and Business Value</h3>
+            <p>
+              FAHEEM Engineering Consultancy delivers disciplined QA/QC, engineering reviews, inspection governance,
+              and technical advisory support designed to strengthen project outcomes across critical sectors.
+            </p>
+          </div>
+
+          <div className="services-intro-grid">
+            <article className="info-card">
+              <div className="info-icon"><PremiumIcon name="quality" /></div>
+              <div>
+                <h3>Professional Delivery Model</h3>
+                <p>Services are structured for clear scope, measurable outcomes, and reliable project control.</p>
+              </div>
+            </article>
+            <article className="info-card">
+              <div className="info-icon"><PremiumIcon name="document" /></div>
+              <div>
+                <h3>Technical and Commercial Alignment</h3>
+                <p>Engineering recommendations are aligned to compliance, schedule realities, and client business priorities.</p>
+              </div>
+            </article>
+          </div>
+
           <div className="service-grid">
-            {consultancyServices.map((item, index) => (
+            {coreServiceCards.map((item, index) => (
               <motion.article
                 key={`service-${index}`}
                 className="service-card"
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: index * 0.03 }}
                 whileHover={{ y: -8, scale: 1.01 }}
               >
@@ -2394,16 +2436,95 @@ function App() {
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <button
-                  type="button"
-                  className="knowledge-link service-link"
-                  onClick={() => {
-                    setSelectedService(item)
-                    setShowServiceModal(true)
-                  }}
+                <ul className="service-highlights service-scope-list">
+                  {item.items.map((serviceItem, serviceItemIndex) => (
+                    <li key={`${item.title}-${serviceItemIndex}`}>{serviceItem}</li>
+                  ))}
+                </ul>
+              </motion.article>
+            ))}
+          </div>
+
+          <div className="services-subsection">
+            <SectionHeading
+              eyebrow="Industries Served"
+              title="Sector-focused delivery across critical projects"
+              subtitle="Service delivery experience across technically demanding environments."
+            />
+            <div className="industries-grid">
+              {industriesServed.map((item, index) => (
+                <motion.article
+                  key={`services-industry-${item.name}`}
+                  className="industry-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.45, delay: index * 0.05 }}
                 >
-                  Learn More
-                </button>
+                  <div className="service-icon">
+                    <PremiumIcon name={item.icon} />
+                  </div>
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </motion.article>
+              ))}
+            </div>
+          </div>
+
+          <div className="services-subsection">
+            <SectionHeading
+              eyebrow="Why Clients Choose FAHEEM"
+              title="Professional consultancy with measurable project value"
+              subtitle="Clients engage FAHEEM for quality confidence, technical clarity, and dependable delivery standards."
+            />
+            <div className="why-choose-grid">
+              {servicePageWhyChoose.map((item, index) => (
+                <article key={`services-why-${index}`} className="why-choose-card">
+                  <h3>{item.value}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="services-cta">
+            <h3>Need Engineering Quality Support?</h3>
+            <p>Let's discuss your project requirements.</p>
+            <div className="contact-actions">
+              <a className="button button-primary" href="mailto:fozulur@yahoo.com">Contact Us</a>
+              <a className="button button-secondary" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">Request Consultation</a>
+            </div>
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="section"
+          id="industries-we-serve"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={sectionAnimation}
+        >
+          <SectionHeading
+            eyebrow="Industries We Serve"
+            title="Sector-focused consultancy for complex engineering environments"
+            subtitle="We support owners, EPC teams, and contractors across demanding industrial and infrastructure sectors."
+          />
+
+          <div className="industries-grid">
+            {industriesServed.map((item, index) => (
+              <motion.article
+                key={`industry-${item.name}`}
+                className="industry-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: index * 0.06 }}
+              >
+                <div className="service-icon">
+                  <PremiumIcon name={item.icon} />
+                </div>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
               </motion.article>
             ))}
           </div>
@@ -2411,22 +2532,22 @@ function App() {
 
         <motion.section
           className="section"
-          id="expertise"
+          id="why-choose"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Engineering Expertise"
-            title="Technical depth across concrete, repair systems, coatings, and geosynthetics"
-            subtitle="A broad engineering foundation supports inspections, repairs, material recommendations, and quality leadership."
+            eyebrow="Why Choose FAHEEM"
+            title="Business value delivered through engineering quality leadership"
+            subtitle="Our consultancy model is built to reduce risk, strengthen compliance, and improve project confidence."
           />
 
-          <div className="expertise-grid">
-            {engineeringExpertise.map((item, index) => (
-              <article key={`expertise-${index}`} className="expertise-card">
-                <h3>{item.title}</h3>
+          <div className="why-choose-grid">
+            {whyChooseFaheem.map((item, index) => (
+              <article key={`why-choose-${index}`} className="why-choose-card">
+                <h3>{item.value}</h3>
                 <p>{item.description}</p>
               </article>
             ))}
@@ -2435,7 +2556,7 @@ function App() {
 
         <motion.section
           className="section"
-          id="featured-projects-home"
+          id="projects-featured"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -2443,12 +2564,12 @@ function App() {
         >
           <SectionHeading
             eyebrow="Featured Projects"
-            title="Key engagements across mining, oil & gas, and industrial sectors"
-            subtitle="Current projects and long-term partnerships demonstrating quality leadership and technical expertise."
+            title="Consultancy capabilities demonstrated through project delivery"
+            subtitle="Representative capability areas that show how FAHEEM supports quality-led outcomes across major sectors."
           />
 
           <div className="featured-projects-grid">
-            {homepageFeaturedProjects.map((project, index) => (
+            {featuredCapabilities.map((project, index) => (
               <motion.article
                 key={project.id}
                 className="featured-project-card"
@@ -2471,206 +2592,23 @@ function App() {
                   <p className="project-description">{project.description}</p>
 
                   <div className="project-highlights">
-                    <p className="highlights-label">Key Achievements:</p>
+                    <p className="highlights-label">Capability Highlights:</p>
                     <ul className="highlights-list">
                       {project.highlights.map((highlight, highlightIndex) => (
                         <li key={`${highlight}-${highlightIndex}`}>{highlight}</li>
                       ))}
                     </ul>
                   </div>
-
-                  <div className="project-role">
-                    <p className="role-label">My Role:</p>
-                    <p className="role-value">{project.role}</p>
-                  </div>
-
-                  <div className="project-tech">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={`${tech}-${techIndex}`} className="tech-badge">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <a
-                  href={project.link}
-                  className="button button-primary"
-                >
-                  Learn More
-                </a>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="knowledge-center"
-          initial="hidden"
-          animate="visible"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Engineering Knowledge Center"
-            title="A premium resource library for engineering insight and practical decision support"
-            subtitle="Technical reference material for concrete diagnostics, repair planning, field inspection, and quality leadership."
-          />
-
-          <div className="knowledge-grid">
-            {knowledgeCenterItems.map((item, index) => (
-              <motion.article
-                key={`knowledge-${index}`}
-                className="knowledge-card"
-                initial={{ opacity: 0, y: 22 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.42, delay: index * 0.03 }}
-                whileHover={{ y: -6, scale: 1.01 }}
-              >
-                <div className="knowledge-icon">
-                  <PremiumIcon name={item.icon} />
-                </div>
-                <div className="knowledge-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <button type="button" className="knowledge-link">Read More</button>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="why-choose"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Why Choose Me"
-            title="Trusted by owners, consultants, and project teams for decisive engineering support"
-            subtitle="The combination of technical experience, field credibility, and quality leadership helps projects move forward with confidence."
-          />
-
-          <div className="why-choose-grid">
-            {whyChooseItems.map((item, index) => (
-              <article key={`why-choose-${index}`} className="why-choose-card">
-                <h3>{item.value}</h3>
-                <p>{item.description}</p>
-              </article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="credentials"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Professional Credentials"
-            title="Verified qualifications, certifications, and professional documentation"
-            subtitle="Access to downloadable credentials including academic qualifications, professional certifications, and work experience verification."
-          />
-
-          <div className="credentials-grid">
-            {credentials.map((cred, index) => (
-              <motion.article
-                key={cred.id}
-                className="credential-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.42, delay: index * 0.06 }}
-                whileHover={{ y: -6 }}
-              >
-                <div className="credential-category">{cred.category}</div>
-                <h3>{cred.title}</h3>
-                <p>{cred.description}</p>
-                <a href={`/credentials/${cred.filename}`} download className="credential-download">
-                  <span>📥 Download PDF</span>
-                </a>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="projects-featured"
-          initial="hidden"
-          animate="visible"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Featured Projects"
-            title="Industrial engineering excellence across oil & gas, petrochemical, and mining sectors"
-            subtitle="Delivering comprehensive QA/QC management and civil engineering solutions for world-scale projects in Saudi Arabia."
-          />
-
-          <div className="projects-grid">
-            {featuredProjects.map((project, index) => (
-              <motion.article
-                key={project.id}
-                className="project-card"
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
-              >
-                <div className="project-header">
-                  <h3>{project.name}</h3>
-                  <p className="project-subtitle">{project.title}</p>
-                </div>
-
-                <div className="project-meta">
-                  <span className="project-industry">{project.industry}</span>
-                  <span className="project-location">{project.location}</span>
-                </div>
-
-                <div className="project-details">
-                  <div className="project-detail-item">
-                    <p className="detail-label">My Role</p>
-                    <p className="detail-value">{project.role}</p>
-                  </div>
-
-                  <div className="project-detail-item">
-                    <p className="detail-label">Scope of Work</p>
-                    <p className="detail-value">{project.scope}</p>
-                  </div>
-
-                  <div className="project-detail-item">
-                    <p className="detail-label">Key Technologies</p>
-                    <div className="tech-tags">
-                      {project.technologies.slice(0, 2).map((tech, techIndex) => (
-                        <span key={`${tech}-${techIndex}`} className="tech-tag">{tech}</span>
-                      ))}
-                      {project.technologies.length > 2 && (
-                        <span className="tech-tag">+{project.technologies.length - 2} more</span>
-                      )}
-                    </div>
-                  </div>
                 </div>
 
                 <button
                   className="project-view-button"
                   onClick={() => {
-                    setSelectedProject(project)
+                    setSelectedProject(featuredProjects[index])
                     setShowProjectModal(true)
                   }}
                 >
-                  View Project Details →
+                  View Capability Details →
                 </button>
               </motion.article>
             ))}
@@ -2679,476 +2617,38 @@ function App() {
 
         <motion.section
           className="section"
-          id="case-studies"
-        >
-          <SectionHeading
-            eyebrow="Professional Case Studies"
-            title="Proven engineering solutions across industries and technical challenges"
-            subtitle="Detailed case studies showcasing root cause analysis, technical investigation, engineering calculations, and durable repair methodologies."
-          />
-
-          <div className="case-study-grid">
-            {caseStudies.map((study, index) => (
-              <motion.article
-                key={study.id}
-                className="case-study-card"
-                whileHover={{ y: -8, scale: 1.01 }}
-              >
-                <div className="case-study-header">
-                  <span className="case-study-industry">{study.industry}</span>
-                  <h3>{study.title}</h3>
-                </div>
-
-                <div className="case-study-content">
-                  <div className="case-study-field">
-                    <p className="field-label">Engineering Problem</p>
-                    <p className="field-value">{study.problem}</p>
-                  </div>
-
-                  <div className="case-study-field">
-                    <p className="field-label">Root Cause</p>
-                    <p className="field-value">{study.rootCause}</p>
-                  </div>
-
-                  <div className="case-study-field">
-                    <p className="field-label">Technical Investigation</p>
-                    <p className="field-value">{study.investigation}</p>
-                  </div>
-
-                  <div className="case-study-field">
-                    <p className="field-label">Engineering Solution</p>
-                    <p className="field-value">{study.solution}</p>
-                  </div>
-
-                  <div className="case-study-field">
-                    <p className="field-label">Result</p>
-                    <p className="field-value">{study.result}</p>
-                  </div>
-
-                  <div className="case-study-field">
-                    <p className="field-label">Technologies Used</p>
-                    <div className="tech-list">
-                      {study.technologies.map((tech, techIndex) => (
-                        <span key={`${tech}-${techIndex}`} className="tech-tag">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <button
-                  type="button"
-                  className="button button-secondary"
-                  onClick={() => {
-                    setSelectedCaseStudy(study)
-                    setShowCaseStudyModal(true)
-                  }}
-                >
-                  Read More
-                </button>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="technical-downloads"
+          id="leadership-preview"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Technical Resources"
-            title="Professional templates and operational procedures for quality management"
-            subtitle="Downloadable tools and frameworks developed from field experience across industrial and infrastructure projects."
+            eyebrow="Leadership Preview"
+            title="Leadership grounded in technical depth and quality discipline"
+            subtitle="Founder leadership supports FAHEEM's company-first mission to deliver dependable engineering consultancy outcomes."
           />
-
-          <div className="downloads-grid">
-            {technicalDownloads.map((download, index) => (
-              <motion.article
-                key={download.id}
-                className="download-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <div className="download-header">
-                  <div className="download-icon">
-                    <PremiumIcon name={download.icon} />
-                  </div>
-                  <span className="download-category">{download.category}</span>
-                </div>
-
-                <div className="download-content">
-                  <h3>{download.title}</h3>
-                  <p>{download.description}</p>
-                </div>
-
-                <div className="download-footer">
-                  <span className="file-type">{download.fileType}</span>
-                  <a
-                    href={download.link}
-                    className="button button-secondary button-small"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Request Resource
-                  </a>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-
-          <div className="downloads-cta">
-            <p>Need additional resources or custom templates?</p>
-            <a className="button button-primary" href="mailto:fozulur@yahoo.com?subject=Request%20Custom%20Resources">
-              Get in Touch
-            </a>
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="featured-articles"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Thought Leadership"
-            title="Engineering insights and quality management perspectives"
-            subtitle="Articles on quality systems, technical assessment, problem-solving methodologies, and leadership in engineering environments."
-          />
-
-          <div className="articles-grid">
-            {featuredArticles.map((article, index) => (
-              <motion.article
-                key={article.id}
-                className="article-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                whileHover={{ y: -8, scale: 1.01 }}
-              >
-                <div className="article-header">
-                  <span className="article-date">{article.date}</span>
-                  <span className="article-read-time">{article.readTime}</span>
-                </div>
-
-                <div className="article-content">
-                  <span className="article-category">{article.category}</span>
-                  <h3>{article.title}</h3>
-                  <p>{article.excerpt}</p>
-                </div>
-
-                <div className="article-footer">
-                  <div className="article-tags">
-                    {article.tags.map((tag, tagIndex) => (
-                      <span key={`${tag}-${tagIndex}`} className="tag">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <a
-                    href={article.link}
-                    className="button button-secondary button-small"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Request Article
-                  </a>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="testimonials"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Client Recognition"
-            title="What clients and project partners say about our collaboration"
-            subtitle="Testimonials from senior leaders across international petrochemical, mining, and industrial infrastructure projects."
-          />
-
-          <div className="testimonials-grid">
-            {testimonials.map((testimonial, index) => (
-              <motion.article
-                key={testimonial.id}
-                className="testimonial-card"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                whileHover={{ y: -4, scale: 1.01 }}
-              >
-                <div className="testimonial-rating">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="star">★</span>
-                  ))}
-                </div>
-
-                <p className="testimonial-quote">{testimonial.quote}</p>
-
-                <div className="testimonial-author">
-                  <div className="author-info">
-                    <h4>{testimonial.name}</h4>
-                    <p className="author-role">{testimonial.role}</p>
-                    <p className="author-company">{testimonial.company}</p>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="faq"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Frequently Asked Questions"
-            title="Common questions about consultancy services and expertise"
-            subtitle="Find answers about our approach, methods, industries, and how we can support your quality and engineering initiatives."
-          />
-
-          <div className="faq-container">
-            {faqItems.map((item, index) => (
-              <motion.div
-                key={item.id}
-                className="faq-item"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: index * 0.03 }}
-              >
-                <button
-                  type="button"
-                  className="faq-question"
-                  onClick={() => {
-                    setFaqExpanded(
-                      faqExpanded === item.id ? null : item.id
-                    )
-                  }}
-                >
-                  <span>{item.question}</span>
-                  <motion.span
-                    className="faq-icon"
-                    animate={{ rotate: faqExpanded === item.id ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    ▼
-                  </motion.span>
-                </button>
-
-                <AnimatePresence>
-                  {faqExpanded === item.id && (
-                    <motion.div
-                      className="faq-answer"
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <p>{item.answer}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="experience"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Experience"
-            title="A career built on quality leadership and measurable project impact"
-            subtitle="From field execution to senior management oversight, each phase has strengthened construction quality and delivery confidence."
-          />
-
-          <div className="timeline">
-            {timelineItems.map((item, index) => (
-              <motion.article
-                key={`timeline-${index}`}
-                className="timeline-item"
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{ duration: 0.45 }}
-              >
-                <div className="timeline-dot" />
-                <div className="timeline-card">
-                  <p className="timeline-period">{item.period}</p>
-                  <h3>{item.title}</h3>
-                  <p className="timeline-company">{item.company}</p>
-                  <p>{item.details}</p>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="projects"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Project Gallery"
-            title="Engineering delivery that reflects discipline, precision, and operational maturity"
-            subtitle="A selection of visual storytelling from field execution, site verification, and industrial project environments."
-          />
-
-          <div className="gallery-grid">
-            {gallery.map((item, index) => (
-              <article key={`gallery-${index}`} className="gallery-card">
-                <img src={item.image} alt={item.title} loading="lazy" />
-                <div className="gallery-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.label}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="certifications"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Certifications"
-            title="Professional credentials that reinforce technical credibility"
-            subtitle="A focused combination of inspection, safety, and civil maintenance expertise."
-          />
-
-          <div className="chip-list certifications-list">
-            {certifications.map((item, index) => (
-              <span key={`${item.title}-${index}`}>{item.title}</span>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="skills"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Skills"
-            title="Core skills backed by proven delivery and measurable results"
-            subtitle="A balanced mix of technical excellence, inspection depth, and quality leadership."
-          />
-
-          <div className="skill-list">
-            {skillData.map((skill, index) => (
-              <div key={`skill-${index}`} className="skill-item">
-                <div className="skill-labels">
-                  <span>{skill.name}</span>
-                  <span>{skill.value}%</span>
-                </div>
-                <div className="progress-track">
-                  <div className="progress-fill" style={{ width: `${skill.value}%` }} />
-                </div>
+          <div className="contact-card">
+            <div className="contact-card-main">
+              <p className="section-label">Founder</p>
+              <h3>Mohamed Haneefa Fozul Rahuman</h3>
+              <p>Senior QA/QC Civil Engineer | 25+ Years Experience</p>
+              <p>
+                FAHEEM's leadership combines deep technical experience with practical project quality governance across critical sectors.
+              </p>
+              <div className="contact-actions">
+                <a className="button button-primary" href="/leadership">
+                  Meet Our Leadership
+                </a>
+                <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">
+                  LinkedIn Profile
+                </a>
               </div>
-            ))}
-          </div>
-        </motion.section>
+            </div>
 
-        <motion.section
-          className="section"
-          id="download"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Download Resume"
-            title="Access a professional overview of experience, leadership, and project delivery"
-            subtitle="A polished summary of civil QA/QC capability, project history, and technical specialization."
-          />
-          <div className="download-card">
-            <a className="button button-primary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
-              Download PDF Resume
-            </a>
-          </div>
-        </motion.section>
-
-        <motion.section
-          className="section"
-          id="consultation"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={sectionAnimation}
-        >
-          <SectionHeading
-            eyebrow="Book a Consultation"
-            title="Need Professional Engineering Advice?"
-            subtitle="I provide online engineering consultation for civil quality, concrete defects, QA/QC, HDPE liner systems, inspections, root cause analysis and repair recommendations."
-          />
-
-          <div className="consultation-cta">
-            <a className="button button-primary consultation-button" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
-              Book a Consultation
-            </a>
-          </div>
-
-          <div className="consultation-grid">
-            <a className="consultation-card" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">
-              <div className="consultation-icon"><PremiumIcon name="quality" /></div>
-              <h3>WhatsApp Consultation</h3>
-              <p>Quick discussion for urgent engineering support and technical guidance.</p>
-            </a>
-            <a className="consultation-card" href="mailto:fozulur@yahoo.com">
-              <div className="consultation-icon"><PremiumIcon name="document" /></div>
-              <h3>Email Consultation</h3>
-              <p>Share your project details for a detailed consultation response.</p>
-            </a>
-            <a className="consultation-card" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" download>
-              <div className="consultation-icon"><PremiumIcon name="plan" /></div>
-              <h3>Download CV</h3>
-              <p>Review technical experience, credentials, and project background.</p>
-            </a>
-            <a className="consultation-card" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">
-              <div className="consultation-icon"><PremiumIcon name="globe" /></div>
-              <h3>LinkedIn Profile</h3>
-              <p>Connect for professional discussion and engineering collaboration.</p>
-            </a>
+            <div className="photo-frame">
+              <img src={profilePhoto} alt="Leadership portrait of Mohamed Haneefa Fozul Rahuman" loading="lazy" />
+            </div>
           </div>
         </motion.section>
 
@@ -3161,25 +2661,28 @@ function App() {
           variants={sectionAnimation}
         >
           <SectionHeading
-            eyebrow="Contact"
-            title="Let's discuss quality leadership for your next project"
-            subtitle="Open for senior civil QA/QC roles, consulting, and project quality advisory opportunities."
+            eyebrow="Call To Action"
+            title="Ready to strengthen quality performance on your next project?"
+            subtitle="Contact FAHEEM Engineering Consultancy to request consultancy support, discuss your project, or start a technical review." 
           />
 
           <div className="contact-card">
             <div className="contact-card-main">
-              <p className="section-label">Contact</p>
-              <h3>Discuss your next engineering or QA/QC requirement</h3>
-              <p>Reach out for senior consultancy support, quality leadership, and international project delivery partnerships as QA/QC Engineer at Al Yamama Company.</p>
+              <p className="section-label">Contact Us</p>
+              <h3>Let's discuss your project requirements</h3>
+              <p>
+                Engage FAHEEM for quality consultancy, inspection strategy, and engineering advisory tailored to your scope, risk profile, and delivery priorities.
+              </p>
               <div className="contact-actions">
-                <a className="button button-primary" href="mailto:fozulur@yahoo.com">Email Us</a>
-                <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a className="button button-primary" href="mailto:fozulur@yahoo.com">Contact Us</a>
+                <a className="button button-secondary" href="https://wa.me/966581212378" target="_blank" rel="noreferrer">Request Consultancy</a>
+                <a className="button button-secondary" href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer">Discuss Your Project</a>
               </div>
             </div>
 
             <div className="contact-details">
               <a href="mailto:fozulur@yahoo.com"><PremiumIcon name="document" /> fozulur@yahoo.com</a>
-              <a href="https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman" target="_blank" rel="noreferrer"><PremiumIcon name="globe" /> LinkedIn Profile</a>
+              <a href="https://wa.me/966581212378" target="_blank" rel="noreferrer"><PremiumIcon name="globe" /> WhatsApp Consultation</a>
               <span><PremiumIcon name="pin" /> Location: Saudi Arabia</span>
             </div>
           </div>
@@ -3228,20 +2731,21 @@ function App() {
       <footer className="footer">
         <div className="footer-grid">
           <div>
-            <h3>Fozul Engineering</h3>
-            <p>Premium engineering consultancy focused on quality, assurance, and project excellence.</p>
+            <h3>FAHEEM Engineering Consultancy</h3>
+            <p>Premium international engineering consultancy focused on quality, compliance, and project confidence.</p>
           </div>
           <div>
             <h4>Quick Links</h4>
             <a href="#home">Home</a>
+            <a href="#about">Company</a>
             <a href="#services">Services</a>
-            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
           </div>
           <div>
             <h4>Services</h4>
             <a href="#services">Consultancy Services</a>
-            <a href="#expertise">Engineering Expertise</a>
-            <a href="#why-choose">Why Choose Me</a>
+            <a href="#industries-we-serve">Industries We Serve</a>
+            <a href="#why-choose">Why Choose FAHEEM</a>
           </div>
           <div>
             <h4>Social Media</h4>
@@ -3250,7 +2754,7 @@ function App() {
             ))}
           </div>
         </div>
-        <p className="footer-copy">© 2026 Mohamed Haneefa Fozul Rahuman | QA/QC Engineer, Al Yamama Company</p>
+        <p className="footer-copy">© 2026 FAHEEM Engineering Consultancy | All rights reserved.</p>
       </footer>
     </div>
   )
