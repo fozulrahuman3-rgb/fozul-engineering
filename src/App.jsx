@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import profilePhoto from './assets/hero.webp'
 import feLogo from "./assets/faheem-monogram-gold.webp";
+import Leadership from './pages/Leadership'
+import Industries from './pages/Industries'
+import Projects from './pages/Projects'
 import './App.css'
 
 // SEO Strategy - Page Titles, Meta Descriptions & Keywords
@@ -198,48 +201,39 @@ const whyChooseFaheem = [
 const featuredCapabilities = [
   {
     id: 1,
-    title: 'Mining Containment Quality Programmes',
-    status: 'Consultancy Capability',
-    location: 'Saudi Arabia',
-    industry: 'Mining',
-    description:
-      'Delivery of structured QA/QC systems for large-area geosynthetic and HDPE containment installations under strict environmental requirements.',
-    highlights: [
-      'Large-scale liner quality oversight',
-      'Non-destructive testing governance',
-      'Regulatory documentation readiness',
-      'Multi-contractor coordination',
-    ],
+    title: 'Mining & Industrial Facilities',
+    description: 'QA/QC management for large-scale industrial developments.',
+    icon: 'quality',
   },
   {
     id: 2,
-    title: 'Oil & Gas Asset Integrity Consultancy',
-    status: 'Consultancy Capability',
-    location: 'Saudi Arabia & GCC',
-    industry: 'Oil & Gas',
-    description:
-      'Engineering advisory, inspection, and quality management support for maintenance, shutdowns, and critical civil reliability improvements.',
-    highlights: [
-      'Concrete investigation and repair strategy',
-      'Rapid assessment and corrective planning',
-      'Quality compliance for live facilities',
-      'Long-term partnership delivery model',
-    ],
+    title: 'Oil & Gas Infrastructure',
+    description: 'Construction quality assurance for critical energy projects.',
+    icon: 'inspection',
   },
   {
     id: 3,
-    title: 'Industrial and Infrastructure QA/QC Advisory',
-    status: 'Consultancy Capability',
-    location: 'Regional Delivery',
-    industry: 'Industrial & Infrastructure',
-    description:
-      'End-to-end quality advisory for civil packages, inspection systems, and handover assurance across high-value programs.',
-    highlights: [
-      'Construction quality management frameworks',
-      'Material and vendor quality controls',
-      'Audit and compliance improvement',
-      'Documentation and handover confidence',
-    ],
+    title: 'HDPE & Geosynthetics',
+    description: 'Installation quality, welding inspection, and compliance verification.',
+    icon: 'liner',
+  },
+  {
+    id: 4,
+    title: 'Earthworks & Civil Construction',
+    description: 'Excavation, filling, compaction, and infrastructure quality control.',
+    icon: 'earthwork',
+  },
+  {
+    id: 5,
+    title: 'Concrete & Structural Works',
+    description: 'Inspection, material compliance, reinforcement, and concrete quality.',
+    icon: 'repair',
+  },
+  {
+    id: 6,
+    title: 'Engineering Documentation',
+    description: 'ITPs, Quality Plans, Method Statements, MAR reviews, NCR support, and technical documentation.',
+    icon: 'document',
   },
 ]
 
@@ -2227,6 +2221,22 @@ function App() {
     return savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark'
   })
 
+  const isLeadershipPath = typeof window !== 'undefined' && window.location.pathname === '/leadership'
+  const isIndustriesPath = typeof window !== 'undefined' && window.location.pathname === '/industries'
+  const isProjectsPath = typeof window !== 'undefined' && window.location.pathname === '/projects'
+  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath
+  const renderedNavItems = isStandalonePage
+    ? navItems.map((item) =>
+        item.label === 'Leadership'
+          ? { ...item, href: '/leadership' }
+          : item.label === 'Industries'
+            ? { ...item, href: '/industries' }
+            : item.label === 'Projects'
+              ? { ...item, href: '/projects' }
+            : { ...item, href: `/${item.href}` }
+      )
+    : navItems
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
     window.localStorage.setItem('portfolio-theme', theme)
@@ -2282,11 +2292,11 @@ function App() {
 
       <nav className="navbar glass-nav">
         <div className="navbar-inner">
-          {navItems.map((item) => (
+          {renderedNavItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className={`nav-link ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+              className={`nav-link ${isLeadershipPath ? item.label === 'Leadership' : isIndustriesPath ? item.label === 'Industries' : isProjectsPath ? item.label === 'Projects' : activeSection === item.href.substring(1) ? 'active' : ''}`}
             >
               {item.label}
             </a>
@@ -2294,6 +2304,8 @@ function App() {
         </div>
       </nav>
 
+      {!isStandalonePage ? (
+        <>
       <motion.header id="home" className="hero-section" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
         <div className="hero-background">
           <div className="particle particle-a" />
@@ -2564,8 +2576,8 @@ function App() {
         >
           <SectionHeading
             eyebrow="Featured Projects"
-            title="Consultancy capabilities demonstrated through project delivery"
-            subtitle="Representative capability areas that show how FAHEEM supports quality-led outcomes across major sectors."
+            title="Featured Engineering Projects"
+            subtitle="Delivering quality, technical excellence, and engineering confidence across industrial and infrastructure projects."
           />
 
           <div className="featured-projects-grid">
@@ -2579,39 +2591,26 @@ function App() {
                 transition={{ duration: 0.5, delay: index * 0.08 }}
                 whileHover={{ y: -12, scale: 1.02 }}
               >
-                <div className="project-header">
-                  <div className="project-status-badge">{project.status}</div>
-                  <span className="project-industry">{project.industry}</span>
+                <div className="service-icon">
+                  <PremiumIcon name={project.icon} />
                 </div>
 
                 <div className="project-body">
                   <h3>{project.title}</h3>
-                  <p className="project-location">
-                    📍 {project.location}
-                  </p>
                   <p className="project-description">{project.description}</p>
-
-                  <div className="project-highlights">
-                    <p className="highlights-label">Capability Highlights:</p>
-                    <ul className="highlights-list">
-                      {project.highlights.map((highlight, highlightIndex) => (
-                        <li key={`${highlight}-${highlightIndex}`}>{highlight}</li>
-                      ))}
-                    </ul>
-                  </div>
                 </div>
 
-                <button
-                  className="project-view-button"
-                  onClick={() => {
-                    setSelectedProject(featuredProjects[index])
-                    setShowProjectModal(true)
-                  }}
-                >
-                  View Capability Details →
-                </button>
+                <a className="project-view-button" href="#">Learn More</a>
               </motion.article>
             ))}
+          </div>
+
+          <div className="services-cta">
+            <h3>Ready to discuss your next engineering project?</h3>
+            <div className="contact-actions">
+              <a className="button button-primary" href="mailto:fozulur@yahoo.com">Contact Us</a>
+              <a className="button button-secondary" href="#">Explore All Projects</a>
+            </div>
           </div>
         </motion.section>
 
@@ -2688,6 +2687,14 @@ function App() {
           </div>
         </motion.section>
       </main>
+        </>
+      ) : isLeadershipPath ? (
+        <Leadership SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} profilePhoto={profilePhoto} />
+      ) : isIndustriesPath ? (
+        <Industries SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} />
+      ) : (
+        <Projects SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} />
+      )}
 
       <CaseStudyModal
         caseStudy={selectedCaseStudy}

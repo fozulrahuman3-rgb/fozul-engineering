@@ -3736,7 +3736,7 @@ a {
 .timeline-container .timeline-item:last-child:before { display: none; }
 .timeline-year { font-size: 0.85rem; font-weight: 800; color: var(--accent-2); text-transform: uppercase; margin-bottom: 8px; }
 
-.stat-number { font-size: 2.8rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-number { font-size: 2.8rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent-2)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .certifications-section { margin-top: 24px; display: flex; flex-direction: column; gap: 32px; }
 .cert-category { padding: 28px; border-radius: 20px; border: 1.5px solid var(--border); background: linear-gradient(135deg, rgba(91, 135, 255, 0.06), rgba(53, 210, 255, 0.03)); }
@@ -3747,7 +3747,7 @@ a {
 
 .founder-message-container { display: grid; grid-template-columns: 280px 1fr; gap: 40px; margin-top: 24px; align-items: start; }
 .founder-image-placeholder { width: 280px; height: 280px; border-radius: 20px; background: linear-gradient(135deg, rgba(91, 135, 255, 0.15), rgba(53, 210, 255, 0.1)); border: 2px solid rgba(91, 135, 255, 0.3); display: flex; align-items: center; justify-content: center; }
-.founder-initials { font-size: 3.2rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.founder-initials { font-size: 3.2rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent-2)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .statement-intro { font-size: 1.2rem; font-weight: 700; color: var(--accent); font-style: italic; padding: 20px; border-left: 3px solid var(--accent-2); background: rgba(91, 135, 255, 0.06); border-radius: 8px; }
 
 .founder-message-content { padding: 32px; border-radius: 24px; border: 1.5px solid var(--border); background: linear-gradient(135deg, rgba(91, 135, 255, 0.08), rgba(53, 210, 255, 0.04)); box-shadow: 0 12px 32px rgba(4, 10, 24, 0.2), inset 0 1px 2px rgba(91, 135, 255, 0.08); }
