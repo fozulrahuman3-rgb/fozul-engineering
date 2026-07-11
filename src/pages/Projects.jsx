@@ -3,10 +3,17 @@ import { projectGallery, projectCategoryList } from '../data/projectGallery'
 import ProjectGalleryHero from '../components/ProjectGalleryHero'
 import ProjectCategoryFilters from '../components/ProjectCategoryFilters'
 import ProjectGalleryCard from '../components/ProjectGalleryCard'
+import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import './ProjectGallery.css'
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All')
+
+  useDocumentMeta({
+    title: 'Engineering Project Portfolio | FAHEEM Engineering Consultancy',
+    description: 'Selected engineering projects demonstrating international QA/QC leadership, quality assurance, and construction excellence across oil & gas, mining, and industrial sectors in Saudi Arabia — HDPE liner, concrete repair, earthworks, and geosynthetics case studies.',
+    url: 'https://faheemengineering.com/projects',
+  })
 
   const counts = useMemo(() => {
     const tally = { All: projectGallery.length }

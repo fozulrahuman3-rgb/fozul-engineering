@@ -1,10 +1,19 @@
 import { getProjectBySlug } from '../data/projectGallery'
+import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import './ProjectGallery.css'
 
 const GALLERY_PLACEHOLDER_COUNT = 4
 
 export default function ProjectCaseStudy({ slug }) {
   const project = getProjectBySlug(slug)
+
+  useDocumentMeta({
+    title: project
+      ? `${project.title} | FAHEEM Engineering Consultancy`
+      : 'Project Not Found | FAHEEM Engineering Consultancy',
+    description: project ? project.shortDescription : 'This case study could not be found. Browse the full FAHEEM Engineering Consultancy project portfolio instead.',
+    url: project ? `https://faheemengineering.com/projects/${project.slug}` : undefined,
+  })
 
   if (!project) {
     return (
