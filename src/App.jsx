@@ -2237,6 +2237,7 @@ function App() {
   const isCredentialsPath = typeof window !== 'undefined' && window.location.pathname === '/credentials'
   const isCaseStudiesPath = typeof window !== 'undefined' && window.location.pathname === '/case-studies'
   const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath
+  const homeAnchor = (hash) => (isStandalonePage ? `/${hash}` : hash)
   const renderedNavItems = isStandalonePage
     ? navItems.map((item) =>
         item.label === 'Leadership'
@@ -2771,16 +2772,16 @@ function App() {
           </div>
           <div>
             <h4>Quick Links</h4>
-            <a href="#home">Home</a>
-            <a href="#about">Company</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href={homeAnchor('#home')}>Home</a>
+            <a href={homeAnchor('#about')}>Company</a>
+            <a href={homeAnchor('#services')}>Services</a>
+            <a href={homeAnchor('#contact')}>Contact</a>
           </div>
           <div>
             <h4>Services</h4>
-            <a href="#services">Consultancy Services</a>
-            <a href="#industries-we-serve">Industries We Serve</a>
-            <a href="#why-choose">Why Choose FAHEEM</a>
+            <a href={homeAnchor('#services')}>Consultancy Services</a>
+            <a href={homeAnchor('#industries-we-serve')}>Industries We Serve</a>
+            <a href={homeAnchor('#why-choose')}>Why Choose FAHEEM</a>
           </div>
           <div>
             <h4>Social Media</h4>
