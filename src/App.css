@@ -204,6 +204,30 @@ a {
 }
 
 .hero-section {
+  /* The hero keeps its dark-navy "signature band" look in both themes
+     (brand direction: dark luxury hero), so it pins the theme variables
+     its descendants use to their dark-theme values regardless of the
+     site-wide light/dark toggle. */
+  --bg-elevated: rgba(10, 16, 31, 0.8);
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-strong: rgba(255, 255, 255, 0.1);
+  --text: #f7f9ff;
+  --muted: #bcc7dc;
+  --accent: #5b87ff;
+  --accent-2: #35d2ff;
+  --accent-soft: rgba(91, 135, 255, 0.16);
+  --border: rgba(255, 255, 255, 0.14);
+  --shadow-sm: 0 2px 8px rgba(4, 10, 24, 0.2);
+  --shadow-md: 0 8px 24px rgba(4, 10, 24, 0.25);
+  --shadow: 0 12px 40px rgba(4, 10, 24, 0.28);
+  --shadow-lg: 0 20px 60px rgba(4, 10, 24, 0.32);
+  --shadow-xl: 0 32px 80px rgba(4, 10, 24, 0.36);
+  /* Re-resolve `color` locally so descendants without their own explicit
+     color rule inherit this scope's --text instead of body's light-theme
+     color (custom properties re-derive per-scope; inherited `color` does
+     not — it's already resolved by the time it reaches this subtree). */
+  color: var(--text);
+
   position: relative;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
