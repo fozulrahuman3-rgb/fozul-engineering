@@ -5,6 +5,7 @@ import feLogo from "./assets/faheem-monogram-gold.webp";
 import Leadership from './pages/Leadership'
 import Industries from './pages/Industries'
 import Projects from './pages/Projects'
+import ProjectCaseStudy from './pages/ProjectCaseStudy'
 import CompanyProfile from './pages/CompanyProfile'
 import OrganizationChart from './pages/OrganizationChart'
 import Credentials from './pages/Credentials'
@@ -2232,11 +2233,13 @@ function App() {
   const isLeadershipPath = typeof window !== 'undefined' && window.location.pathname === '/leadership'
   const isIndustriesPath = typeof window !== 'undefined' && window.location.pathname === '/industries'
   const isProjectsPath = typeof window !== 'undefined' && window.location.pathname === '/projects'
+  const isProjectDetailPath = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects/')
+  const projectDetailSlug = isProjectDetailPath ? window.location.pathname.replace('/projects/', '').replace(/\/$/, '') : null
   const isCompanyProfilePath = typeof window !== 'undefined' && window.location.pathname === '/company-profile'
   const isOrganizationChartPath = typeof window !== 'undefined' && window.location.pathname === '/organization-chart'
   const isCredentialsPath = typeof window !== 'undefined' && window.location.pathname === '/credentials'
   const isCaseStudiesPath = typeof window !== 'undefined' && window.location.pathname === '/case-studies'
-  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath
+  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isProjectDetailPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath
   const homeAnchor = (hash) => (isStandalonePage ? `/${hash}` : hash)
   const renderedNavItems = isStandalonePage
     ? navItems.map((item) =>
@@ -2721,6 +2724,8 @@ function App() {
         <Credentials />
       ) : isCaseStudiesPath ? (
         <CaseStudies />
+      ) : isProjectDetailPath ? (
+        <ProjectCaseStudy slug={projectDetailSlug} />
       ) : (
         <Projects />
       )}
