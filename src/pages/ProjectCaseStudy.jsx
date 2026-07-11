@@ -4,6 +4,14 @@ import './ProjectGallery.css'
 
 const GALLERY_PLACEHOLDER_COUNT = 4
 
+function StatusCheckIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 12.5 9.2 16.7 19 6.9" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 export default function ProjectCaseStudy({ slug }) {
   const project = getProjectBySlug(slug)
 
@@ -43,12 +51,16 @@ export default function ProjectCaseStudy({ slug }) {
 
         <dl className="project-case-study-meta-grid">
           <div>
+            <dt>Client</dt>
+            <dd>{project.client}</dd>
+          </div>
+          <div>
             <dt>Country</dt>
             <dd>{project.country}</dd>
           </div>
           <div>
-            <dt>Client</dt>
-            <dd>{project.client}</dd>
+            <dt>Industry</dt>
+            <dd>{project.industry}</dd>
           </div>
           <div>
             <dt>Duration</dt>
@@ -58,7 +70,37 @@ export default function ProjectCaseStudy({ slug }) {
             <dt>Role</dt>
             <dd>{project.role}</dd>
           </div>
+          {project.contractValue ? (
+            <div>
+              <dt>Contract Value</dt>
+              <dd>{project.contractValue}</dd>
+            </div>
+          ) : null}
+          <div>
+            <dt>Status</dt>
+            <dd>
+              <span className="project-case-study-status-badge">
+                <StatusCheckIcon />
+                {project.status}
+              </span>
+            </dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>{project.location}</dd>
+          </div>
         </dl>
+
+        {project.tags?.length ? (
+          <div className="project-case-study-tags-row">
+            <span>Project Tags</span>
+            <div className="project-case-study-hero-tags">
+              {project.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+          </div>
+        ) : null}
       </header>
 
       <div className="project-case-study-sections">
