@@ -17,6 +17,34 @@ export const projectCategoryList = [
   'Industrial Maintenance',
 ]
 
+// Fixed engineering-skill taxonomy for badge display (Phase 3). Each project
+// lists the subset that genuinely applies, based on its actual standards and
+// categories above — not every project uses every skill.
+export const skillTaxonomy = [
+  'ASTM', 'ISO', 'AASHTO', 'Saudi Standards', 'Civil QA/QC', 'Earthworks',
+  'HDPE', 'Concrete', 'Geosynthetics', 'Inspection', 'Material Approval', 'Documentation',
+]
+
+// Drawings and Document Library are placeholder-only per the Phase 3 spec —
+// same fixed category set shown on every project rather than per-project
+// authored content, since no real files exist yet for any project.
+export const drawingCategories = [
+  { key: 'ifc', label: 'IFC Drawings', description: 'Issued-for-construction drawing sets.' },
+  { key: 'sections', label: 'Sections', description: 'Cross-section and profile drawings.' },
+  { key: 'details', label: 'Details', description: 'Detail call-outs and connection drawings.' },
+  { key: 'sequence', label: 'Construction Sequence', description: 'Staged construction sequence drawings.' },
+  { key: 'method-statements', label: 'Method Statements', description: 'Execution method statement drawings and diagrams.' },
+]
+
+export const documentCategories = [
+  { key: 'reports', label: 'Project Reports', description: 'Progress and completion reporting.' },
+  { key: 'method-statements', label: 'Method Statements', description: 'Approved execution method statements.' },
+  { key: 'inspection-reports', label: 'Inspection Reports', description: 'Field inspection and hold-point records.' },
+  { key: 'quality-plans', label: 'Quality Plans', description: 'Inspection and test plans, project quality plans.' },
+  { key: 'material-approvals', label: 'Material Approvals', description: 'Material approval requests and submittal records.' },
+  { key: 'certificates', label: 'Certificates', description: 'Test and compliance certificates.' },
+]
+
 export const projectGallery = [
   {
     slug: 'seawater-sump-emergency-concrete-repair',
@@ -24,6 +52,10 @@ export const projectGallery = [
     categories: ['Oil & Gas', 'Concrete', 'Industrial Maintenance'],
     country: 'Saudi Arabia',
     client: 'Saudi Chevron Company',
+    industry: 'Oil & Gas',
+    location: 'Operational refining/processing facility, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: 'Shutdown-window repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'Cathodic-protection-compatible concrete repair of a seawater return sump, completed within a single planned shutdown window.',
@@ -49,6 +81,20 @@ export const projectGallery = [
       'Sump returned to service without compromising the Cathodic Protection system',
     ],
     lessonsLearned: 'Repair material selection must account for all active protection systems before a specification is issued. Controlled accelerated curing can support time-critical repair work when properly managed.',
+    tags: ['Cementitious Repair Mortar', 'Halogen Light Curing', 'Cathodic Protection', 'Protective Coating'],
+    materials: 'Cathodic-protection-compatible cementitious repair mortar, protective coating system, and curing compound selected to replace the original epoxy specification.',
+    testing: 'Substrate soundness checks prior to placement, halogen-light cure monitoring against the shutdown deadline, and Cathodic Protection continuity verification before and after repair.',
+    documentation: 'Hold-point inspection records, material batch verification records, and a repair completion report supporting sump reinstatement sign-off.',
+    skills: ['Civil QA/QC', 'Concrete', 'Inspection', 'Documentation'],
+    timeline: [
+      { phase: 'Assessment', description: 'Shutdown inspection identified deterioration and confirmed the Cathodic Protection constraint on repair material choice.' },
+      { phase: 'Material Selection', description: 'Cementitious repair mortar selected in place of epoxy for CP compatibility.' },
+      { phase: 'Substrate Preparation', description: 'Deteriorated concrete removed to sound substrate.' },
+      { phase: 'Repair Placement', description: 'Repair mortar placed under hold-point inspection.' },
+      { phase: 'Curing', description: 'Controlled halogen-light curing to accelerate strength gain within the shutdown window.' },
+      { phase: 'Handover', description: 'Protective coating applied and the sump returned to service.' },
+    ],
+    stats: [],
   },
   {
     slug: 'cfrp-strengthening-seawater-return-sump-wall',
@@ -56,6 +102,10 @@ export const projectGallery = [
     categories: ['Oil & Gas', 'Concrete'],
     country: 'Saudi Arabia',
     client: 'Saudi Chevron Company',
+    industry: 'Oil & Gas',
+    location: 'Operational refining/processing facility, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: 'Live-operation structural repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'CFRP strengthening of a corroded seawater sump wall, executed without taking the structure out of service.',
@@ -81,6 +131,20 @@ export const projectGallery = [
       'Added confinement and durability support for the marine exposure environment',
     ],
     lessonsLearned: 'CFRP can be effective where live structures cannot be taken out of service. Protection of active corrosion-control systems must be a documented hold point, not an assumption.',
+    tags: ['CFRP Strengthening', 'Cementitious Repair Mortar', 'Grit Blasting', 'Structural Rehabilitation'],
+    materials: 'Cementitious repair mortar for substrate reinstatement, followed by a full CFRP strengthening system applied to the rehabilitated wall.',
+    testing: 'Cathodic Protection ribbon continuity verified as a documented hold point at each repair stage; CFRP surface preparation and bond quality inspected before sign-off.',
+    documentation: 'Damage and CP-ribbon mapping records, staged hold-point inspection reports, and CFRP installation acceptance records.',
+    skills: ['Civil QA/QC', 'Concrete', 'Inspection', 'Documentation'],
+    timeline: [
+      { phase: 'Damage Assessment', description: 'Delamination, reinforcement exposure, and chloride attack mapped, along with Cathodic Protection ribbon routing.' },
+      { phase: 'Preparation', description: 'Unsound concrete removed and exposed reinforcement grit-blasted.' },
+      { phase: 'CP Protection', description: 'Cathodic Protection ribbon isolated and protected throughout the repair sequence.' },
+      { phase: 'Concrete Repair', description: 'Cementitious repair placed and cured under staged hold points.' },
+      { phase: 'CFRP Installation', description: 'Full CFRP strengthening applied to the repaired wall.' },
+      { phase: 'Handover', description: 'Structural capacity restored without interrupting live sump operation.' },
+    ],
+    stats: [],
   },
   {
     slug: 'epoxy-grouting-reciprocating-pump-foundation',
@@ -88,6 +152,10 @@ export const projectGallery = [
     categories: ['Oil & Gas', 'Industrial Maintenance'],
     country: 'Saudi Arabia',
     client: 'Saudi Chevron Company',
+    industry: 'Oil & Gas',
+    location: 'Operational refining/processing facility, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: 'Root-cause investigation and repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'Root-cause investigation and geometry correction ending a recurring grout-cracking failure on a critical pump foundation.',
@@ -113,6 +181,19 @@ export const projectGallery = [
       'Foundation remained stable under normal reciprocating pump operation',
     ],
     lessonsLearned: 'Recurring repair failures require root-cause resolution, not repeated symptom treatment. Grout geometry is a critical design parameter for dynamically loaded equipment foundations.',
+    tags: ['Epoxy Grouting', 'Foundation Geometry Correction', 'Expansion Joints', 'Dynamic Load Analysis'],
+    materials: 'Epoxy grout placed to a corrected geometry, with new perimeter expansion joints installed to accommodate dynamic pump loading.',
+    testing: 'Controlled removal inspection to confirm full extraction of damaged grout, and void-free placement confirmation before the foundation returned to service.',
+    documentation: 'Engineering review record of prior failures, geometry verification records against the revised design, and regrouting completion sign-off.',
+    skills: ['Civil QA/QC', 'Inspection', 'Documentation'],
+    timeline: [
+      { phase: 'Root Cause Review', description: 'Grout geometry, material properties, and dynamic loading reviewed against the recurring failure history.' },
+      { phase: 'Removal', description: 'Damaged grout removed under controlled, inspected demolition.' },
+      { phase: 'Geometry Correction', description: 'Width-to-depth ratio corrected and perimeter expansion joints installed.' },
+      { phase: 'Regrouting', description: 'New epoxy grout placed to the revised geometry, verified void-free.' },
+      { phase: 'Handover', description: 'Foundation returned to service with no further cracking observed.' },
+    ],
+    stats: [],
   },
   {
     slug: 'hdpe-liner-qc-gypsum-stack-expansion-phase-iv',
@@ -120,6 +201,10 @@ export const projectGallery = [
     categories: ['Mining', 'HDPE Liner'],
     country: 'Saudi Arabia (Ras Al Khair)',
     client: 'Ma’aden Phosphate Company (via Al Yamama Company)',
+    industry: 'Mining',
+    location: 'Ras Al Khair Industrial City, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Full QA/QC programme for a large-scale HDPE liner installation, covering 1M+ m² with 100% weld-test coverage.',
@@ -145,6 +230,24 @@ export const projectGallery = [
       'Zero environmental non-compliance incidents across the 18-month execution',
     ],
     lessonsLearned: 'Contractor and welding-procedure qualification are essential at the outset. Consistent NDT coverage across every seam is central to demonstrating liner integrity at handover.',
+    tags: ['HDPE Geomembrane', 'Thermal Fusion Welding', 'Vacuum Box Testing', 'Air Pressure Testing'],
+    materials: 'HDPE geomembrane liner deployed across a 280-hectare containment area, joined by thermal fusion welding.',
+    testing: '100% non-destructive weld testing via vacuum box and air pressure channel methods, with destructive test witnessing and documented repair/re-test cycles for every defect found.',
+    documentation: 'Contractor and welding-procedure qualification records, inspection and test plans per installation stage, and final acceptance and environmental compliance documentation.',
+    skills: ['HDPE', 'Civil QA/QC', 'Inspection', 'Material Approval', 'Documentation', 'Saudi Standards'],
+    timeline: [
+      { phase: 'Mobilization', description: 'Contractor, welding-equipment, and installer competency qualifications reviewed before deployment.' },
+      { phase: 'Subgrade Acceptance', description: 'Subgrade inspected and accepted ahead of liner deployment.' },
+      { phase: 'Liner Deployment', description: 'HDPE geomembrane deployed across the 280-hectare project area.' },
+      { phase: 'Seam Welding', description: 'Thermal fusion welding executed under inspection and test plan controls.' },
+      { phase: 'NDT & QC', description: '100% weld testing via vacuum box and air pressure channel methods, with repair/re-test cycles.' },
+      { phase: 'Handover', description: 'Final acceptance and environmental compliance documentation completed for sign-off.' },
+    ],
+    stats: [
+      { label: 'Liner Area Installed', value: 1000000, suffix: '+ m²' },
+      { label: 'Inspection Points', value: 4862, suffix: '' },
+      { label: 'Weld Length Tested', value: 42000, suffix: ' LM' },
+    ],
   },
   {
     slug: 'earthwork-compaction-optimisation-field-density-testing',
@@ -152,6 +255,10 @@ export const projectGallery = [
     categories: ['Mining', 'Earthworks'],
     country: 'Saudi Arabia (Ras Al Khair)',
     client: 'Ma’aden Phosphate Company (via Al Yamama Company)',
+    industry: 'Mining',
+    location: 'Ras Al Khair Industrial City, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Field-procedure correction that eliminated false compaction failures on a liner-foundation subgrade without slowing construction.',
@@ -177,6 +284,20 @@ export const projectGallery = [
       'False failures caused by surface drying eliminated without slowing construction productivity',
     ],
     lessonsLearned: 'Material-specific behaviour must inform testing procedures, not just the specification. Low-plasticity SM materials require adapted FDT protocols to produce representative results.',
+    tags: ['Field Density Testing', 'Nuclear Density Gauge', 'Proctor Compaction Testing', 'SM Soil Classification'],
+    materials: 'Silty Sand (SM) earthwork fill placed and compacted as a liner-foundation subgrade.',
+    testing: 'Proctor compaction testing and nuclear-gauge Field Density Testing under a revised, moisture-controlled procedure, with scarification/re-moistening/recompaction and re-testing wherever results fell short.',
+    documentation: 'Soil classification and Proctor test records, revised field-procedure documentation, and Field Density Testing result records supporting layer acceptance.',
+    skills: ['Earthworks', 'Civil QA/QC', 'Inspection', 'ASTM'],
+    timeline: [
+      { phase: 'Material Assessment', description: 'Silty Sand (SM) classification and Proctor values established for the subgrade fill.' },
+      { phase: 'Trial Compaction', description: 'Rapid surface drying identified as the cause of unrepresentative Field Density Testing results.' },
+      { phase: 'Procedure Revision', description: 'Field procedure introduced to restore representative moisture immediately before testing.' },
+      { phase: 'Compaction & Testing', description: 'Field Density Testing performed under the revised procedure, with re-testing where required.' },
+      { phase: 'Layer Protection', description: 'Approved surfaces protected promptly with the next earthwork layer.' },
+      { phase: 'Handover', description: 'Required density and moisture compliance achieved without slowing construction.' },
+    ],
+    stats: [],
   },
   {
     slug: 'geosynthetic-layer-inspection-hdpe-liner-system',
@@ -184,6 +305,10 @@ export const projectGallery = [
     categories: ['Mining', 'Geosynthetics'],
     country: 'Saudi Arabia (Ras Al Khair)',
     client: 'Ma’aden Phosphate Company (via Al Yamama Company)',
+    industry: 'Mining',
+    location: 'Ras Al Khair Industrial City, Saudi Arabia',
+    status: 'Completed',
+    contractValue: null,
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Layer-by-layer inspection programme for a multi-product geosynthetic system beneath the HDPE liner.',
@@ -209,6 +334,19 @@ export const projectGallery = [
       'Overlap and anchorage verification accepted for regulatory and client sign-off',
     ],
     lessonsLearned: 'Multi-layer geosynthetic systems need inspection hold points at every layer, not just at completion. Orientation and overlap must be verified in real time before subsequent layers are installed.',
+    tags: ['Bi-planar Geocomposite', 'Tri-planar Geocomposite', 'Geotextile Inspection', 'Hold Point Inspection'],
+    materials: 'Bi-planar geocomposite, tri-planar geocomposite, and geotextile layers installed beneath the HDPE liner system.',
+    testing: 'Material submittal and delivery-certificate verification, overlap and anchor-trench dimension checks, and hold-point inspection at every layer before the next was permitted to proceed.',
+    documentation: 'Delivery-certificate and material-conformance records, layer-by-layer hold-point inspection sign-offs, and non-conformance correction records.',
+    skills: ['Geosynthetics', 'Civil QA/QC', 'Inspection', 'Material Approval', 'Saudi Standards'],
+    timeline: [
+      { phase: 'Material Verification', description: 'Submittals and delivery certificates checked against specification for every product type.' },
+      { phase: 'Geotextile Layer', description: 'Geotextile installation inspected for orientation, overlap, and anchorage.' },
+      { phase: 'Geocomposite Layers', description: 'Bi-planar and tri-planar geocomposite installation verified layer by layer.' },
+      { phase: 'Hold Point Sign-off', description: 'Each layer inspected and signed off before the next was installed.' },
+      { phase: 'Handover', description: 'Full conformance and anchorage verification accepted for regulatory and client sign-off.' },
+    ],
+    stats: [],
   },
 ]
 
