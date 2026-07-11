@@ -123,7 +123,7 @@ export default function Credentials() {
         </div>
         <div className="credentials-download-actions">
           <button className="button button-secondary" type="button" disabled>Professional Credentials <small>Coming Soon</small></button>
-          <a className="button button-primary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.pdf" target="_blank" rel="noreferrer">Download Founder CV</a>
+          <a className="button button-primary" href="/Mohamed_Haneefa_Fozul_Rahuman_CV.docx" target="_blank" rel="noreferrer">Download Founder CV <small>DOCX</small></a>
           <a className="button button-secondary" href="/capability-statement.svg" target="_blank" rel="noreferrer">Download Capability Statement</a>
         </div>
       </section>
