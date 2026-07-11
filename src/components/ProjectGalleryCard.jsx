@@ -18,7 +18,7 @@ export default function ProjectGalleryCard({ project }) {
           ))}
         </div>
 
-        <h3>{project.title}</h3>
+        <h2>{project.title}</h2>
         <p className="project-gallery-card-description">{project.shortDescription}</p>
 
         <dl className="project-gallery-card-meta">

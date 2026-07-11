@@ -8,6 +8,14 @@
   --gallery-gold: #d5af5b;
   --gallery-gold-light: #f1d28a;
   --gallery-navy: #07162c;
+  /* This module keeps its dark-navy premium look in both themes (same
+     convention as .case-studies-page and its siblings). Pin --muted (used
+     by card/section body copy) to its dark-theme value so text stays
+     legible against the always-dark card backgrounds when the site-wide
+     toggle is set to light — otherwise light theme's darker --muted reads
+     as low-contrast on a background that never lightens. */
+  --muted: #bcc7dc;
+  color: #f7f9ff;
   display: grid;
   gap: clamp(56px, 8vw, 96px);
   padding: 12px 0 36px;
@@ -130,7 +138,9 @@
 
 .project-gallery-filter:focus-visible,
 .project-gallery-card-link:focus-visible {
-  outline: 2px solid var(--gallery-gold-light);
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--gallery-gold-light);
   outline-offset: 2px;
 }
 
@@ -229,7 +239,7 @@
   text-transform: uppercase;
 }
 
-.project-gallery-card h3 {
+.project-gallery-card h2 {
   margin: 0;
   color: #fff;
   font-size: 1.22rem;
