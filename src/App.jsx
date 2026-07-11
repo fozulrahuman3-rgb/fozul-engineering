@@ -5,6 +5,10 @@ import feLogo from "./assets/faheem-monogram-gold.webp";
 import Leadership from './pages/Leadership'
 import Industries from './pages/Industries'
 import Projects from './pages/Projects'
+import CompanyProfile from './pages/CompanyProfile'
+import OrganizationChart from './pages/OrganizationChart'
+import Credentials from './pages/Credentials'
+import CaseStudies from './pages/CaseStudies'
 import './App.css'
 
 // SEO Strategy - Page Titles, Meta Descriptions & Keywords
@@ -48,6 +52,10 @@ const seoStrategy = {
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Company', href: '#about' },
+  { label: 'Profile', href: '/company-profile' },
+  { label: 'Organization', href: '/organization-chart' },
+  { label: 'Credentials', href: '/credentials' },
+  { label: 'Case Studies', href: '/case-studies' },
   { label: 'Services', href: '#services' },
   { label: 'Industries', href: '#industries-we-serve' },
   { label: 'Why FAHEEM', href: '#why-choose' },
@@ -2224,7 +2232,11 @@ function App() {
   const isLeadershipPath = typeof window !== 'undefined' && window.location.pathname === '/leadership'
   const isIndustriesPath = typeof window !== 'undefined' && window.location.pathname === '/industries'
   const isProjectsPath = typeof window !== 'undefined' && window.location.pathname === '/projects'
-  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath
+  const isCompanyProfilePath = typeof window !== 'undefined' && window.location.pathname === '/company-profile'
+  const isOrganizationChartPath = typeof window !== 'undefined' && window.location.pathname === '/organization-chart'
+  const isCredentialsPath = typeof window !== 'undefined' && window.location.pathname === '/credentials'
+  const isCaseStudiesPath = typeof window !== 'undefined' && window.location.pathname === '/case-studies'
+  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath
   const renderedNavItems = isStandalonePage
     ? navItems.map((item) =>
         item.label === 'Leadership'
@@ -2233,7 +2245,15 @@ function App() {
             ? { ...item, href: '/industries' }
             : item.label === 'Projects'
               ? { ...item, href: '/projects' }
-            : { ...item, href: `/${item.href}` }
+              : item.label === 'Profile'
+                ? { ...item, href: '/company-profile' }
+                : item.label === 'Organization'
+                  ? { ...item, href: '/organization-chart' }
+                  : item.label === 'Credentials'
+                    ? { ...item, href: '/credentials' }
+                    : item.label === 'Case Studies'
+                      ? { ...item, href: '/case-studies' }
+              : { ...item, href: `/${item.href}` }
       )
     : navItems
 
@@ -2252,7 +2272,7 @@ function App() {
       const offset = window.scrollY + 220
       let current = 'home'
 
-      navItems.forEach((item) => {
+      navItems.filter((item) => item.href.startsWith('#')).forEach((item) => {
         const section = document.querySelector(item.href)
         if (section && section.offsetTop <= offset) {
           current = section.id
@@ -2296,7 +2316,7 @@ function App() {
             <a
               key={item.href}
               href={item.href}
-              className={`nav-link ${isLeadershipPath ? item.label === 'Leadership' : isIndustriesPath ? item.label === 'Industries' : isProjectsPath ? item.label === 'Projects' : activeSection === item.href.substring(1) ? 'active' : ''}`}
+              className={`nav-link ${isLeadershipPath ? item.label === 'Leadership' : isIndustriesPath ? item.label === 'Industries' : isProjectsPath ? item.label === 'Projects' : isCompanyProfilePath ? item.label === 'Profile' : isOrganizationChartPath ? item.label === 'Organization' : isCredentialsPath ? item.label === 'Credentials' : isCaseStudiesPath ? item.label === 'Case Studies' : activeSection === item.href.substring(1) ? 'active' : ''}`}
             >
               {item.label}
             </a>
@@ -2692,6 +2712,14 @@ function App() {
         <Leadership SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} profilePhoto={profilePhoto} />
       ) : isIndustriesPath ? (
         <Industries SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} />
+      ) : isCompanyProfilePath ? (
+        <CompanyProfile profilePhoto={profilePhoto} />
+      ) : isOrganizationChartPath ? (
+        <OrganizationChart />
+      ) : isCredentialsPath ? (
+        <Credentials />
+      ) : isCaseStudiesPath ? (
+        <CaseStudies />
       ) : (
         <Projects SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} />
       )}
