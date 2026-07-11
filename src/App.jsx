@@ -2722,7 +2722,7 @@ function App() {
       ) : isCaseStudiesPath ? (
         <CaseStudies />
       ) : (
-        <Projects SectionHeading={SectionHeading} PremiumIcon={PremiumIcon} />
+        <Projects />
       )}
 
       <CaseStudyModal
