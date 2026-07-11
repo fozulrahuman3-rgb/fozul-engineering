@@ -2621,7 +2621,7 @@ function App() {
                   <p className="project-description">{project.description}</p>
                 </div>
 
-                <a className="project-view-button" href="#">Learn More</a>
+                <a className="project-view-button" href="/projects">Learn More</a>
               </motion.article>
             ))}
           </div>
@@ -2630,7 +2630,7 @@ function App() {
             <h3>Ready to discuss your next engineering project?</h3>
             <div className="contact-actions">
               <a className="button button-primary" href="mailto:fozulur@yahoo.com">Contact Us</a>
-              <a className="button button-secondary" href="#">Explore All Projects</a>
+              <a className="button button-secondary" href="/projects">Explore All Projects</a>
             </div>
           </div>
         </motion.section>
