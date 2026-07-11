@@ -2115,7 +2115,7 @@ a {
   margin: 48px 0;
 }
 
-.section-subtitle {
+.subsection-label {
   margin: 0 0 28px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -2402,7 +2402,7 @@ a {
     font-size: 2rem;
   }
 
-  .section-subtitle {
+  .subsection-label {
     font-size: 1.3rem;
   }
 }

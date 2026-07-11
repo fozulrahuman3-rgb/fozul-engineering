@@ -86,7 +86,7 @@ export default function Leadership({ SectionHeading, PremiumIcon, profilePhoto }
         </div>
 
         <div className="services-subsection">
-          <h3 className="section-subtitle">Engineering Expertise</h3>
+          <h3 className="subsection-label">Engineering Expertise</h3>
           <div className="why-choose-grid">
             {leadership.engineeringExpertise.map((item, index) => (
               <article key={`${item}-${index}`} className="why-choose-card">
@@ -98,7 +98,7 @@ export default function Leadership({ SectionHeading, PremiumIcon, profilePhoto }
         </div>
 
         <div className="services-subsection">
-          <h3 className="section-subtitle">Core Competencies</h3>
+          <h3 className="subsection-label">Core Competencies</h3>
           <div className="chip-list">
             {leadership.coreCompetencies.map((item, index) => (
               <span key={`${item}-${index}`}>{item}</span>
@@ -107,7 +107,7 @@ export default function Leadership({ SectionHeading, PremiumIcon, profilePhoto }
         </div>
 
         <div className="services-subsection">
-          <h3 className="section-subtitle">Professional Achievements</h3>
+          <h3 className="subsection-label">Professional Achievements</h3>
           <ul className="service-highlights service-scope-list">
             {leadership.achievements.map((item, index) => (
               <li key={`${item}-${index}`}>{item}</li>
