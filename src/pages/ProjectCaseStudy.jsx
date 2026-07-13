@@ -4,6 +4,17 @@ import './ProjectGallery.css'
 
 const GALLERY_PLACEHOLDER_COUNT = 4
 
+const CODES_STANDARDS_CATEGORY_ORDER = ['Industry Standard', 'Regulatory Requirement', 'Project Specification']
+
+function groupCodesStandards(codesStandards) {
+  return CODES_STANDARDS_CATEGORY_ORDER
+    .map((category) => ({
+      category,
+      items: codesStandards.filter((entry) => entry.category === category),
+    }))
+    .filter((group) => group.items.length > 0)
+}
+
 function StatusCheckIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -35,6 +46,8 @@ export default function ProjectCaseStudy({ slug }) {
       </main>
     )
   }
+
+  const codesStandardsGroups = groupCodesStandards(project.codesStandards)
 
   return (
     <main className="project-gallery-page">
@@ -143,7 +156,20 @@ export default function ProjectCaseStudy({ slug }) {
 
         <section className="project-case-study-section">
           <h2>Codes &amp; Standards</h2>
-          <p>{project.standards}</p>
+          {codesStandardsGroups.map((group) => (
+            <div key={group.category} className="project-case-study-standards-group">
+              <h3>{group.category}</h3>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item.standard}>
+                    <span className="project-case-study-standard-name">{item.standard}</span>
+                    {' — '}
+                    {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
 
         <section className="project-case-study-section">

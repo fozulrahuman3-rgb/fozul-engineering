@@ -560,6 +560,11 @@
   line-height: 1.6;
 }
 
+.project-case-study-standard-name {
+  color: var(--gallery-gold-light);
+  font-weight: 700;
+}
+
 .project-case-study-section li::before {
   content: '';
   position: absolute;

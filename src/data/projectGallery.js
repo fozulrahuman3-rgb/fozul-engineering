@@ -71,6 +71,11 @@ export const projectGallery = [
     ],
     qaqcActivities: 'Hold-point inspection at substrate preparation, material batch verification, cure monitoring under halogen lighting, and final coating inspection prior to sump reinstatement.',
     standards: 'No third-party standard was formally cited in the project record; work was governed by project repair requirements, the active Cathodic Protection constraints, and the shutdown schedule.',
+    codesStandards: [
+      { category: 'Project Specification', standard: 'Project Repair Requirements', description: 'Governed the concrete repair scope and material selection for the sump.' },
+      { category: 'Project Specification', standard: 'Cathodic Protection Constraints', description: 'Governed compatibility requirements for the replacement repair material.' },
+      { category: 'Project Specification', standard: 'Shutdown Schedule', description: 'Governed the available window for repair execution and reinstatement.' },
+    ],
     challenges: 'The replacement material had to remain fully compatible with a live Cathodic Protection system while achieving sufficient early strength to meet the available shutdown and reinstatement window.',
     solutions: 'A cementitious repair mortar compatible with the CP system replaced the original epoxy specification, paired with controlled halogen-light curing to accelerate strength gain without compromising the CP installation.',
     inspectionHighlights: [
@@ -129,6 +134,11 @@ export const projectGallery = [
     ],
     qaqcActivities: 'Staged quality hold points across damage mapping, controlled breaking, reinforcement grit-blasting, CP ribbon protection, cementitious repair, curing, and CFRP installation.',
     standards: 'No third-party standard was formally cited in the project record; the repair followed documented operational, Cathodic Protection, and structural-rehabilitation requirements for the facility.',
+    codesStandards: [
+      { category: 'Project Specification', standard: 'Operational Requirements', description: 'Governed execution of the repair without interrupting live sump operation.' },
+      { category: 'Project Specification', standard: 'Cathodic Protection Requirements', description: 'Governed protection of the CP ribbon throughout the repair sequence.' },
+      { category: 'Project Specification', standard: 'Structural Rehabilitation Requirements', description: 'Governed the cementitious repair and CFRP strengthening scope for the facility.' },
+    ],
     challenges: 'Structural rehabilitation was required without a shutdown, and the active Cathodic Protection ribbon had to be protected throughout every stage of the repair sequence.',
     solutions: 'A staged repair sequence isolated and protected the CP ribbon at each step, allowing full CFRP strengthening to proceed on a live structure without interrupting sump operation.',
     inspectionHighlights: [
@@ -185,6 +195,10 @@ export const projectGallery = [
     ],
     qaqcActivities: 'Engineering review of prior failures, controlled removal inspection, geometry verification against the revised design, and void-free regrouting confirmation.',
     standards: 'No third-party standard was formally cited in the project record; the work used the project’s dynamic-load analysis and foundation-specific repair requirements.',
+    codesStandards: [
+      { category: 'Project Specification', standard: 'Dynamic-Load Analysis', description: 'Governed evaluation of the recurring grout-cracking failure mechanism.' },
+      { category: 'Project Specification', standard: 'Foundation-Specific Repair Requirements', description: 'Governed the corrected grout geometry and regrouting scope.' },
+    ],
     challenges: 'The project needed to identify the engineering mechanism behind recurring failures rather than repeat a symptom-based repair that had already failed once.',
     solutions: 'Grout geometry, not material selection, was identified as the root cause; correcting the width-to-depth ratio and adding perimeter expansion joints addressed the actual failure mechanism.',
     inspectionHighlights: [
@@ -240,6 +254,11 @@ export const projectGallery = [
     ],
     qaqcActivities: '4,862 inspection points and 42,000 linear metres of thermal fusion welds tested via vacuum box and air pressure channel testing, with destructive test witnessing and documented repair/re-test cycles for every defect found.',
     standards: 'Project specification and GRI requirements for HDPE weld-test acceptance criteria were applied, alongside applicable environmental regulatory requirements.',
+    codesStandards: [
+      { category: 'Industry Standard', standard: 'GRI (Geosynthetic Research Institute)', description: 'HDPE weld-test acceptance criteria.' },
+      { category: 'Project Specification', standard: 'Project Specification', description: 'Weld-test acceptance criteria applied alongside GRI requirements.' },
+      { category: 'Regulatory Requirement', standard: 'Environmental Regulatory Requirements', description: 'Applicable environmental regulatory requirements for the containment installation.' },
+    ],
     challenges: 'The installation scale, site conditions, and containment function required consistent controls across a very large area without compromising installation productivity.',
     solutions: 'Contractor and welding-procedure qualification were locked down before deployment began, and inspection and test plans were applied uniformly across every installation stage, including full NDT coverage and disciplined repair re-testing.',
     inspectionHighlights: [
@@ -300,6 +319,10 @@ export const projectGallery = [
     ],
     qaqcActivities: 'Soil classification, Proctor compaction testing, field moisture monitoring, controlled FDT timing, and surface protection inspection, with scarification/re-moistening/recompaction cycles where results fell short.',
     standards: 'ASTM D698 Standard Proctor compaction, together with project density, moisture, layer-thickness, and installation-tolerance requirements.',
+    codesStandards: [
+      { category: 'Industry Standard', standard: 'ASTM D698', description: 'Standard Proctor compaction test method.' },
+      { category: 'Project Specification', standard: 'Project Specification', description: 'Density, moisture, layer-thickness, and installation-tolerance requirements.' },
+    ],
     challenges: 'The high-sand, non-plastic material lost surface moisture rapidly under ambient site conditions, producing FDT results that did not reflect the compaction actually achieved.',
     solutions: 'A revised field procedure restored representative moisture conditions immediately before testing and protected approved surfaces with the next layer promptly, removing the drying window that had been causing false failures.',
     inspectionHighlights: [
@@ -356,6 +379,11 @@ export const projectGallery = [
     ],
     qaqcActivities: 'Material submittal and delivery-certificate review, installation-sequence verification, overlap and anchorage measurement, non-conformance correction tracking, and hold-point approvals at every layer.',
     standards: 'GRI overlap requirements and Saudi Building Code compliance, alongside project-specific installation tolerances and anchorage requirements.',
+    codesStandards: [
+      { category: 'Industry Standard', standard: 'GRI (Geosynthetic Research Institute)', description: 'Overlap requirements for geosynthetic layer installation.' },
+      { category: 'Regulatory Requirement', standard: 'Saudi Building Code', description: 'Regulatory compliance for the installation.' },
+      { category: 'Project Specification', standard: 'Project Specification', description: 'Project-specific installation tolerances and anchorage requirements.' },
+    ],
     challenges: 'Multiple product types and installation stages had to be coordinated with construction progress while maintaining complete documentation across a large installation area.',
     solutions: 'A documented hold point at every layer prevented any product from being covered before conformance, orientation, and overlap were verified in real time, keeping the multi-product sequence traceable end to end.',
     inspectionHighlights: [
