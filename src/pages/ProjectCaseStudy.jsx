@@ -6,11 +6,18 @@ const GALLERY_PLACEHOLDER_COUNT = 4
 
 const CODES_STANDARDS_CATEGORY_ORDER = ['Industry Standard', 'Regulatory Requirement', 'Project Specification']
 
-function groupCodesStandards(codesStandards) {
-  return CODES_STANDARDS_CATEGORY_ORDER
+const QUALITY_DELIVERABLES_CATEGORY_ORDER = [
+  'Engineering & Assessment Records',
+  'Material & Qualification Records',
+  'Inspection & Test Records',
+  'Completion & Compliance Documentation',
+]
+
+function groupByCategory(entries, categoryOrder) {
+  return categoryOrder
     .map((category) => ({
       category,
-      items: codesStandards.filter((entry) => entry.category === category),
+      items: entries.filter((entry) => entry.category === category),
     }))
     .filter((group) => group.items.length > 0)
 }
@@ -47,7 +54,8 @@ export default function ProjectCaseStudy({ slug }) {
     )
   }
 
-  const codesStandardsGroups = groupCodesStandards(project.codesStandards)
+  const codesStandardsGroups = groupByCategory(project.codesStandards, CODES_STANDARDS_CATEGORY_ORDER)
+  const qualityDeliverablesGroups = groupByCategory(project.qualityDeliverables, QUALITY_DELIVERABLES_CATEGORY_ORDER)
 
   return (
     <main className="project-gallery-page">
@@ -157,12 +165,12 @@ export default function ProjectCaseStudy({ slug }) {
         <section className="project-case-study-section">
           <h2>Codes &amp; Standards</h2>
           {codesStandardsGroups.map((group) => (
-            <div key={group.category} className="project-case-study-standards-group">
+            <div key={group.category} className="project-case-study-category-group">
               <h3>{group.category}</h3>
               <ul>
                 {group.items.map((item) => (
                   <li key={item.standard}>
-                    <span className="project-case-study-standard-name">{item.standard}</span>
+                    <span className="project-case-study-category-item-name">{item.standard}</span>
                     {' — '}
                     {item.description}
                   </li>
@@ -189,6 +197,24 @@ export default function ProjectCaseStudy({ slug }) {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        </section>
+
+        <section className="project-case-study-section">
+          <h2>Quality Deliverables</h2>
+          {qualityDeliverablesGroups.map((group) => (
+            <div key={group.category} className="project-case-study-category-group">
+              <h3>{group.category}</h3>
+              <ul>
+                {group.items.map((entry) => (
+                  <li key={entry.item}>
+                    <span className="project-case-study-category-item-name">{entry.item}</span>
+                    {' — '}
+                    {entry.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
 
         <section className="project-case-study-section">

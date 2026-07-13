@@ -92,6 +92,11 @@ export const projectGallery = [
     materials: 'Cathodic-protection-compatible cementitious repair mortar, protective coating system, and curing compound selected to replace the original epoxy specification.',
     testing: 'Substrate soundness checks prior to placement, halogen-light cure monitoring against the shutdown deadline, and Cathodic Protection continuity verification before and after repair.',
     documentation: 'Hold-point inspection records, material batch verification records, and a repair completion report supporting sump reinstatement sign-off.',
+    qualityDeliverables: [
+      { category: 'Inspection & Test Records', item: 'Hold-Point Inspection Records', description: 'Recorded verification at each repair hold point.' },
+      { category: 'Material & Qualification Records', item: 'Material Batch Verification Records', description: 'Confirmed the repair mortar batch used for the works.' },
+      { category: 'Completion & Compliance Documentation', item: 'Repair Completion Report', description: 'Supported sump reinstatement sign-off.' },
+    ],
     skills: ['Civil QA/QC', 'Concrete', 'Inspection', 'Documentation'],
     timeline: [
       { phase: 'Assessment', description: 'Shutdown inspection identified deterioration and confirmed the Cathodic Protection constraint on repair material choice.' },
@@ -155,6 +160,11 @@ export const projectGallery = [
     materials: 'Cementitious repair mortar for substrate reinstatement, followed by a full CFRP strengthening system applied to the rehabilitated wall.',
     testing: 'Cathodic Protection ribbon continuity verified as a documented hold point at each repair stage; CFRP surface preparation and bond quality inspected before sign-off.',
     documentation: 'Damage and CP-ribbon mapping records, staged hold-point inspection reports, and CFRP installation acceptance records.',
+    qualityDeliverables: [
+      { category: 'Engineering & Assessment Records', item: 'Damage & CP-Ribbon Mapping Records', description: 'Documented damage extent and Cathodic Protection ribbon routing before works began.' },
+      { category: 'Inspection & Test Records', item: 'Staged Hold-Point Inspection Reports', description: 'Recorded verification at each stage of the repair sequence.' },
+      { category: 'Completion & Compliance Documentation', item: 'CFRP Installation Acceptance Records', description: 'Confirmed surface preparation and bond quality sign-off.' },
+    ],
     skills: ['Civil QA/QC', 'Concrete', 'Inspection', 'Documentation'],
     timeline: [
       { phase: 'Damage Assessment', description: 'Delamination, reinforcement exposure, and chloride attack mapped, along with Cathodic Protection ribbon routing.' },
@@ -215,6 +225,11 @@ export const projectGallery = [
     materials: 'Epoxy grout placed to a corrected geometry, with new perimeter expansion joints installed to accommodate dynamic pump loading.',
     testing: 'Controlled removal inspection to confirm full extraction of damaged grout, and void-free placement confirmation before the foundation returned to service.',
     documentation: 'Engineering review record of prior failures, geometry verification records against the revised design, and regrouting completion sign-off.',
+    qualityDeliverables: [
+      { category: 'Engineering & Assessment Records', item: 'Engineering Review Record', description: 'Reviewed the prior grout-cracking failure history.' },
+      { category: 'Engineering & Assessment Records', item: 'Geometry Verification Records', description: 'Verified the corrected grout geometry against the revised design.' },
+      { category: 'Completion & Compliance Documentation', item: 'Regrouting Completion Sign-Off', description: 'Confirmed the foundation returned to service.' },
+    ],
     skills: ['Civil QA/QC', 'Inspection', 'Documentation'],
     timeline: [
       { phase: 'Root Cause Review', description: 'Grout geometry, material properties, and dynamic loading reviewed against the recurring failure history.' },
@@ -275,6 +290,11 @@ export const projectGallery = [
     materials: 'HDPE geomembrane liner deployed across a 280-hectare containment area, joined by thermal fusion welding.',
     testing: '100% non-destructive weld testing via vacuum box and air pressure channel methods, with destructive test witnessing and documented repair/re-test cycles for every defect found.',
     documentation: 'Contractor and welding-procedure qualification records, inspection and test plans per installation stage, and final acceptance and environmental compliance documentation.',
+    qualityDeliverables: [
+      { category: 'Material & Qualification Records', item: 'Contractor & Welding-Procedure Qualification Records', description: 'Verified contractor, welding-equipment, and installer competency before deployment.' },
+      { category: 'Inspection & Test Records', item: 'Inspection and Test Plans', description: 'Applied per installation stage across the full project area.' },
+      { category: 'Completion & Compliance Documentation', item: 'Final Acceptance & Environmental Compliance Documentation', description: 'Supported project handover and sign-off.' },
+    ],
     skills: ['HDPE', 'Civil QA/QC', 'Inspection', 'Material Approval', 'Documentation', 'Saudi Standards'],
     timeline: [
       { phase: 'Mobilization', description: 'Contractor, welding-equipment, and installer competency qualifications reviewed before deployment.' },
@@ -339,6 +359,11 @@ export const projectGallery = [
     materials: 'Silty Sand (SM) earthwork fill placed and compacted as a liner-foundation subgrade.',
     testing: 'Proctor compaction testing and nuclear-gauge Field Density Testing under a revised, moisture-controlled procedure, with scarification/re-moistening/recompaction and re-testing wherever results fell short.',
     documentation: 'Soil classification and Proctor test records, revised field-procedure documentation, and Field Density Testing result records supporting layer acceptance.',
+    qualityDeliverables: [
+      { category: 'Material & Qualification Records', item: 'Soil Classification & Proctor Test Records', description: 'Established the Silty Sand (SM) classification and Proctor values for the subgrade fill.' },
+      { category: 'Engineering & Assessment Records', item: 'Revised Field-Procedure Documentation', description: 'Documented the moisture-controlled procedure introduced to correct unrepresentative test results.' },
+      { category: 'Inspection & Test Records', item: 'Field Density Testing Result Records', description: 'Supported layer acceptance under the revised procedure.' },
+    ],
     skills: ['Earthworks', 'Civil QA/QC', 'Inspection', 'ASTM'],
     timeline: [
       { phase: 'Material Assessment', description: 'Silty Sand (SM) classification and Proctor values established for the subgrade fill.' },
@@ -400,6 +425,11 @@ export const projectGallery = [
     materials: 'Bi-planar geocomposite, tri-planar geocomposite, and geotextile layers installed beneath the HDPE liner system.',
     testing: 'Material submittal and delivery-certificate verification, overlap and anchor-trench dimension checks, and hold-point inspection at every layer before the next was permitted to proceed.',
     documentation: 'Delivery-certificate and material-conformance records, layer-by-layer hold-point inspection sign-offs, and non-conformance correction records.',
+    qualityDeliverables: [
+      { category: 'Material & Qualification Records', item: 'Delivery-Certificate & Material-Conformance Records', description: 'Verified submittals against specification for every product type.' },
+      { category: 'Inspection & Test Records', item: 'Layer-by-Layer Hold-Point Inspection Sign-Offs', description: 'Recorded inspection and sign-off before each subsequent layer was installed.' },
+      { category: 'Completion & Compliance Documentation', item: 'Non-Conformance Correction Records', description: 'Documented correction and re-inspection of any non-conforming work.' },
+    ],
     skills: ['Geosynthetics', 'Civil QA/QC', 'Inspection', 'Material Approval', 'Saudi Standards'],
     timeline: [
       { phase: 'Material Verification', description: 'Submittals and delivery certificates checked against specification for every product type.' },
