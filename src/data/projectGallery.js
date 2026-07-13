@@ -60,6 +60,7 @@ export const projectGallery = [
     duration: 'Shutdown-window repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'Cathodic-protection-compatible concrete repair of a seawater return sump, completed within a single planned shutdown window.',
+    executiveSummary: 'As Senior Civil QA/QC Engineer, directed the CP-compatible concrete repair of a seawater return sump for Saudi Chevron Company, replacing an incompatible epoxy specification with a cementitious repair mortar under controlled halogen-light curing. The repair was completed within the shutdown period with no schedule extension, and the sump was returned to service without compromising the Cathodic Protection system.',
     overview: 'A planned shutdown inspection identified extensive concrete deterioration in a seawater return sump. The structure’s active Cathodic Protection system ruled out the originally specified epoxy repair mortar, requiring a compatible alternative to be identified and executed inside a fixed shutdown window.',
     scope: 'Specification of a cementitious repair mortar in place of the original epoxy system, with controlled halogen-light curing, a curing compound, and a protective coating applied within the shutdown programme.',
     responsibilities: [
@@ -117,6 +118,7 @@ export const projectGallery = [
     duration: 'Live-operation structural repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'CFRP strengthening of a corroded seawater sump wall, executed without taking the structure out of service.',
+    executiveSummary: 'As Senior Civil QA/QC Engineer, directed CFRP strengthening of a corroded seawater return sump wall for Saudi Chevron Company, executed on a live structure without taking it out of service. A staged repair sequence protected the active Cathodic Protection ribbon throughout, restoring structural capacity and adding confinement and durability support for the marine exposure environment without interrupting operations.',
     overview: 'Continuous seawater overflow caused concrete delamination, reinforcement exposure, spalling, and chloride attack in a retaining wall that had to remain operational throughout the repair.',
     scope: 'Removal of unsound concrete, grit-blasting of exposed reinforcement, protection of the Cathodic Protection ribbon, cementitious repair, and full CFRP strengthening of the repaired wall.',
     responsibilities: [
@@ -172,6 +174,7 @@ export const projectGallery = [
     duration: 'Root-cause investigation and repair, within a continuous 2018–2025 QA/QC engagement',
     role: 'Senior Civil QA/QC Engineer',
     shortDescription: 'Root-cause investigation and geometry correction ending a recurring grout-cracking failure on a critical pump foundation.',
+    executiveSummary: 'As Senior Civil QA/QC Engineer, led a root-cause investigation into recurring epoxy grout cracking beneath a critical reciprocating pump foundation for Saudi Chevron Company, identifying grout geometry rather than material selection as the governing failure mechanism. Correcting the width-to-depth ratio and adding perimeter expansion joints eliminated further grout cracking, and the foundation has remained stable under normal pump operation.',
     overview: 'Repeated cracking and uplift of epoxy grout beneath a critical reciprocating pump foundation required investigation after earlier repairs had failed to resolve the underlying failure cycle.',
     scope: 'Removal of damaged grout, correction of grout geometry, installation of perimeter expansion joints, and placement of new epoxy grout to the revised geometry.',
     responsibilities: [
@@ -226,6 +229,7 @@ export const projectGallery = [
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Full QA/QC programme for a large-scale HDPE liner installation, covering 1M+ m² with 100% weld-test coverage.',
+    executiveSummary: "As Senior Civil QA/QC Engineer with Al Yamama Company, directed the full QA/QC programme for the Ma'aden Phosphate Gypsum Stack Expansion Phase IV HDPE liner installation — over 1,000,000 m² of geomembrane across 4,862 inspection points and 42,000 linear metres of tested welds. The installation achieved 100% specification compliance with zero environmental non-compliance incidents across the 18-month execution.",
     overview: 'A large-scale HDPE liner installation on the Ma’aden Phosphate Gypsum Stack Expansion Phase IV required comprehensive QA/QC oversight to support seam integrity, installation quality, and environmental compliance across a 280-hectare project area.',
     scope: 'A full QA/QC programme covering subgrade acceptance, liner deployment, seam welding, non-destructive weld testing, anchor trench inspection, defect repair, and final acceptance documentation.',
     responsibilities: [
@@ -285,6 +289,7 @@ export const projectGallery = [
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Field-procedure correction that eliminated false compaction failures on a liner-foundation subgrade without slowing construction.',
+    executiveSummary: "As Senior Civil QA/QC Engineer with Al Yamama Company, diagnosed rapid surface drying as the cause of unrepresentative Field Density Testing results on a Silty Sand liner-foundation subgrade at the Ma'aden Gypsum Stack Expansion, and introduced a revised moisture-controlled field procedure. The change achieved consistent density and moisture compliance and eliminated false compaction failures without slowing construction productivity.",
     overview: 'Silty Sand (SM) earthworks were being prepared as a liner-foundation subgrade for the Gypsum Stack Expansion. Rapid surface drying ahead of Field Density Testing created a risk of unrepresentative density results and false failures.',
     scope: 'Introduction of a controlled field procedure to restore representative moisture conditions immediately before testing, with surface protection from the next earthwork layer once approved.',
     responsibilities: [
@@ -340,6 +345,7 @@ export const projectGallery = [
     duration: '2024–2025, 18-month execution',
     role: 'Senior Civil QA/QC Engineer, Al Yamama Company',
     shortDescription: 'Layer-by-layer inspection programme for a multi-product geosynthetic system beneath the HDPE liner.',
+    executiveSummary: "As Senior Civil QA/QC Engineer with Al Yamama Company, ran a layer-by-layer inspection programme for the bi-planar geocomposite, tri-planar geocomposite, and geotextile system installed beneath the HDPE liner at the Ma'aden Gypsum Stack Expansion, enforcing a documented hold point at every layer. All layers were installed in the correct sequence with documented conformance, and overlap and anchorage verification was accepted for regulatory and client sign-off.",
     overview: 'A multi-layer system of bi-planar geocomposite, tri-planar geocomposite, and geotextile required independent inspection for material conformance, installation sequence, overlap, and anchorage before the HDPE liner could be deployed above it.',
     scope: 'A layer-by-layer inspection programme with documented hold points, delivery-certificate checks, installation verification, defect rework, and re-inspection before each following layer was permitted to proceed.',
     responsibilities: [

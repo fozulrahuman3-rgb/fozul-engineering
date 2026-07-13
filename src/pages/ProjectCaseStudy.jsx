@@ -105,7 +105,12 @@ export default function ProjectCaseStudy({ slug }) {
 
       <div className="project-case-study-sections">
         <section className="project-case-study-section">
-          <h2>Overview</h2>
+          <h2>Executive Summary</h2>
+          <p>{project.executiveSummary}</p>
+        </section>
+
+        <section className="project-case-study-section">
+          <h2>Project Overview</h2>
           <p>{project.overview}</p>
         </section>
 
