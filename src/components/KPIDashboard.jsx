@@ -1,7 +1,7 @@
 export default function KPIDashboard({ stats }) {
   if (!stats?.length) {
     return (
-      <div className="project-case-study-kpi-placeholder">
+      <div className="project-case-study-empty-state">
         Awaiting Verified Project Metrics
       </div>
     )

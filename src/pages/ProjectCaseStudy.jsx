@@ -3,8 +3,6 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import KPIDashboard from '../components/KPIDashboard'
 import './ProjectGallery.css'
 
-const GALLERY_PLACEHOLDER_COUNT = 4
-
 const CODES_STANDARDS_CATEGORY_ORDER = ['Industry Standard', 'Regulatory Requirement', 'Project Specification']
 
 const QUALITY_DELIVERABLES_CATEGORY_ORDER = [
@@ -229,21 +227,24 @@ export default function ProjectCaseStudy({ slug }) {
         </section>
 
         <section className="project-case-study-section">
-          <h2>Project Gallery</h2>
-          <div className="project-case-study-gallery-grid">
-            {Array.from({ length: GALLERY_PLACEHOLDER_COUNT }, (_, index) => (
-              <div
-                key={index}
-                className="project-case-study-gallery-placeholder"
-                role="img"
-                aria-label={`${project.title} — site photograph ${index + 1}, not yet published`}
-              >
-                <span>Project Imagery</span>
-                <strong>{index + 1}</strong>
-                <span>Coming soon</span>
-              </div>
-            ))}
-          </div>
+          <h2>Real Project Photo Gallery</h2>
+          {project.galleryImages?.length ? (
+            <div className="project-case-study-gallery-grid">
+              {project.galleryImages.map((image) => (
+                <figure key={image.src} className="project-case-study-gallery-photo">
+                  <img src={image.src} alt={image.altText} loading="lazy" />
+                  {image.caption ? <figcaption>{image.caption}</figcaption> : null}
+                </figure>
+              ))}
+            </div>
+          ) : (
+            <div className="project-case-study-empty-state">
+              Verified site photography for this project has not yet been published.
+            </div>
+          )}
+          {project.imageCredits ? (
+            <p className="project-case-study-image-credits">{project.imageCredits}</p>
+          ) : null}
         </section>
       </div>
 
