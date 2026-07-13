@@ -1,5 +1,6 @@
 import { getProjectBySlug } from '../data/projectGallery'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
+import KPIDashboard from '../components/KPIDashboard'
 import './ProjectGallery.css'
 
 const GALLERY_PLACEHOLDER_COUNT = 4
@@ -125,6 +126,11 @@ export default function ProjectCaseStudy({ slug }) {
       </header>
 
       <div className="project-case-study-sections">
+        <section className="project-case-study-section">
+          <h2>Executive KPI Dashboard</h2>
+          <KPIDashboard stats={project.stats} />
+        </section>
+
         <section className="project-case-study-section">
           <h2>Executive Summary</h2>
           <p>{project.executiveSummary}</p>

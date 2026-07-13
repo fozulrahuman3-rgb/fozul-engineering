@@ -565,6 +565,50 @@
   font-weight: 700;
 }
 
+.project-case-study-kpi-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.project-case-study-kpi-tile {
+  padding: 20px;
+  border: 1px solid rgba(213, 175, 91, 0.22);
+  border-radius: 16px;
+  background: rgba(213, 175, 91, 0.06);
+  text-align: center;
+}
+
+.project-case-study-kpi-tile strong {
+  display: block;
+  color: var(--gallery-gold-light);
+  font-size: 2.4rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.project-case-study-kpi-tile span {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-case-study-kpi-placeholder {
+  padding: clamp(32px, 6vw, 56px);
+  border: 1px dashed rgba(213, 175, 91, 0.4);
+  border-radius: 20px;
+  background: rgba(7, 22, 44, 0.4);
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .project-case-study-section li::before {
   content: '';
   position: absolute;
