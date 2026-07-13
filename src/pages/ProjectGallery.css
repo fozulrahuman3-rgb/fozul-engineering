@@ -535,6 +535,15 @@
   line-height: 1.75;
 }
 
+.project-case-study-section h3 {
+  margin: 20px 0 12px;
+  color: var(--gallery-gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .project-case-study-section ul {
   display: grid;
   gap: 10px;

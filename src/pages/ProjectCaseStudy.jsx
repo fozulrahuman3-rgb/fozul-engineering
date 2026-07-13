@@ -115,12 +115,9 @@ export default function ProjectCaseStudy({ slug }) {
         </section>
 
         <section className="project-case-study-section">
-          <h2>Project Scope</h2>
+          <h2>Scope of Work</h2>
           <p>{project.scope}</p>
-        </section>
-
-        <section className="project-case-study-section">
-          <h2>Responsibilities</h2>
+          <h3>Key Responsibilities</h3>
           <ul>
             {project.responsibilities.map((item) => (
               <li key={item}>{item}</li>
@@ -139,12 +136,12 @@ export default function ProjectCaseStudy({ slug }) {
         </section>
 
         <section className="project-case-study-section">
-          <h2>Major Challenges</h2>
+          <h2>Engineering Challenges</h2>
           <p>{project.challenges}</p>
         </section>
 
         <section className="project-case-study-section">
-          <h2>Solutions</h2>
+          <h2>Engineering Solutions</h2>
           <p>{project.solutions}</p>
         </section>
 
