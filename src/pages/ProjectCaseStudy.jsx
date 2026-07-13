@@ -126,8 +126,19 @@ export default function ProjectCaseStudy({ slug }) {
         </section>
 
         <section className="project-case-study-section">
-          <h2>QA/QC Activities</h2>
+          <h2>QA/QC Responsibilities</h2>
           <p>{project.qaqcActivities}</p>
+        </section>
+
+        <section className="project-case-study-section">
+          <h2>Inspection &amp; Testing Activities</h2>
+          <p>{project.testing}</p>
+          <h3>Inspection Highlights</h3>
+          <ul>
+            {project.inspectionHighlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </section>
 
         <section className="project-case-study-section">
@@ -143,15 +154,6 @@ export default function ProjectCaseStudy({ slug }) {
         <section className="project-case-study-section">
           <h2>Engineering Solutions</h2>
           <p>{project.solutions}</p>
-        </section>
-
-        <section className="project-case-study-section">
-          <h2>Inspection Highlights</h2>
-          <ul>
-            {project.inspectionHighlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
         </section>
 
         <section className="project-case-study-section">
