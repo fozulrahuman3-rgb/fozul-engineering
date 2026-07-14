@@ -449,3 +449,24 @@ export const projectGallery = [
 export function getProjectBySlug(slug) {
   return projectGallery.find((project) => project.slug === slug)
 }
+
+// Scores every other project by shared industry (weight 2) and shared
+// categories[] overlap (weight 1 each), then returns the top `limit` with a
+// real relationship — never pads the result with an unrelated project just
+// to fill the quota.
+export function getRelatedProjects(slug, limit = 2) {
+  const project = getProjectBySlug(slug)
+  if (!project) return []
+
+  return projectGallery
+    .filter((candidate) => candidate.slug !== slug)
+    .map((candidate) => {
+      const sharedCategories = candidate.categories.filter((category) => project.categories.includes(category)).length
+      const sharedIndustry = candidate.industry === project.industry ? 2 : 0
+      return { candidate, score: sharedIndustry + sharedCategories }
+    })
+    .filter((entry) => entry.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((entry) => entry.candidate)
+}

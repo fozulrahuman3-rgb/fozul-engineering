@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import { getProjectBySlug } from '../data/projectGallery'
+import { getProjectBySlug, getRelatedProjects } from '../data/projectGallery'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import KPIDashboard from '../components/KPIDashboard'
+import RelatedProjects from '../components/RelatedProjects'
 import './ProjectGallery.css'
 
 const CODES_STANDARDS_CATEGORY_ORDER = ['Industry Standard', 'Regulatory Requirement', 'Project Specification']
@@ -63,6 +64,7 @@ export default function ProjectCaseStudy({ slug }) {
 
   const codesStandardsGroups = groupByCategory(project.codesStandards, CODES_STANDARDS_CATEGORY_ORDER)
   const qualityDeliverablesGroups = groupByCategory(project.qualityDeliverables, QUALITY_DELIVERABLES_CATEGORY_ORDER)
+  const relatedProjects = getRelatedProjects(project.slug)
 
   return (
     <main className="project-gallery-page">
@@ -259,6 +261,8 @@ export default function ProjectCaseStudy({ slug }) {
             <p className="project-case-study-image-credits">{project.imageCredits}</p>
           ) : null}
         </section>
+
+        <RelatedProjects projects={relatedProjects} />
       </div>
 
       <section className="project-gallery-cta">
