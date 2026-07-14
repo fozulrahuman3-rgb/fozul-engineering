@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { getProjectBySlug } from '../data/projectGallery'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import KPIDashboard from '../components/KPIDashboard'
@@ -40,6 +41,13 @@ export default function ProjectCaseStudy({ slug }) {
     url: project ? `https://faheemengineering.com/projects/${project.slug}` : undefined,
   })
 
+  useEffect(() => {
+    document.body.dataset.printScope = 'project-case-study'
+    return () => {
+      delete document.body.dataset.printScope
+    }
+  }, [])
+
   if (!project) {
     return (
       <main className="project-gallery-page">
@@ -58,7 +66,12 @@ export default function ProjectCaseStudy({ slug }) {
 
   return (
     <main className="project-gallery-page">
-      <a className="project-case-study-breadcrumb" href="/projects">&larr; Back to Project Portfolio</a>
+      <div className="project-case-study-toolbar">
+        <a className="project-case-study-breadcrumb" href="/projects">&larr; Back to Project Portfolio</a>
+        <button type="button" className="button button-secondary project-case-study-print-button" onClick={() => window.print()}>
+          Download / Print Project Summary
+        </button>
+      </div>
 
       <header className="project-case-study-hero">
         <p className="project-gallery-eyebrow">FAHEEM / PROJECTS / CASE STUDY</p>
@@ -226,7 +239,7 @@ export default function ProjectCaseStudy({ slug }) {
           <p>{project.lessonsLearned}</p>
         </section>
 
-        <section className="project-case-study-section">
+        <section className="project-case-study-section project-case-study-print-hide">
           <h2>Real Project Photo Gallery</h2>
           {project.galleryImages?.length ? (
             <div className="project-case-study-gallery-grid">

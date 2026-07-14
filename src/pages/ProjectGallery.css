@@ -391,6 +391,20 @@
 }
 
 /* Individual case study page */
+.project-case-study-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-case-study-print-button {
+  min-height: 44px;
+  padding: 0 24px;
+  font-size: 0.86rem;
+}
+
 .project-case-study-breadcrumb {
   display: inline-flex;
   align-items: center;
@@ -692,5 +706,75 @@
   .project-case-study-section {
     padding: 20px;
     border-radius: 18px;
+  }
+}
+
+/* Downloadable Project Summary — print-optimized output. Scoped to
+   body[data-print-scope="project-case-study"] (set only while this page
+   is mounted) so printing any other page on the site is unaffected. */
+@media print {
+  body[data-print-scope='project-case-study'] .navbar,
+  body[data-print-scope='project-case-study'] .footer,
+  body[data-print-scope='project-case-study'] .back-to-top,
+  body[data-print-scope='project-case-study'] .theme-toggle,
+  body[data-print-scope='project-case-study'] .floating-whatsapp,
+  body[data-print-scope='project-case-study'] .project-case-study-toolbar,
+  body[data-print-scope='project-case-study'] .project-gallery-cta,
+  body[data-print-scope='project-case-study'] .project-case-study-print-hide {
+    display: none !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-gallery-page {
+    color: #14171f;
+    background: #fff;
+    gap: 18px;
+    padding: 0;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-hero,
+  body[data-print-scope='project-case-study'] .project-case-study-section {
+    border: 1px solid #ccc !important;
+    border-radius: 8px;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-gallery-eyebrow,
+  body[data-print-scope='project-case-study'] .project-case-study-meta-grid dt,
+  body[data-print-scope='project-case-study'] .project-case-study-section h3,
+  body[data-print-scope='project-case-study'] .project-case-study-category-item-name,
+  body[data-print-scope='project-case-study'] .project-case-study-kpi-tile span {
+    color: #6b5416 !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-hero h1,
+  body[data-print-scope='project-case-study'] .project-case-study-section h2,
+  body[data-print-scope='project-case-study'] .project-case-study-kpi-tile strong {
+    color: #14171f !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-meta-grid dd,
+  body[data-print-scope='project-case-study'] .project-case-study-section p,
+  body[data-print-scope='project-case-study'] .project-case-study-section li,
+  body[data-print-scope='project-case-study'] .project-case-study-status-badge,
+  body[data-print-scope='project-case-study'] .project-case-study-empty-state {
+    color: #33394a !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-hero-tags span,
+  body[data-print-scope='project-case-study'] .project-case-study-tags-row span:not(:first-child) {
+    border: 1px solid #ccc;
+    background: none !important;
+    color: #33394a !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-kpi-tile,
+  body[data-print-scope='project-case-study'] .project-case-study-empty-state {
+    border: 1px solid #ccc !important;
+    background: none !important;
+  }
+
+  body[data-print-scope='project-case-study'] .project-case-study-section li::before {
+    background: #6b5416 !important;
   }
 }
