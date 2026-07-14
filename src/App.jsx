@@ -2272,22 +2272,36 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const handleScroll = () => {
+    const sections = navItems
+      .filter((item) => item.href.startsWith('#'))
+      .map((item) => document.querySelector(item.href))
+      .filter(Boolean)
+
+    let ticking = false
+
+    const updateScrollState = () => {
       const offset = window.scrollY + 220
       let current = 'home'
 
-      navItems.filter((item) => item.href.startsWith('#')).forEach((item) => {
-        const section = document.querySelector(item.href)
-        if (section && section.offsetTop <= offset) {
+      sections.forEach((section) => {
+        if (section.offsetTop <= offset) {
           current = section.id
         }
       })
 
       setActiveSection(current)
       setShowBackToTop(window.scrollY > 480)
+      ticking = false
     }
 
-    handleScroll()
+    const handleScroll = () => {
+      if (!ticking) {
+        ticking = true
+        window.requestAnimationFrame(updateScrollState)
+      }
+    }
+
+    updateScrollState()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
