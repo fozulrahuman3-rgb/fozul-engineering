@@ -80,6 +80,26 @@ export const leadership = {
       status: 'Future Position',
     },
   ],
+  advisoryLeadership: [
+    {
+      title: 'Technology Advisor',
+      name: 'Abdul Rahman',
+      description:
+        'Abdul Rahman serves as Technology Advisor to FAHEEM Engineering Consultancy, providing strategic guidance on IT infrastructure, enterprise networking, digital transformation, cybersecurity awareness, and future technology initiatives. His professional experience supports the company\'s long-term digital strategy.',
+    },
+    {
+      title: 'Future Generation',
+      name: 'Master Fahim',
+      description:
+        'FAHEEM Engineering Consultancy carries the name of Fahim as a symbol of continuity, responsibility, and hope for future generations. Whether his future lies in engineering, technology, or another profession, the company exists to preserve knowledge, integrity, and service for those who follow.',
+    },
+    {
+      title: 'Legal Advisor',
+      name: 'Position to be Appointed',
+      description:
+        'This position will be filled by a qualified legal professional when the company expands its operations.',
+    },
+  ],
   profileHref: 'https://www.linkedin.com/in/mohamed-haneefa-fozul-rahuman',
   leadershipHref: '/leadership',
 }

@@ -189,6 +189,26 @@ export default function Leadership({ SectionHeading, PremiumIcon, profilePhoto }
         </div>
       </section>
 
+      <section className="section" id="advisory-leadership-team">
+        <SectionHeading
+          eyebrow="Leadership & Advisory"
+          title="Advisory Support and Legacy Leadership"
+          subtitle="FAHEEM's leadership circle also includes advisory guidance and legacy roles that reflect the company's long-term commitments."
+        />
+        <div className="featured-projects-grid">
+          {leadership.advisoryLeadership.map((item, index) => (
+            <article key={`${item.title}-${index}`} className="featured-project-card">
+              <div className="service-icon"><PremiumIcon name="qa" /></div>
+              <div className="project-body">
+                <h3>{item.title}</h3>
+                <p className="project-description">{item.name}</p>
+                <p className="project-description">{item.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section" id="leadership-cta">
         <SectionHeading
           eyebrow="Call To Action"
