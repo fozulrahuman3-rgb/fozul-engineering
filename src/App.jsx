@@ -7,6 +7,7 @@ import Industries from './pages/Industries'
 import Projects from './pages/Projects'
 import ProjectCaseStudy from './pages/ProjectCaseStudy'
 import CompanyProfile from './pages/CompanyProfile'
+import Legacy from './pages/Legacy'
 import OrganizationChart from './pages/OrganizationChart'
 import Credentials from './pages/Credentials'
 import CaseStudies from './pages/CaseStudies'
@@ -57,6 +58,7 @@ const navItems = [
   { label: 'Organization', href: '/organization-chart' },
   { label: 'Credentials', href: '/credentials' },
   { label: 'Case Studies', href: '/case-studies' },
+  { label: 'Legacy', href: '/legacy' },
   { label: 'Services', href: '#services' },
   { label: 'Industries', href: '#industries-we-serve' },
   { label: 'Why FAHEEM', href: '#why-choose' },
@@ -2239,7 +2241,8 @@ function App() {
   const isOrganizationChartPath = typeof window !== 'undefined' && window.location.pathname === '/organization-chart'
   const isCredentialsPath = typeof window !== 'undefined' && window.location.pathname === '/credentials'
   const isCaseStudiesPath = typeof window !== 'undefined' && window.location.pathname === '/case-studies'
-  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isProjectDetailPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath
+  const isLegacyPath = typeof window !== 'undefined' && window.location.pathname === '/legacy'
+  const isStandalonePage = isLeadershipPath || isIndustriesPath || isProjectsPath || isProjectDetailPath || isCompanyProfilePath || isOrganizationChartPath || isCredentialsPath || isCaseStudiesPath || isLegacyPath
   const homeAnchor = (hash) => (isStandalonePage ? `/${hash}` : hash)
   const renderedNavItems = isStandalonePage
     ? navItems.map((item) =>
@@ -2257,6 +2260,8 @@ function App() {
                     ? { ...item, href: '/credentials' }
                     : item.label === 'Case Studies'
                       ? { ...item, href: '/case-studies' }
+                      : item.label === 'Legacy'
+                        ? { ...item, href: '/legacy' }
               : { ...item, href: `/${item.href}` }
       )
     : navItems
@@ -2334,7 +2339,7 @@ function App() {
             <a
               key={item.href}
               href={item.href}
-              className={`nav-link ${isLeadershipPath ? item.label === 'Leadership' : isIndustriesPath ? item.label === 'Industries' : isProjectsPath ? item.label === 'Projects' : isCompanyProfilePath ? item.label === 'Profile' : isOrganizationChartPath ? item.label === 'Organization' : isCredentialsPath ? item.label === 'Credentials' : isCaseStudiesPath ? item.label === 'Case Studies' : activeSection === item.href.substring(1) ? 'active' : ''}`}
+              className={`nav-link ${isLeadershipPath ? item.label === 'Leadership' : isIndustriesPath ? item.label === 'Industries' : isProjectsPath ? item.label === 'Projects' : isCompanyProfilePath ? item.label === 'Profile' : isOrganizationChartPath ? item.label === 'Organization' : isCredentialsPath ? item.label === 'Credentials' : isCaseStudiesPath ? item.label === 'Case Studies' : isLegacyPath ? item.label === 'Legacy' : activeSection === item.href.substring(1) ? 'active' : ''}`}
             >
               {item.label}
             </a>
@@ -2738,6 +2743,8 @@ function App() {
         <Credentials />
       ) : isCaseStudiesPath ? (
         <CaseStudies />
+      ) : isLegacyPath ? (
+        <Legacy />
       ) : isProjectDetailPath ? (
         <ProjectCaseStudy slug={projectDetailSlug} />
       ) : (
