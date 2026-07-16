@@ -83,15 +83,16 @@ export const leadership = {
   advisoryLeadership: [
     {
       title: 'Technology Advisor',
-      name: 'Abdul Rahman',
+      name: 'Mr. Abdul Rahuman',
+      role: 'IT Manager – GET Group Holdings Ltd., Dubai, UAE',
       description:
-        'Abdul Rahman serves as Technology Advisor to FAHEEM Engineering Consultancy, providing strategic guidance on IT infrastructure, enterprise networking, digital transformation, cybersecurity awareness, and future technology initiatives. His professional experience supports the company\'s long-term digital strategy.',
+        'Mr. Abdul Rahuman serves as Technology Advisor to FAHEEM Engineering Consultancy, providing strategic guidance on IT infrastructure, enterprise networking, digital transformation, cybersecurity awareness, and future technology initiatives. As IT Manager at GET Group Holdings Ltd., Dubai, UAE, his professional experience supports the company\'s long-term digital strategy.',
     },
     {
       title: 'Future Generation',
-      name: 'Master Fahim',
+      name: 'Master Faheem',
       description:
-        'FAHEEM Engineering Consultancy carries the name of Fahim as a symbol of continuity, responsibility, and hope for future generations. Whether his future lies in engineering, technology, or another profession, the company exists to preserve knowledge, integrity, and service for those who follow.',
+        'FAHEEM Engineering Consultancy carries the name of Faheem as a symbol of continuity, responsibility, and hope for future generations. Whether his future lies in engineering, technology, or another profession, the company exists to preserve knowledge, integrity, and service for those who follow.',
     },
     {
       title: 'Legal Advisor',

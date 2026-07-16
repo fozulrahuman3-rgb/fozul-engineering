@@ -202,6 +202,7 @@ export default function Leadership({ SectionHeading, PremiumIcon, profilePhoto }
               <div className="project-body">
                 <h3>{item.title}</h3>
                 <p className="project-description">{item.name}</p>
+                {item.role && <p className="project-description">{item.role}</p>}
                 <p className="project-description">{item.description}</p>
               </div>
             </article>
